@@ -2344,29 +2344,12 @@
 .end method
 
 .method synthetic lambda$initComponentsBase$3$com-vietschool-NewBaseActivity(Landroid/view/View;)V
-    .locals 1
+    .locals 2
 
-    .line 294
-    new-instance p1, Landroid/content/Intent;
-
-    const-class v0, Lcom/vietschool/NewMainActivity;
-
-    invoke-direct {p1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    const/high16 v0, 0x20000
-
-    .line 295
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
-
-    .line 296
-    invoke-virtual {p0, p1}, Lcom/vietschool/NewBaseActivity;->startActivity(Landroid/content/Intent;)V
-
-    .line 297
-    sget p1, Lcom/vietschool/R$anim;->ios_slide_in_right_long:I
-
-    sget v0, Lcom/vietschool/R$anim;->ios_slide_out_left_short:I
-
-    invoke-virtual {p0, p1, v0}, Lcom/vietschool/NewBaseActivity;->overridePendingTransition(II)V
+    new-instance v0, Landroid/content/Intent;
+    const-class v1, Lcom/vietschool/AppInfoActivity;
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0}, Lcom/vietschool/NewBaseActivity;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method
