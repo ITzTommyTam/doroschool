@@ -743,6 +743,10 @@
 
     check-cast v4, Lcom/vietschool/components/feature/Feature;
 
+    invoke-static {v4}, Lcom/vietschool/FeatureFilter;->shouldKeep(Lcom/vietschool/components/feature/Feature;)Z
+    move-result v5
+    if-eqz v5, :goto_5
+
     .line 890
     invoke-virtual {v4}, Lcom/vietschool/components/feature/Feature;->getName()Ljava/lang/String;
 
@@ -751,6 +755,7 @@
     invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
+    const-string v5, "hoc-tap" 
 
     check-cast v5, Ljava/lang/String;
 

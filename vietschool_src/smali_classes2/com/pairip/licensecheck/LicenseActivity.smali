@@ -54,22 +54,7 @@
 .end method
 
 .method private closeApp()V
-    .locals 1
-
-    .line 113
-    sget-boolean v0, Lcom/pairip/licensecheck/LicenseClient;->gracefulShutdownEnabled:Z
-
-    if-eqz v0, :cond_0
-
-    .line 114
-    invoke-virtual {p0}, Lcom/pairip/licensecheck/LicenseActivity;->closeAllTasks()V
-
-    return-void
-
-    .line 116
-    :cond_0
-    invoke-virtual {p0}, Lcom/pairip/licensecheck/LicenseActivity;->exitApp()V
-
+    .locals 0
     return-void
 .end method
 
@@ -275,15 +260,8 @@
 .end method
 
 .method private showErrorDialog()V
-    .locals 1
-
-    .line 88
-    new-instance v0, Lcom/pairip/licensecheck/LicenseActivity$$ExternalSyntheticLambda1;
-
-    invoke-direct {v0, p0}, Lcom/pairip/licensecheck/LicenseActivity$$ExternalSyntheticLambda1;-><init>(Lcom/pairip/licensecheck/LicenseActivity;)V
-
-    invoke-virtual {p0, v0}, Lcom/pairip/licensecheck/LicenseActivity;->runOnUiThread(Ljava/lang/Runnable;)V
-
+    .locals 0
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
     return-void
 .end method
 
@@ -419,59 +397,8 @@
 .end method
 
 .method public onStart()V
-    .locals 2
-
-    .line 33
+    .locals 0
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
-
-    .line 36
-    :try_start_0
-    invoke-virtual {p0}, Lcom/pairip/licensecheck/LicenseActivity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v0
-
-    const-string v1, "activitytype"
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->getSerializableExtra(Ljava/lang/String;)Ljava/io/Serializable;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/pairip/licensecheck/LicenseActivity$ActivityType;
-
-    .line 37
-    invoke-virtual {v0}, Lcom/pairip/licensecheck/LicenseActivity$ActivityType;->ordinal()I
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_0
-
-    return-void
-
-    .line 42
-    :cond_0
-    invoke-direct {p0}, Lcom/pairip/licensecheck/LicenseActivity;->showErrorDialog()V
-
-    return-void
-
-    .line 39
-    :cond_1
-    invoke-direct {p0}, Lcom/pairip/licensecheck/LicenseActivity;->showPaywallAndCloseApp()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception v0
-
-    .line 46
-    const-string v1, "Couldn\'t process license activity correctly."
-
-    invoke-direct {p0, v1, v0}, Lcom/pairip/licensecheck/LicenseActivity;->logAndShowErrorDialog(Ljava/lang/String;Ljava/lang/Exception;)V
-
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
     return-void
 .end method

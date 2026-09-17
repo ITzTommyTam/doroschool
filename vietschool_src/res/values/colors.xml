@@ -132,7 +132,7 @@
     <color name="cyan_dark">#ff078ba4</color>
     <color name="cyan_primary">#ff186b79</color>
     <color name="d1_nav_active">@color/primary_color</color>
-    <color name="d1_nav_background">#ffffffff</color>
+    <color name="d1_nav_background">#00000000</color>
     <color name="d1_nav_inactive">#ff3e4a5e</color>
     <color name="darkblue">#ff00008b</color>
     <color name="darkcyan">#ff008b8b</color>

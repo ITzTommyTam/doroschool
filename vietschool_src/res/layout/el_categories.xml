@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/sideMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout android:visibility="gone" android:orientation="vertical" android:id="@id/sideMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
         <ImageView android:id="@id/btn_open" android:background="@drawable/bg_side_menu_item" android:paddingLeft="12.0dip" android:paddingTop="11.0dip" android:paddingRight="2.0dip" android:paddingBottom="11.0dip" android:layout_width="38.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/category_item_gap" android:src="@drawable/arrow_back_ios_24px" android:elevation="2.0dip" android:paddingVertical="11.0dip" app:tint="@color/black"
           xmlns:android="http://schemas.android.com/apk/res/android" />
         <androidx.recyclerview.widget.RecyclerView android:id="@id/categoryList" android:visibility="gone" android:layoutAnimation="@anim/layout_animation_fall_down" android:layout_width="fill_parent" android:layout_height="fill_parent" />

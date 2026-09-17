@@ -403,53 +403,7 @@
 .end method
 
 .method public static checkLicense(Landroid/content/Context;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
-
-    .line 175
-    const-string v0, "LicenseClient"
-
-    if-nez p0, :cond_0
-
-    .line 176
-    const-string p0, "Cannot check license with null context."
-
-    invoke-static {v0, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    .line 179
-    :cond_0
-    invoke-static {}, Lcom/pairip/licensecheck/LicenseClient;->isIsolatedProcess()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 180
-    const-string p0, "Skipping license check in isolated process."
-
-    invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    .line 183
-    :cond_1
-    sget-object v0, Lcom/pairip/licensecheck/LicenseClient;->mainThreadRunner:Lcom/pairip/licensecheck/LicenseClient$ImmediateTaskExecutor;
-
-    new-instance v1, Lcom/pairip/licensecheck/LicenseClient$$ExternalSyntheticLambda7;
-
-    invoke-direct {v1, p0}, Lcom/pairip/licensecheck/LicenseClient$$ExternalSyntheticLambda7;-><init>(Landroid/content/Context;)V
-
-    invoke-interface {v0, v1}, Lcom/pairip/licensecheck/LicenseClient$ImmediateTaskExecutor;->run(Ljava/lang/Runnable;)V
-
+    .locals 0
     return-void
 .end method
 

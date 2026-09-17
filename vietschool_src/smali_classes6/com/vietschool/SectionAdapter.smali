@@ -232,7 +232,7 @@
 
     move-result-object v0
 
-    const/4 v1, 0x6
+    const/16 v1, 0x32
 
     invoke-static {v0, v1}, Lcom/vietschool/components/feature/FeaturePaper;->initFromList(Ljava/util/List;I)Ljava/util/List;
 
@@ -251,6 +251,10 @@
     iget-object v0, p1, Lcom/vietschool/SectionAdapter$ViewHolder;->pager:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {v0, v1}, Landroidx/viewpager2/widget/ViewPager2;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Landroidx/viewpager2/widget/ViewPager2;->setUserInputEnabled(Z)V
 
     .line 63
     invoke-virtual {v1}, Lcom/vietschool/components/feature/FeaturePaperAdapter;->getItemCount()I

@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:paddingTop="@dimen/top_margin_avoid_header" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_margin" android:layout_marginTop="@dimen/card_margin" android:layout_marginRight="@dimen/card_margin" android:layout_marginBottom="0.0dip">
-            <LinearLayout android:orientation="vertical" android:id="@id/favoriteContainer" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
-                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
-                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="5.0dip" app:srcCompat="@drawable/favorite_24px" />
-                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yêu thích" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent">
+    <LinearLayout ns0:orientation="vertical" ns0:id="@id/linearLayout3" ns0:paddingTop="@dimen/top_margin_avoid_header" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent" ns1:layout_constraintBottom_toBottomOf="parent" ns1:layout_constraintEnd_toEndOf="parent" ns1:layout_constraintStart_toStartOf="parent" ns1:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout ns0:background="@drawable/card_bg" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginLeft="@dimen/card_margin" ns0:layout_marginTop="@dimen/card_margin" ns0:layout_marginRight="@dimen/card_margin" ns0:layout_marginBottom="0.0dip" ns0:visibility="gone">
+            <LinearLayout ns0:orientation="vertical" ns0:id="@id/favoriteContainer" ns0:padding="10.0dip" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns1:layout_constraintEnd_toEndOf="parent" ns1:layout_constraintStart_toStartOf="parent">
+                <LinearLayout ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginBottom="10.0dip">
+                    <LinearLayout ns0:gravity="center" ns0:orientation="horizontal" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:visibility="gone">
+                        <ImageView ns0:layout_width="20.0dip" ns0:layout_height="20.0dip" ns0:layout_marginEnd="5.0dip" ns1:srcCompat="@drawable/favorite_24px" />
+                        <TextView ns0:textSize="18.0sp" ns0:textStyle="bold" ns0:textColor="#ff333333" ns0:id="@id/section_title" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="Yêu thích" ns1:layout_constraintStart_toStartOf="parent" ns1:layout_constraintTop_toTopOf="parent" />
                     </LinearLayout>
-                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
-                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/favorite_setting" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/discover_tune_24px" />
+                    <View ns0:layout_width="0.0dip" ns0:layout_height="0.0dip" ns0:layout_weight="1.0" />
+                    <LinearLayout ns0:gravity="center" ns0:orientation="horizontal" ns0:id="@id/favorite_setting" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content">
+                        <ImageView ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns1:srcCompat="@drawable/discover_tune_24px" />
                     </LinearLayout>
                 </LinearLayout>
-                <androidx.viewpager2.widget.ViewPager2 android:id="@id/section_feature_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/section_feature_container">
-                    <com.google.android.material.tabs.TabLayout android:id="@id/tabIndicator" android:layout_width="wrap_content" android:layout_height="10.0dip" app:tabBackground="@drawable/d1_dot_selector" app:tabGravity="center" app:tabIndicator="@null" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="fixed" app:tabPaddingEnd="10.0dip" app:tabPaddingStart="10.0dip" app:tabRippleColor="@null" />
+                <androidx.viewpager2.widget.ViewPager2 ns0:id="@id/section_feature_container" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+                <LinearLayout ns0:gravity="center" ns0:orientation="horizontal" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="10.0dip" ns1:layout_constraintEnd_toEndOf="parent" ns1:layout_constraintStart_toStartOf="parent" ns1:layout_constraintTop_toBottomOf="@id/section_feature_container">
+                    <com.google.android.material.tabs.TabLayout ns0:id="@id/tabIndicator" ns0:layout_width="wrap_content" ns0:layout_height="10.0dip" ns1:tabBackground="@drawable/d1_dot_selector" ns1:tabGravity="center" ns1:tabIndicator="@null" ns1:tabIndicatorHeight="0.0dip" ns1:tabMaxWidth="0.0dip" ns1:tabMinWidth="0.0dip" ns1:tabMode="fixed" ns1:tabPaddingEnd="10.0dip" ns1:tabPaddingStart="10.0dip" ns1:tabRippleColor="@null" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.recyclerview.widget.RecyclerView android:id="@id/section_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_margin" />
+        <androidx.recyclerview.widget.RecyclerView ns0:id="@id/section_list" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginBottom="@dimen/card_margin" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
