@@ -84,7 +84,7 @@
 
     const/4 v1, 0x4
 
-# #     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+# # #     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 127
     sget v0, Lcom/vietschool/R$id;->btLogin:I

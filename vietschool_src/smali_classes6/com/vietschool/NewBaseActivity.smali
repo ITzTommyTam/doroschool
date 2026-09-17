@@ -1027,7 +1027,7 @@
     .line 182
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_icon_home:Landroid/widget/ImageView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1038,7 +1038,7 @@
     .line 183
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_label_home:Landroid/widget/TextView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1049,7 +1049,7 @@
     .line 184
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_icon_dich_vu_cong:Landroid/widget/ImageView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1060,7 +1060,7 @@
     .line 185
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_label_dich_vu_cong:Landroid/widget/TextView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1071,7 +1071,7 @@
     .line 186
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_icon_feature:Landroid/widget/ImageView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1082,7 +1082,7 @@
     .line 187
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_label_feature:Landroid/widget/TextView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1093,7 +1093,7 @@
     .line 188
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_icon_elearning:Landroid/widget/ImageView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1104,7 +1104,7 @@
     .line 189
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_label_elearning:Landroid/widget/TextView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1115,7 +1115,7 @@
     .line 190
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_icon_baitapnhanh:Landroid/widget/ImageView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 
@@ -1126,7 +1126,7 @@
     .line 191
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity;->d1_label_baitapnhanh:Landroid/widget/TextView;
 
-    sget v1, Lcom/vietschool/R$color;->d1_nav_inactive:I
+    sget v1, Lcom/vietschool/R$color;->d1_nav_active:I
 
     invoke-virtual {p0, v1}, Lcom/vietschool/NewBaseActivity;->getColor(I)I
 

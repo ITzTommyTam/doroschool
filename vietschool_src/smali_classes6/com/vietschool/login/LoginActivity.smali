@@ -149,7 +149,7 @@
 
     const/4 v1, 0x4
 
-# #     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+# # #     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 82
     invoke-static {p0}, Lcom/vietschool/libs/SystemInfo;->GetSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -556,7 +556,7 @@
 
     const/4 v0, 0x4
 
-# #     invoke-virtual {p1, v0}, Landroid/view/Window;->setSoftInputMode(I)V
+# # #     invoke-virtual {p1, v0}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 55
     sget p1, Lcom/vietschool/R$layout;->activity_login3:I

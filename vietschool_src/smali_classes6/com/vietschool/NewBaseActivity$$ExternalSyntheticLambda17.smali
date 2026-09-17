@@ -30,7 +30,7 @@
     .line 0
     iget-object v0, p0, Lcom/vietschool/NewBaseActivity$$ExternalSyntheticLambda17;->f$0:Lcom/vietschool/NewBaseActivity;
 
-    invoke-virtual {v0, p1}, Lcom/vietschool/NewBaseActivity;->lambda$initComponentsBase$1$com-vietschool-NewBaseActivity(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/vietschool/NewBaseActivity;->lambda$initComponentsBase$3$com-vietschool-NewBaseActivity(Landroid/view/View;)V
 
     return-void
 .end method
