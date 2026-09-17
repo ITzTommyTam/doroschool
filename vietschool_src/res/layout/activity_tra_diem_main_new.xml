@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/rootViewTraDiem" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<?xml version='1.0' encoding='utf-8'?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/rootViewTraDiem" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
     <androidx.core.widget.NestedScrollView android:id="@id/scrollViewScore" android:background="@color/score_UIBodyBackground" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:paddingTop="70.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
             <LinearLayout android:orientation="horizontal" android:id="@id/grouptbhlhk" android:layout_width="fill_parent" android:layout_height="164.0dip" android:layout_marginTop="10.0dip" android:baselineAligned="false">
@@ -26,8 +25,8 @@
                             <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_school" app:tint="@color/score_UIPrimary" />
                         </FrameLayout>
                     </LinearLayout>
-                    <Space android:id="@id/space1" android:layout_width="fill_parent" android:layout_height="8.0dip" />
-                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupHanhKiem" android:background="@drawable/card_bg" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip">
+                    <Space android:id="@id/space1" android:layout_width="0.0dip" android:layout_height="0.0dip" android:visibility="gone" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupHanhKiem" android:background="@drawable/card_bg" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip" android:visibility="gone">
                         <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
                             <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText600" android:id="@id/tvLabelKQRL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KQRL" />
                             <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvConduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_" />
@@ -48,7 +47,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout android:orientation="vertical" android:id="@id/groupNhanXetGVCN" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/groupNhanXetGVCN" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:visibility="gone">
                 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
                     <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="32.0dip" android:layout_height="32.0dip" android:backgroundTint="@color/score_UISuccess">
                         <ImageView android:layout_gravity="center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_chat_bubble" app:tint="@color/score_UISuccess" />
@@ -57,7 +56,7 @@
                 </LinearLayout>
                 <TextView android:textSize="14.0sp" android:textColor="@color/score_UIText700" android:ellipsize="end" android:id="@id/tvSummaryMessage" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_" android:maxLines="2" android:lineSpacingExtra="2.0dip" android:transitionName="expand_collapse_summary" android:justificationMode="inter_word" />
             </LinearLayout>
-            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:visibility="gone">
                 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
                     <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điểm TB từng môn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
                     <LinearLayout android:id="@id/seeMoreBtn" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip" android:paddingVertical="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
@@ -67,7 +66,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
                 <com.github.mikephil.charting.charts.BarChart android:id="@id/barChartAverage" android:layout_width="fill_parent" android:layout_height="250.0dip" />
             </LinearLayout>
-            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:visibility="gone">
                 <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="Phân bổ kết quả" />
                 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
                     <com.github.mikephil.charting.charts.PieChart android:id="@id/pieChartDistribution" android:layout_width="124.0dip" android:layout_height="124.0dip" android:layout_marginEnd="16.0dip" />
@@ -93,7 +92,7 @@
             <androidx.cardview.widget.CardView android:id="@id/cvLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" app:cardBackgroundColor="#fff7f9f8" app:cardCornerRadius="20.0dip" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false">
                 <LinearLayout android:orientation="vertical" android:id="@id/layoutGrid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             </androidx.cardview.widget.CardView>
-            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_td_score_card_warning_note" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_td_score_card_warning_note" android:padding="14.0dip" android:layout_width="0.0dip" android:layout_height="0.0dip" android:visibility="gone">
                 <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/score_UIPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="!" android:layout_marginEnd="12.0dip" />
                 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
                     <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/score_UIText800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="Lưu ý" />
