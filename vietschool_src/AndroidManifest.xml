@@ -1,526 +1,527 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.vietschool" platformBuildVersionCode="35" platformBuildVersionName="15">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
-    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
-    <uses-permission android:name="huawei.android.permission.MULTIWINDOW_SDK"/>
-    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
-    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
-    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
-    <uses-feature android:name="android.hardware.touchscreen.microphone" android:required="false"/>
-    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
-    <uses-feature android:name="android.hardware.type.pc" android:required="false"/>
-    <uses-feature android:name="android.hardware.ram.low" android:required="false"/>
-    <uses-feature android:name="android.hardware.ram.normal" android:required="false"/>
-    <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true"/>
-    <meta-data android:name="android.max_aspect" android:value="3.0"/>
-    <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
-    <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
-    <meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true"/>
-    <meta-data android:name="android.intent.category.MULTIWINDOW_LAUNCHER" android:value="true"/>
-    <meta-data android:name="com.sec.android.intent.category.MULTIWINDOW_LAUNCHER" android:value="true"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.vietschool" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="huawei.android.permission.MULTIWINDOW_SDK" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+    <uses-feature android:name="android.hardware.type.pc" android:required="false" />
+    <uses-feature android:name="android.hardware.ram.low" android:required="false" />
+    <uses-feature android:name="android.hardware.ram.normal" android:required="false" />
+    <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true" />
+    <meta-data android:name="android.max_aspect" android:value="3.0" />
+    <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true" />
+    <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
+    <meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true" />
+    <meta-data android:name="android.intent.category.MULTIWINDOW_LAUNCHER" android:value="true" />
+    <meta-data android:name="com.sec.android.intent.category.MULTIWINDOW_LAUNCHER" android:value="true" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <queries>
         <intent>
-            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
         </intent>
     </queries>
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-    <permission android:name="com.vietschool.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.vietschool.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
-    <uses-feature android:name="android.hardware.camera" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
-    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <permission android:name="com.vietschool.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
+    <uses-permission android:name="com.vietschool.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:manageSpaceActivity="com.viettel.biometrics.signature.helpers.ActivityOfMyChoice" android:name="com.pairip.application.Application" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/NewTheme" android:usesCleartextTraffic="false" android:windowSoftInputMode="adjustResize">
         <provider android:authorities="com.vietschool.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
         </provider>
         <activity android:logo="@android:color/transparent" android:name="com.vietschool.TKB_QuanLyTKB.TSHeThongActivity" android:parentActivityName="com.vietschool.NewMainActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.TKB_QuanLyTKB.TSHeThongActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.TKB_QuanLyTKB.TSHeThongActivity" />
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.vietschool.TKB_QuanLyTKB.QuanLyTKBActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light" android:windowSoftInputMode="adjustPan|stateHidden"/>
-        <activity android:label="Chọn môn thi tốt nghiệp" android:logo="@android:color/transparent" android:name="com.vietschool.HS_DangKyMonTotNghiep" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.BanTruMonAn.SuatAnActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.SoHocBa.HocBaActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Nhập điểm tiểu học" android:name="com.vietschool.NhapDiemTieuHoc.NhapDiemTieuHocActivity" android:parentActivityName="com.vietschool.NhapDiemTieuHoc.ChonLopMonTieuHocActivity"/>
-        <activity android:exported="false" android:label="Chọn lớp môn tiểu học" android:name="com.vietschool.NhapDiemTieuHoc.ChonLopMonTieuHocActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Thông báo điểm danh" android:name="com.vietschool.nhandang.ThongBaoDiemDanhActivity" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
-        <activity android:exported="false" android:label="Nhập báo giảng" android:name="com.vietschool.baogiang.BaoGiangActivity"/>
-        <activity android:exported="false" android:label="BC nhận xét tiết học" android:name="com.vietschool.nhapnhanxettiethoc.BCNhanXetTietHocActivity" android:parentActivityName="com.vietschool.nhapnhanxettiethoc.NhanXetTietHocActivity"/>
-        <activity android:exported="false" android:label="Nhận xét tiết học" android:name="com.vietschool.nhapnhanxettiethoc.NhanXetTietHocActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Xem bài HS" android:name="com.vietschool.elearning.baitapnhanh.XemBaiLamHSActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.HocSinhLamBaiTapActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.ChonBaiTapActivity"/>
-        <activity android:exported="false" android:label="Ds bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.ChonBaiTapActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Tạo và sửa bài" android:name="com.vietschool.elearning.baitapnhanh.TaoVaSuaBaiActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/capnhatthongtin" android:name="com.vietschool.capnhatthongtin.CapNhatThongTinHocSinhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.duyetxinphep.DuyetPhepXinNghiActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.duyetxinphep.DuyetPhepXinNghiV2Activity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/duyetphep" android:logo="@android:color/transparent" android:name="com.vietschool.duyetxinphep.DuyetPhepNghiHocActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/xinphep" android:logo="@android:color/transparent" android:name="com.vietschool.xinphep.XinPhepNghiHocActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="true" android:label="Đơn xin phép" android:name="com.vietschool.xinphep.DonXinPhepViewActivity" android:parentActivityName="com.vietschool.xinphep.XinPhepNghiHocActivity" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.xinphep.DuyetPhepXinNghiTungBuocActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:name="com.vietschool.tuyensinh10.DangKyNguyenVongActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.DiemDanhGiupBan" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.vietschool.TKB_QuanLyTKB.QuanLyTKBActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="Chọn môn thi tốt nghiệp" android:logo="@android:color/transparent" android:name="com.vietschool.HS_DangKyMonTotNghiep" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:name="com.vietschool.BanTruMonAn.SuatAnActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:name="com.vietschool.SoHocBa.HocBaActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Nhập điểm tiểu học" android:name="com.vietschool.NhapDiemTieuHoc.NhapDiemTieuHocActivity" android:parentActivityName="com.vietschool.NhapDiemTieuHoc.ChonLopMonTieuHocActivity" />
+        <activity android:exported="false" android:label="Chọn lớp môn tiểu học" android:name="com.vietschool.NhapDiemTieuHoc.ChonLopMonTieuHocActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Thông báo điểm danh" android:name="com.vietschool.nhandang.ThongBaoDiemDanhActivity" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
+        <activity android:exported="false" android:label="Nhập báo giảng" android:name="com.vietschool.baogiang.BaoGiangActivity" />
+        <activity android:exported="false" android:label="BC nhận xét tiết học" android:name="com.vietschool.nhapnhanxettiethoc.BCNhanXetTietHocActivity" android:parentActivityName="com.vietschool.nhapnhanxettiethoc.NhanXetTietHocActivity" />
+        <activity android:exported="false" android:label="Nhận xét tiết học" android:name="com.vietschool.nhapnhanxettiethoc.NhanXetTietHocActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Xem bài HS" android:name="com.vietschool.elearning.baitapnhanh.XemBaiLamHSActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.HocSinhLamBaiTapActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.ChonBaiTapActivity" />
+        <activity android:exported="false" android:label="Ds bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.ChonBaiTapActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Tạo và sửa bài" android:name="com.vietschool.elearning.baitapnhanh.TaoVaSuaBaiActivity" android:parentActivityName="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Bài tập nhanh" android:name="com.vietschool.elearning.baitapnhanh.BaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/capnhatthongtin" android:name="com.vietschool.capnhatthongtin.CapNhatThongTinHocSinhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.duyetxinphep.DuyetPhepXinNghiActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.duyetxinphep.DuyetPhepXinNghiV2Activity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/duyetphep" android:logo="@android:color/transparent" android:name="com.vietschool.duyetxinphep.DuyetPhepNghiHocActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/xinphep" android:logo="@android:color/transparent" android:name="com.vietschool.xinphep.XinPhepNghiHocActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="true" android:label="Đơn xin phép" android:name="com.vietschool.xinphep.DonXinPhepViewActivity" android:parentActivityName="com.vietschool.xinphep.XinPhepNghiHocActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/duyetphep" android:name="com.vietschool.xinphep.DuyetPhepXinNghiTungBuocActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:name="com.vietschool.tuyensinh10.DangKyNguyenVongActivity" />
+        <activity android:exported="false" android:name="com.vietschool.nhandang.DiemDanhGiupBan" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
         <receiver android:exported="false" android:name="com.vietschool.nhandang.SliderImage.SliderViewer">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/slider_viewer_info"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/slider_viewer_info" />
         </receiver>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.ND_ThongKeDiemDanh" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.QuanLyDiemDanh" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.HoTroLayAnhMau.ViewCustom.nd_processbar_dangky"/>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.ND_ThongKe" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
+        <activity android:exported="false" android:name="com.vietschool.nhandang.ND_ThongKeDiemDanh" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
+        <activity android:exported="false" android:name="com.vietschool.nhandang.QuanLyDiemDanh" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
+        <activity android:exported="false" android:name="com.vietschool.nhandang.HoTroLayAnhMau.ViewCustom.nd_processbar_dangky" />
+        <activity android:exported="false" android:name="com.vietschool.nhandang.ND_ThongKe" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
         <activity android:exported="false" android:name="com.vietschool.nhandang.DiemDanhFaceAndGPS" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:exported="false" android:name="com.vietschool.nhandang.LichSuDiemDanh" android:parentActivityName="com.vietschool.nhandang.LichSuDiemDanh">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.DiemDanhThanhCongActivity" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS"/>
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <activity android:exported="false" android:name="com.vietschool.nhandang.custom_dialog"/>
+        <activity android:exported="false" android:name="com.vietschool.nhandang.DiemDanhThanhCongActivity" android:parentActivityName="com.vietschool.nhandang.DiemDanhFaceAndGPS" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity android:exported="false" android:name="com.vietschool.nhandang.custom_dialog" />
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Điểm danh" android:logo="@android:color/transparent" android:name="com.vietschool.nhandang.DiemDanhActivity" android:parentActivityName="com.vietschool.nhandang.DiemDanhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Đăng ký gương mặt" android:logo="@android:color/transparent" android:name="com.vietschool.nhandang.DangKyNhanDang" android:parentActivityName="com.vietschool.nhandang.DangKyNhanDang">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Chi tiết bài chấm" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ChiTietBaiDaChamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.DanhSachBaiDaChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachBaiDaChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachBaiDaChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Báo cáo - thống kê" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ThongKeBaiLamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.ChiTietDotChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Danh sách bài chấm" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.DanhSachBaiDaChamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.ChiTietDotChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Chấm trắc nghiệm" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ChupAnhBaiLamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.ChiTietDotChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Thiết lập đáp án" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ChiTietDapAnActivity" android:parentActivityName="com.vietschool.chamtracnghiem.DanhSachDapAnActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachDapAnActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachDapAnActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Mã đề" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.DanhSachDapAnActivity" android:parentActivityName="com.vietschool.chamtracnghiem.ChiTietDotChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ChiTietDotChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Mã đề" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ChiTietDotChamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.DanhSachChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation" android:label="Danh sách chấm" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.TaoBaiChamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.DanhSachChamActivity" android:windowSoftInputMode="adjustPan">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.DanhSachChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Thư viên mẫu" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.PDFViewerActivity" android:parentActivityName="com.vietschool.chamtracnghiem.ThuVienMauActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ThuVienMauActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.ThuVienMauActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Thư viên mẫu" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.ThuVienMauActivity" android:parentActivityName="com.vietschool.chamtracnghiem.QuanLyChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.QuanLyChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.QuanLyChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Danh sách chấm" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.DanhSachChamActivity" android:parentActivityName="com.vietschool.chamtracnghiem.QuanLyChamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.QuanLyChamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.chamtracnghiem.QuanLyChamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Chấm thi" android:logo="@android:color/transparent" android:name="com.vietschool.chamtracnghiem.QuanLyChamActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.GiaoVienViewCauHoiActivity" android:parentActivityName="com.vietschool.elearning.BaiHocGiaoVienActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.BaiHocGiaoVienActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.BaiHocGiaoVienActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Bài học" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.BaiHocGiaoVienActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Bài học" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.ThongKeHSActivity" android:parentActivityName="com.vietschool.elearning.ChonPhongActivity" android:supportsPictureInPicture="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.ChonPhongActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.ChonPhongActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Phòng học / Kiểm tra" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.PhongHocActivity" android:parentActivityName="com.vietschool.elearning.ChonPhongActivity" android:supportsPictureInPicture="false" android:windowSoftInputMode="adjustResize">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.ChonPhongActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.elearning.ChonPhongActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.HO_DSPhongHoc_HS" android:parentActivityName="com.vietschool.NewMainActivity" android:supportsPictureInPicture="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Bài học" android:logo="@android:color/transparent" android:name="com.vietschool.elearning.ChonPhongActivity" android:parentActivityName="com.vietschool.NewMainActivity" android:resizeableActivity="false">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
-        <activity android:logo="@android:color/transparent" android:name="com.vietschool.login.LoginActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:logo="@android:color/transparent" android:name="com.vietschool.login.LoginActivity" android:windowSoftInputMode="adjustResize" />
         <activity android:label="Chọn loại tài khoản" android:logo="@android:color/transparent" android:name="com.vietschool.login.RegistActivity" android:parentActivityName="com.vietschool.login.LoginActivity" android:windowSoftInputMode="adjustResize">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.LoginActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.LoginActivity" />
         </activity>
         <activity android:logo="@android:color/transparent" android:name="com.vietschool.login.RegUdsActivity" android:parentActivityName="com.vietschool.login.RegistActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity" />
         </activity>
         <activity android:logo="@android:color/transparent" android:name="com.vietschool.login.RegTnolActivity" android:parentActivityName="com.vietschool.login.RegistActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity" />
         </activity>
         <activity android:logo="@android:color/transparent" android:name="com.vietschool.login.RegSlldtActivity" android:parentActivityName="com.vietschool.login.RegistActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".login.RegistActivity" />
         </activity>
         <activity android:label="Chọn đợt KTTT - Môn" android:logo="@android:color/transparent" android:name="com.vietschool.nhapdiemkttt.ChonPhongMonLoaiActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Nhập điểm KTTT" android:logo="@android:color/transparent" android:name="com.vietschool.nhapdiemkttt.NhapDiemKTTTActivity" android:parentActivityName="com.vietschool.nhapdiemkttt.ChonPhongMonLoaiActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhapdiemkttt.ChonPhongMonLoaiActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhapdiemkttt.ChonPhongMonLoaiActivity" />
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/tradiemdanh" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.TraDiemDanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/nhaphsvang" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.NhapHSVangActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/diemdanh" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.DiemDanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:logo="@android:color/transparent" android:name="com.vietschool.imagegallery.GalleryActivity"/>
-        <activity android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.ContactActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_soan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.TaoDotTraActivity" android:parentActivityName="com.vietschool.tinnhan_v1.TinNhanActivity"/>
-        <activity android:label="@string/title_activity_tin_nhan" android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.TinNhanActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.ChatActivity" android:parentActivityName="com.vietschool.tinnhan_v1.TinNhanActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/tradiemdanh" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.TraDiemDanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/nhaphsvang" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.NhapHSVangActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/diemdanh" android:logo="@android:color/transparent" android:name="com.vietschool.diemdanh.DiemDanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:logo="@android:color/transparent" android:name="com.vietschool.imagegallery.GalleryActivity" />
+        <activity android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.ContactActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_soan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.TaoDotTraActivity" android:parentActivityName="com.vietschool.tinnhan_v1.TinNhanActivity" />
+        <activity android:label="@string/title_activity_tin_nhan" android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.TinNhanActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:logo="@android:color/transparent" android:name="com.vietschool.tinnhan_v1.ChatActivity" android:parentActivityName="com.vietschool.tinnhan_v1.TinNhanActivity" android:windowSoftInputMode="adjustPan" />
         <activity android:label="@string/title_activity_nhan_tin_HS" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.CanhBaoActivity" android:noHistory="true" android:parentActivityName="com.vietschool.nhantin.QuanLyYCTTActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Khôi phục mật khẩu" android:logo="@android:color/transparent" android:name="com.vietschool.login.PhucHoiMatKhauActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.WebViewActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.DashBoardActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_phan_cong_day" android:logo="@android:color/transparent" android:name="com.vietschool.PhanCongDayActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Khôi phục mật khẩu" android:logo="@android:color/transparent" android:name="com.vietschool.login.PhucHoiMatKhauActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.WebViewActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.DashBoardActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_phan_cong_day" android:logo="@android:color/transparent" android:name="com.vietschool.PhanCongDayActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
         <service android:enabled="true" android:exported="true" android:name="com.vietschool.notification.NotificationService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:exported="true" android:name="com.vietschool.ReminderService" android:stopWithTask="true"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_display_lbgiang" android:logo="@android:color/transparent" android:name="com.vietschool.LichBaoGiangActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_vipham" android:logo="@android:color/transparent" android:name="com.vietschool.vipham.ViphamActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
+        <service android:exported="true" android:name="com.vietschool.ReminderService" android:stopWithTask="true" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_display_lbgiang" android:logo="@android:color/transparent" android:name="com.vietschool.LichBaoGiangActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_vipham" android:logo="@android:color/transparent" android:name="com.vietschool.vipham.ViphamActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tra_diem" android:logo="@android:color/transparent" android:name="com.vietschool.diem.TraDiemMainActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tra_diem" android:logo="@android:color/transparent" android:name="com.vietschool.diem.TraDiemMainActivity_New" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".NewMainActivity" />
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tkb" android:logo="@android:color/transparent" android:name="com.vietschool.TKBActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tkb" android:logo="@android:color/transparent" android:name="com.vietschool.TKBActivity_New" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:label="@string/title_activity_input_phone_number" android:logo="@android:color/transparent" android:name="com.vietschool.login.InputPhoneNumberActivity" android:windowSoftInputMode="adjustResize"/>
-        <activity android:label="@string/title_activity_input_password" android:logo="@android:color/transparent" android:name="com.vietschool.login.InputPasswordActivity" android:parentActivityName="com.vietschool.login.InputPhoneNumberActivity" android:windowSoftInputMode="adjustResize"/>
-        <activity android:label="@string/title_activity_notification_config" android:logo="@android:color/transparent" android:name="com.vietschool.systemconfig.NotificationConfig" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:logo="@android:color/transparent" android:name="com.vietschool.SplashScreen"/>
-        <activity android:label="@string/title_activity_gop_y" android:logo="@android:color/transparent" android:name="com.vietschool.GopYActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tkb" android:logo="@android:color/transparent" android:name="com.vietschool.TKBActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_tkb" android:logo="@android:color/transparent" android:name="com.vietschool.TKBActivity_New" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:label="@string/title_activity_input_phone_number" android:logo="@android:color/transparent" android:name="com.vietschool.login.InputPhoneNumberActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:label="@string/title_activity_input_password" android:logo="@android:color/transparent" android:name="com.vietschool.login.InputPasswordActivity" android:parentActivityName="com.vietschool.login.InputPhoneNumberActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:label="@string/title_activity_notification_config" android:logo="@android:color/transparent" android:name="com.vietschool.systemconfig.NotificationConfig" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:logo="@android:color/transparent" android:name="com.vietschool.SplashScreen" />
+        <activity android:label="@string/title_activity_gop_y" android:logo="@android:color/transparent" android:name="com.vietschool.GopYActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
         <activity android:label="@string/title_activity_app_info" android:logo="@android:color/transparent" android:name="com.vietschool.AppInfoActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_them_hoc_sinh" android:logo="@android:color/transparent" android:name="com.vietschool.studentmanager.ThemHocSinh" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_find_school" android:logo="@android:color/transparent" android:name="com.vietschool.studentmanager.FindSchoolActivity" android:parentActivityName="com.vietschool.studentmanager.ThemHocSinh">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.ThemHocSinh"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.ThemHocSinh" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_choose_class" android:logo="@android:color/transparent" android:name="com.vietschool.studentmanager.ChooseClassActivity" android:parentActivityName="com.vietschool.studentmanager.FindSchoolActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.FindSchoolActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.FindSchoolActivity" />
         </activity>
         <activity android:label="@string/title_activity_choose_student" android:logo="@android:color/transparent" android:name="com.vietschool.studentmanager.ChooseStudentActivity" android:parentActivityName="com.vietschool.studentmanager.ChooseClassActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.ChooseClassActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.studentmanager.ChooseClassActivity" />
         </activity>
         <activity android:label="@string/title_activity_change_password" android:logo="@android:color/transparent" android:name="com.vietschool.login.ChangePasswordActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_doi_mat_khau_thanh_vien" android:logo="@android:color/transparent" android:name="com.vietschool.login.DoiMatKhauThanhVienActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_inputmark" android:logo="@android:color/transparent" android:name="com.vietschool.nhapdiem.NhapdiemActivity" android:parentActivityName="com.vietschool.nhapdiem.ChonLopMonDotdiemActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhapdiem.ChonLopMonDotdiemActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhapdiem.ChonLopMonDotdiemActivity" />
         </activity>
         <activity android:label="@string/title_activity_nhan_tin_HS" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.GVNhanTinActivity" android:parentActivityName="com.vietschool.nhantin.QuanLyYCTTActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_chon_hoc_sinh_nhan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.ChonHocSinhNhanTinActivity" android:parentActivityName="com.vietschool.nhantin.GVNhanTinActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhantin.GVNhanTinActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".nhantin.GVNhanTinActivity" />
         </activity>
         <activity android:label="@string/title_activity_soan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.SoanTinActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_quan_ly_yctt" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.QuanLyYCTTActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_qtnhan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.nhantin.QTNhanTinActivity" android:parentActivityName="com.vietschool.nhantin.QuanLyYCTTActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantin.QuanLyYCTTActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantin.QuanLyYCTTActivity" />
         </activity>
         <activity android:label="@string/title_activity_pro_dialog" android:logo="@android:color/transparent" android:name="com.vietschool.ProNotifyDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantin.QuanLyYCTTActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantin.QuanLyYCTTActivity" />
         </activity>
         <activity android:label="@string/title_activity_quan_ly_ycttgv" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.QuanLyYCTTGVActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_danh_sach_nhom" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.DanhSachNhomActivity" android:parentActivityName="com.vietschool.nhantingv.QuanLyYCTTGVActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantingv.QuanLyYCTTGVActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantingv.QuanLyYCTTGVActivity" />
         </activity>
         <activity android:label="@string/title_activity_danh_sach_nguoi_dung" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.DanhSachNguoiDungActivity" android:parentActivityName="com.vietschool.nhantingv.DanhSachNhomActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantingv.DanhSachNhomActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantingv.DanhSachNhomActivity" />
         </activity>
-        <activity android:label="@string/title_activity_danh_sach_nhan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.DanhSachNhanTinActivity"/>
-        <activity android:label="@string/title_activity_soan_tin_nhan_gv" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.SoanTinNhanGVActivity"/>
+        <activity android:label="@string/title_activity_danh_sach_nhan_tin" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.DanhSachNhanTinActivity" />
+        <activity android:label="@string/title_activity_soan_tin_nhan_gv" android:logo="@android:color/transparent" android:name="com.vietschool.nhantingv.SoanTinNhanGVActivity" />
         <activity android:label="@string/title_activity_quan_ly_ycttdiem" android:logo="@android:color/transparent" android:name="com.vietschool.nhantindiem.QuanLyYCTTDiemActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_danh_sach_loai_yeu_cau" android:logo="@android:color/transparent" android:name="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity" android:parentActivityName="com.vietschool.nhantindiem.QuanLyYCTTDiemActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.QuanLyYCTTDiemActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.QuanLyYCTTDiemActivity" />
         </activity>
         <activity android:label="@string/title_activity_yeu_cau_diem_con" android:logo="@android:color/transparent" android:name="com.vietschool.nhantindiem.YeuCauDiemConActivity" android:parentActivityName="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity" />
         </activity>
         <activity android:label="@string/title_activity_yeu_cau_dtb" android:logo="@android:color/transparent" android:name="com.vietschool.nhantindiem.YeuCauDTBActivity" android:parentActivityName="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhantindiem.DanhSachLoaiYeuCauActivity" />
         </activity>
-        <activity android:label="@string/title_activity_demo" android:logo="@android:color/transparent" android:name="com.vietschool.demo"/>
+        <activity android:label="@string/title_activity_demo" android:logo="@android:color/transparent" android:name="com.vietschool.demo" />
         <activity android:label="@string/title_activity_chon_lop_mon_dotdiem" android:logo="@android:color/transparent" android:name="com.vietschool.nhapdiem.ChonLopMonDotdiemActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_chon_lop_mon_dotdiem" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.canhan.Input_CaNhan_Activity" android:parentActivityName="com.vietschool.baocao.BaoCaoActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_bao_cao_ca_nhan" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.canhan.BaoCaoCaNhanActivity" android:parentActivityName="com.vietschool.baocao.canhan.Input_CaNhan_Activity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.canhan.Input_CaNhan_Activity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.canhan.Input_CaNhan_Activity" />
         </activity>
         <activity android:label="@string/title_activity_input_tong_hop" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.tonghop.Input_TongHop_Activity" android:parentActivityName="com.vietschool.baocao.BaoCaoActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_bao_cao_tong_hop" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.tonghop.BaoCaoTongHopActivity" android:parentActivityName="com.vietschool.baocao.tonghop.Input_TongHop_Activity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.tonghop.Input_TongHop_Activity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.tonghop.Input_TongHop_Activity" />
         </activity>
         <activity android:label="@string/title_activity_input_kqgd" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.kqgd.Input_KQGD_Activity" android:parentActivityName="com.vietschool.baocao.BaoCaoActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.BaoCaoActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_bao_cao_kqgd" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.kqgd.BaoCaoKQGDActivity" android:parentActivityName="com.vietschool.baocao.kqgd.Input_KQGD_Activity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.kqgd.Input_KQGD_Activity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.baocao.kqgd.Input_KQGD_Activity" />
         </activity>
         <activity android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.NhapviphamActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.DanhSachHocSinhActivity" android:parentActivityName="com.vietschool.nhapvipham.NhapngaynghiActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.NhapviphamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.NhapviphamActivity" />
         </activity>
         <activity android:label="@string/title_activity_select_vp" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.ThemviphamActivity" android:parentActivityName="com.vietschool.nhapvipham.DanhSachHocSinhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.CapnhatviphamActivity" android:parentActivityName="com.vietschool.nhapvipham.ThemviphamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.ThemviphamActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.ThemviphamActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.NhapngaynghiActivity" android:parentActivityName="com.vietschool.nhapvipham.NhapviphamActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.NhapngaynghiActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.NhapngaynghiActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.ViphamHocsinhActivity" android:parentActivityName="com.vietschool.nhapvipham.DanhSachHocSinhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity" />
         </activity>
         <activity android:label="Vi phạm bán trú" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.VPBanTruActivity" android:parentActivityName="com.vietschool.nhapvipham.DanhSachHocSinhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity" />
         </activity>
         <activity android:label="Vi phạm bán trú" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.ViPhamBanTruActivity" android:parentActivityName="com.vietschool.nhapvipham.DanhSachHocSinhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity" />
         </activity>
         <activity android:label="Vi phạm bán trú" android:logo="@android:color/transparent" android:name="com.vietschool.nhapvipham.NhapVPBanTruActivity" android:parentActivityName="com.vietschool.nhapvipham.DanhSachHocSinhActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapvipham.DanhSachHocSinhActivity" />
         </activity>
         <activity android:label="@string/title_activity_bao_cao" android:logo="@android:color/transparent" android:name="com.vietschool.baocao.BaoCaoActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="@string/title_activity_phe_hanh_kiem" android:logo="@android:color/transparent" android:name="com.vietschool.phehanhkiem.PheHanhKiemActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="GVCN Nhận xét" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.NhapnhanxetActivity" android:parentActivityName="com.vietschool.nhapnhanxet.DSLopNhanxet">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.DSLopNhanxet"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.DSLopNhanxet" />
         </activity>
         <activity android:label="Danh sách lớp" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.DSLopNhanxet" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Danh sách lớp" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.ThemmauActivity" android:parentActivityName="com.vietschool.nhapnhanxet.NhapnhanxetActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.NhapnhanxetActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.NhapnhanxetActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Danh sách lớp" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.DanhSachHSNhanXetActivity" android:parentActivityName="com.vietschool.nhapnhanxet.NhapnhanxetActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.DanhSachHSNhanXetActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.nhapnhanxet.DanhSachHSNhanXetActivity" />
         </activity>
         <activity android:label="Nhận xét GVBM" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.nhanxetgvbm.NhanXetGVBMActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:label="Nhận xét GVCN" android:logo="@android:color/transparent" android:name="com.vietschool.nhapnhanxet.nhanxetgvcn.NhanXetGVCNActivity" android:parentActivityName="com.vietschool.NewMainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.NewMainActivity" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@android:color/transparent" android:name="com.vietschool.dichvucong.DichVuCong">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="" android:name="com.vietschool.dichvucong.BieuMauActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="" android:name="com.vietschool.dichvucong.QFAWebView" android:theme="@style/TransparentActionBar">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
         <activity android:exported="true" android:label="Câu hỏi thường gặp" android:name="com.vietschool.dichvucong.DVCFAQActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="" android:name="com.vietschool.dichvucong.HistoryActivity" android:theme="@style/TransparentActionBar">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="" android:name="com.vietschool.dichvucong.ThongBaoActivity" android:theme="@style/TransparentActionBar">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong"/>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.vietschool.dichvucong.DichVuCong" />
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.vietschool.NewMainActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.vietschool.components.ChooseFavoriteFeatureActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.MessageStatusChiTietActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.MessageSearchChiTietActivity"/>
-        <activity android:exported="false" android:label="@string/title_activity_tao_nhom" android:name="com.vietschool.thongbao_chat.chat.CreateGroupActivityActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TimeLine.CreatePostActivity" android:parentActivityName="com.vietschool.thongbao_chat.TimeLine.TimeLineActivity"/>
-        <activity android:exported="false" android:label="Bình luận" android:name="com.vietschool.thongbao_chat.TimeLine.CommentViewActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TimeLine.ReactionDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.vietschool.NewMainActivity" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.vietschool.components.ChooseFavoriteFeatureActivity" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.MessageStatusChiTietActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.MessageSearchChiTietActivity" />
+        <activity android:exported="false" android:label="@string/title_activity_tao_nhom" android:name="com.vietschool.thongbao_chat.chat.CreateGroupActivityActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TimeLine.CreatePostActivity" android:parentActivityName="com.vietschool.thongbao_chat.TimeLine.TimeLineActivity" />
+        <activity android:exported="false" android:label="Bình luận" android:name="com.vietschool.thongbao_chat.TimeLine.CommentViewActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TimeLine.ReactionDetailActivity" />
         <activity android:exported="true" android:name="com.vietschool.thongbao_chat.TimeLine.TimeLineActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.ChuyenTiepActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.TaoBinhChonActivity"/>
-        <activity android:exported="false" android:label="Chat view " android:name="com.vietschool.thongbao_chat.ChatViewActivity" android:parentActivityName="com.vietschool.thongbao_chat.Dashboard_Chat_Activity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.LoiMoiKetBanActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.ThongTinBanBeActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.ThemBanActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TaoNhomChatActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.taikhoan_chat.WelcomeChatActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.Dashboard_Chat_Activity"/>
-        <activity android:exported="false" android:label="@string/title_activity_danh_ba" android:name="com.vietschool.thongbao_chat.DanhBaActivity"/>
-        <activity android:exported="false" android:label="Thông tin nhóm" android:name="com.vietschool.thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Thành viên" android:name="com.vietschool.thongbao_chat.banbe_chat.DanhSachThanhVienActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Thêm thành viên" android:name="com.vietschool.thongbao_chat.banbe_chat.ThemThanhVienActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Kho lưu trữ" android:name="com.vietschool.thongbao_chat.banbe_chat.ChatMediaTabsActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Tin nhắn đã ghim" android:name="com.vietschool.thongbao_chat.banbe_chat.PinnedMessagesActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Bình chọn" android:name="com.vietschool.thongbao_chat.banbe_chat.PollsListActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity"/>
-        <activity android:exported="false" android:label="Bài Tập Nhanh" android:name="com.vietschool.baitapnhanh.BaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Bài Tập" android:name="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Tạo Bài Tập" android:name="com.vietschool.baitapnhanh.TaoBaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:label="Chi tiết bài nộp" android:name="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Xem ảnh" android:name="com.vietschool.baitapnhanh.ImagePreviewActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity"/>
-        <activity android:exported="false" android:label="AI Chấm nhanh" android:name="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
-        <activity android:exported="false" android:label="Sửa nội dung nhận dạng" android:name="com.vietschool.baitapnhanh.aigrading.ui.RecognitionDetailActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
-        <activity android:exported="false" android:label="Chi tiết chấm điểm" android:name="com.vietschool.baitapnhanh.aigrading.ui.GradingResultDetailActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
-        <activity android:exported="false" android:label="Xem đề bài" android:name="com.vietschool.baitapnhanh.aigrading.ui.SimpleTextViewerActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait"/>
-        <activity android:exported="false" android:label="Xem ảnh" android:name="com.vietschool.baitapnhanh.ImageGalleryActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity"/>
-        <activity android:exported="false" android:label="Phương thức giải bài" android:name="com.vietschool.baitapnhanh.PhuongThucSuaBaiActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Sửa bài" android:name="com.vietschool.baitapnhanh.SuaBaiCanvasActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Bài chấm" android:name="com.vietschool.baitapnhanh.XemBaiChamActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity"/>
-        <activity android:exported="false" android:label="Nộp bài" android:name="com.vietschool.baitapnhanh.NopBaiHSActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Gia hạn thời gian" android:name="com.vietschool.baitapnhanh.GiaHanThoiGianActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity"/>
-        <activity android:exported="false" android:label="Canvas Editor" android:name="com.vietschool.baitapnhanh.BaseCanvasActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:exported="false" android:label="Chấm bài" android:name="com.vietschool.baitapnhanh.AdvancedGraderActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:exported="true" android:label="" android:name="com.vietschool.components.DocumentViewerWebviewActivity" android:parentActivityName="com.vietschool.thongbao_chat.TimeLine.TimeLineActivity" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:exported="false" android:label="Dashboard QLTB" android:name="com.vietschool.quanlithongbao.DashboardQLTBActivity" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GroupMembersActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVChatDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.HSDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.NhapDangKyActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.YeuCauTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.LichSuTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.ChiTietDotTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.NotifDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVCNNotifDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVCNStudentListActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
-        <activity android:exported="false" android:name="com.vietschool.sodaubai.LoginKyThuatActivity" android:parentActivityName="com.vietschool.NewMainActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.sodaubai.MappingKyThuatActivity" android:parentActivityName="com.vietschool.sodaubai.LoginKyThuatActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.sodaubai.LoginSoDauBaiActivity" android:parentActivityName="com.vietschool.sodaubai.MappingKyThuatActivity"/>
-        <activity android:exported="false" android:name="com.vietschool.sodaubai.MainSoDauBaiActivity" android:parentActivityName="com.vietschool.sodaubai.LoginSoDauBaiActivity"/>
-        <activity android:name="com.viettel.biometrics.signature.helpers.ActivityOfMyChoice" android:screenOrientation="portrait"/>
-        <activity android:name="com.prosoftlib.Main2Activity"/>
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.chat.ChuyenTiepActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.TaoBinhChonActivity" />
+        <activity android:exported="false" android:label="Chat view " android:name="com.vietschool.thongbao_chat.ChatViewActivity" android:parentActivityName="com.vietschool.thongbao_chat.Dashboard_Chat_Activity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.LoiMoiKetBanActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.banbe_chat.ThongTinBanBeActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.ThemBanActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.TaoNhomChatActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.taikhoan_chat.WelcomeChatActivity" />
+        <activity android:exported="false" android:name="com.vietschool.thongbao_chat.Dashboard_Chat_Activity" />
+        <activity android:exported="false" android:label="@string/title_activity_danh_ba" android:name="com.vietschool.thongbao_chat.DanhBaActivity" />
+        <activity android:exported="false" android:label="Thông tin nhóm" android:name="com.vietschool.thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Thành viên" android:name="com.vietschool.thongbao_chat.banbe_chat.DanhSachThanhVienActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Thêm thành viên" android:name="com.vietschool.thongbao_chat.banbe_chat.ThemThanhVienActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Kho lưu trữ" android:name="com.vietschool.thongbao_chat.banbe_chat.ChatMediaTabsActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Tin nhắn đã ghim" android:name="com.vietschool.thongbao_chat.banbe_chat.PinnedMessagesActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Bình chọn" android:name="com.vietschool.thongbao_chat.banbe_chat.PollsListActivity" android:parentActivityName="thongbao_chat.banbe_chat.ThongtinNhomActivity" />
+        <activity android:exported="false" android:label="Bài Tập Nhanh" android:name="com.vietschool.baitapnhanh.BaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Bài Tập" android:name="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Tạo Bài Tập" android:name="com.vietschool.baitapnhanh.TaoBaiTapNhanhActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:label="Chi tiết bài nộp" android:name="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Xem ảnh" android:name="com.vietschool.baitapnhanh.ImagePreviewActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" />
+        <activity android:exported="false" android:label="AI Chấm nhanh" android:name="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:exported="false" android:label="Sửa nội dung nhận dạng" android:name="com.vietschool.baitapnhanh.aigrading.ui.RecognitionDetailActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:exported="false" android:label="Chi tiết chấm điểm" android:name="com.vietschool.baitapnhanh.aigrading.ui.GradingResultDetailActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:exported="false" android:label="Xem đề bài" android:name="com.vietschool.baitapnhanh.aigrading.ui.SimpleTextViewerActivity" android:parentActivityName="com.vietschool.baitapnhanh.aigrading.ui.AIGradingWizardActivity" android:screenOrientation="portrait" />
+        <activity android:exported="false" android:label="Xem ảnh" android:name="com.vietschool.baitapnhanh.ImageGalleryActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" />
+        <activity android:exported="false" android:label="Phương thức giải bài" android:name="com.vietschool.baitapnhanh.PhuongThucSuaBaiActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Sửa bài" android:name="com.vietschool.baitapnhanh.SuaBaiCanvasActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Bài chấm" android:name="com.vietschool.baitapnhanh.XemBaiChamActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" />
+        <activity android:exported="false" android:label="Nộp bài" android:name="com.vietschool.baitapnhanh.NopBaiHSActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Gia hạn thời gian" android:name="com.vietschool.baitapnhanh.GiaHanThoiGianActivity" android:parentActivityName="com.vietschool.baitapnhanh.DSBaiTapNhanhActivity" />
+        <activity android:exported="false" android:label="Canvas Editor" android:name="com.vietschool.baitapnhanh.BaseCanvasActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:exported="false" android:label="Chấm bài" android:name="com.vietschool.baitapnhanh.AdvancedGraderActivity" android:parentActivityName="com.vietschool.baitapnhanh.BaiTapNhanhChiTietActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:exported="true" android:label="" android:name="com.vietschool.components.DocumentViewerWebviewActivity" android:parentActivityName="com.vietschool.thongbao_chat.TimeLine.TimeLineActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:exported="false" android:label="Dashboard QLTB" android:name="com.vietschool.quanlithongbao.DashboardQLTBActivity" android:windowSoftInputMode="adjustNothing" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GroupMembersActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVChatDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.HSDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.NhapDangKyActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.YeuCauTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.LichSuTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.ChiTietDotTraTinActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.NotifDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVCNNotifDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.quanlithongbao.GVCNStudentListActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:exported="false" android:name="com.vietschool.sodaubai.LoginKyThuatActivity" android:parentActivityName="com.vietschool.NewMainActivity" />
+        <activity android:exported="false" android:name="com.vietschool.sodaubai.MappingKyThuatActivity" android:parentActivityName="com.vietschool.sodaubai.LoginKyThuatActivity" />
+        <activity android:exported="false" android:name="com.vietschool.sodaubai.LoginSoDauBaiActivity" android:parentActivityName="com.vietschool.sodaubai.MappingKyThuatActivity" />
+        <activity android:exported="false" android:name="com.vietschool.sodaubai.MainSoDauBaiActivity" android:parentActivityName="com.vietschool.sodaubai.LoginSoDauBaiActivity" />
+        <activity android:name="com.viettel.biometrics.signature.helpers.ActivityOfMyChoice" android:screenOrientation="portrait" />
+        <activity android:name="com.prosoftlib.Main2Activity" />
         <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
         <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
-            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
         <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             </intent-filter>
-            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true" />
         </receiver>
         <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
             <intent-filter android:priority="-500">
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <provider android:authorities="com.vietschool.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
-            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
-            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup" />
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup" />
         </provider>
-        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
-        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService" />
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" />
         <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
             <intent-filter>
-                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
             </intent-filter>
         </receiver>
-        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false" />
         <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
-            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
         </service>
-        <provider android:authorities="com.vietschool.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
-        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <provider android:authorities="com.vietschool.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.vietschool.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider" />
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider android:authorities="com.vietschool.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider" />
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver" />
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden" />
         <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
             <intent-filter>
-                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
             </intent-filter>
         </receiver>
         <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
-            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct" />
         </service>
-        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
-        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
-        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
-        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
-        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
-        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
-        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" />
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity" />
+        <meta-data android:name="com.android.vending.splits.required" android:value="true" />
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store" />
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0" />
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3" />
     </application>
-    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
 </manifest>
