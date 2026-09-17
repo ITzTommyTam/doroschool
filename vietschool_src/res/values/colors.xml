@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
@@ -113,8 +113,8 @@
     <color name="chip_background_selected">#bb1b99e5</color>
     <color name="chocolate">#ffd2691e</color>
     <color name="colorAccent">#fffac42a</color>
-    <color name="colorPrimary">#ff4a4a4a</color>
-    <color name="colorPrimaryDark">#ff3e3e3e</color>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -130,7 +130,7 @@
     <color name="cv_capture_bg">#55000000</color>
     <color name="cyan">#ff00ffff</color>
     <color name="cyan_dark">#ff078ba4</color>
-    <color name="cyan_primary">#ff186b79</color>
+    <color name="cyan_primary">#121212</color>
     <color name="d1_nav_active">@color/primary_color</color>
     <color name="d1_nav_background">#00000000</color>
     <color name="d1_nav_inactive">#ff3e4a5e</color>
@@ -740,7 +740,7 @@
     <color name="navajowhite">#ffffdead</color>
     <color name="navy">#ff000080</color>
     <color name="new_bg_color_level0">#ffceecff</color>
-    <color name="new_main_color_level0">#ff186b79</color>
+    <color name="new_main_color_level0">#121212</color>
     <color name="nhap_diem_bg">@color/white</color>
     <color name="notification_action_color_filter">@color/androidx_core_secondary_text_default_material_light</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
@@ -768,9 +768,9 @@
     <color name="pl_card_stroke_color">#ffeeeeee</color>
     <color name="plum">#ffdda0dd</color>
     <color name="powderblue">#ffb0e0e6</color>
-    <color name="primary_color">#ff45bac2</color>
-    <color name="primary_color_200">#fff3ffff</color>
-    <color name="primary_color_bg">#fffbfcff</color>
+    <color name="primary_color">#121212</color>
+    <color name="primary_color_200">#1e1e1e</color>
+    <color name="primary_color_bg">#1e1e1e</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -842,7 +842,7 @@
     <color name="score_UISuccess">#ff47d7bc</color>
     <color name="score_UISuccessSubtle">#3347d7bc</color>
     <color name="score_UISuccessSubtle_New">#3347d7bc</color>
-    <color name="score_UITeal">#ff45bac2</color>
+    <color name="score_UITeal">#121212</color>
     <color name="score_UITeal300">#ff90cdd6</color>
     <color name="score_UITealSubtle">#3345bac2</color>
     <color name="score_UITealSubtle_New">#3345bac2</color>
