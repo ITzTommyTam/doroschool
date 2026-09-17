@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="center|left|top" android:id="@id/etChat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@id/llCommand" android:layout_above="@id/svListFile" android:inputType="textMultiLine" />
+    <LinearLayout android:id="@id/llCommand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/svListFile" android:layout_alignParentRight="true">
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="@dimen/extra2_text_size" android:textColor="#ff05798c" android:gravity="center" android:id="@id/btCapture" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="" android:hint="Đính kèm tập tin" />
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="@dimen/extra2_text_size" android:textColor="#ff05798c" android:gravity="center" android:id="@id/btAttack" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="" android:hint="Đính kèm tập tin" />
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="@dimen/extra2_text_size" android:textColor="#ff05798c" android:gravity="center" android:id="@id/btSend" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="" android:hint="Gởi tin" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/svListFile" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llYeuCauNhanh">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llListFile" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <RelativeLayout android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/line1"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:id="@id/lvDSChat" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llYeuCauNhanh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDotDiem" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDotDiemThang" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDotDiemHocKy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.prosoftlib.control.ProDatePicker android:id="@id/pdpDenNgay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDotKTTT" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboTKB" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/pnDTBConfig" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/selector_fieldset_background" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <CheckBox android:enabled="false" android:id="@id/cbDiemTrungBinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Điểm trung bình" />
+                <CheckBox android:enabled="false" android:id="@id/cbHocLuc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Xếp loại học lực" />
+                <CheckBox android:enabled="false" android:id="@id/cbHanhKiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Xếp loại hạnh kiểm" />
+                <CheckBox android:id="@id/cbNgayNghi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Số ngày nghỉ" />
+                <CheckBox android:id="@id/cbXepHang" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Xếp hạng" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tvPanelHeader" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Bao gồm" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <Button android:id="@id/btYeuCauTraViPham" android:background="@drawable/button_primary_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="Yêu cầu trả Vi Phạm" />
+    </LinearLayout>
+    <View android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/rlReplayForCommentZone_Parent" style="@style/Divider2" />
+    <RelativeLayout android:id="@id/rlRefesh" android:background="@color/lightgrey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="60.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:hint="Đính kèm tập tin" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/blue" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Đọc dữ liệu không thành công.\nChạm để tải lại." android:layout_below="@id/btRefresh" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlReplayForCommentZone_Parent" android:background="@drawable/button_secondary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_above="@id/etChat">
+        <RelativeLayout android:id="@id/rlReplayForCommentZone" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/llShortInfo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@id/line2" android:layout_width="2.0dip" android:layout_height="fill_parent" style="@style/Divider2" />
+                <ImageView android:id="@id/ivShortIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="italic" android:textColor="@color/gray" android:id="@id/tvTraLoiCho" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_alignParentTop="true" android:lineSpacingExtra="2.0dip" />
+                    <TextView android:textColor="@color/black" android:ellipsize="end" android:autoLink="all" android:id="@id/tvTraLoiTextMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:maxLines="1" android:layout_weight="1.0" android:layout_below="@id/tvTraLoiCho" android:lineSpacingExtra="2.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/btCloseReplayForCommentZone" android:background="@drawable/button_gray_outline" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootViewTraDiem" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scrollViewScore" android:background="@color/score_UIBodyBackground" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="70.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/grouptbhlhk" android:layout_width="fill_parent" android:layout_height="164.0dip" android:layout_marginTop="10.0dip" android:baselineAligned="false">
+                <FrameLayout android:id="@id/groupDTBNamHoc" android:background="@drawable/bg_td_score_card_white_18" android:padding="16.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" android:elevation="3.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="36.0dip" android:layout_height="36.0dip" android:backgroundTint="@color/score_UITeal">
+                                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/score_UITeal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Σ" />
+                            </FrameLayout>
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/score_UIText500" android:id="@id/tvLabelDTBNamHoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ĐTB năm học" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="45.0sp" android:textStyle="bold" android:textColor="@color/score_UITeal" android:id="@id/tvAverageYearScore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_" android:fontFamily="monospace" />
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/groupHLHanhKiemHang" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupHocLuc" android:background="@drawable/card_bg" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText600" android:id="@id/tvLabelKQHT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KQHT" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvAcademicPerformance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_" />
+                        </LinearLayout>
+                        <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="36.0dip" android:layout_height="36.0dip" android:backgroundTint="@color/score_UIPrimary">
+                            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_school" app:tint="@color/score_UIPrimary" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <Space android:id="@id/space1" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupHanhKiem" android:background="@drawable/card_bg" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText600" android:id="@id/tvLabelKQRL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KQRL" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvConduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_" />
+                        </LinearLayout>
+                        <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="36.0dip" android:layout_height="36.0dip" android:backgroundTint="@color/score_UIDanger">
+                            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_medal" app:tint="@color/score_UIDanger" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <Space android:id="@id/space2" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/groupHang" android:background="@drawable/bg_td_score_card_white_18" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:elevation="2.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText600" android:id="@id/tvLabelHang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hạng" />
+                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvRankText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_" />
+                        </LinearLayout>
+                        <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="36.0dip" android:layout_height="36.0dip" android:backgroundTint="@color/score_UIWarning">
+                            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_trophy" app:tint="@color/score_UIWarning" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/groupNhanXetGVCN" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <FrameLayout android:background="@drawable/bg_td_score_dropdown" android:layout_width="32.0dip" android:layout_height="32.0dip" android:backgroundTint="@color/score_UISuccess">
+                        <ImageView android:layout_gravity="center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_chat_bubble" app:tint="@color/score_UISuccess" />
+                    </FrameLayout>
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvLabelNXCN" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nhận xét" android:layout_marginStart="10.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/score_UIText700" android:ellipsize="end" android:id="@id/tvSummaryMessage" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_" android:maxLines="2" android:lineSpacingExtra="2.0dip" android:transitionName="expand_collapse_summary" android:justificationMode="inter_word" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điểm TB từng môn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout android:id="@id/seeMoreBtn" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip" android:paddingVertical="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/score_UIText400" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/arrow_forward_ios_24px" android:tint="@color/score_UIText400" android:layout_marginStart="1.0dip" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.github.mikephil.charting.charts.BarChart android:id="@id/barChartAverage" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="Phân bổ kết quả" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+                    <com.github.mikephil.charting.charts.PieChart android:id="@id/pieChartDistribution" android:layout_width="124.0dip" android:layout_height="124.0dip" android:layout_marginEnd="16.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutDistributionLegend" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/info_24px" android:tint="#ff64b5f6" android:layout_marginEnd="3.0dip" />
+                    <TextView android:textSize="9.0sp" android:textColor="#ff64b5f6" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Chạm vào vùng trên biểu đồ hoặc chú thích để lọc, chạm lại để bỏ lọc." />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điểm chi tiết từng môn" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:background="@drawable/bg_toggle" android:padding="@dimen/tra_diem_main_new_toggle_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:id="@id/btnGrid" android:background="@drawable/bg_toggle_selected" android:layout_width="@dimen/tra_diem_main_new_toggle_inner_square_width" android:layout_height="@dimen/tra_diem_main_new_toggle_inner_square_width">
+                        <ImageView android:background="@android:color/transparent" android:layout_width="@dimen/tra_diem_main_new_toggle_inner_square_img_width" android:layout_height="@dimen/tra_diem_main_new_toggle_inner_square_img_width" android:src="@drawable/grid_view_24px" android:tint="@color/tra_diem_toggle_mode_inner_square_selected_fg" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/btnList" android:background="@android:color/transparent" android:layout_width="@dimen/tra_diem_main_new_toggle_inner_square_width" android:layout_height="@dimen/tra_diem_main_new_toggle_inner_square_width">
+                        <ImageView android:background="@android:color/transparent" android:layout_width="@dimen/tra_diem_main_new_toggle_inner_square_img_width" android:layout_height="@dimen/tra_diem_main_new_toggle_inner_square_img_width" android:src="@drawable/list_24px" android:tint="@color/tra_diem_toggle_mode_inner_square_fg" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutSubjectsContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.cardview.widget.CardView android:id="@id/cvLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" app:cardBackgroundColor="#fff7f9f8" app:cardCornerRadius="20.0dip" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false">
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutGrid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_td_score_card_warning_note" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/score_UIPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="!" android:layout_marginEnd="12.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/score_UIText800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="Lưu ý" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/score_UIText700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vị trí dấu 'x' là thông tin chưa được công bố. Chi tiết liên hệ nhà trường." android:lineSpacingExtra="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutHeader" android:background="@color/score_UITeal" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/btnSelectYear" android:background="@drawable/bg_score_dropdown" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ebf5f7fa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Niên học" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/score_UIWhite" android:id="@id/tvSelectedYear" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2023 - 2024" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/score_UIWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/btnSelectPeriod" android:background="@drawable/bg_score_dropdown" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ebf5f7fa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Đợt điểm" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/score_UIWhite" android:id="@id/tvSelectedPeriod" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Học kỳ 1" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/score_UIWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.vietschool.components.Loading android:id="@id/loadingView" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

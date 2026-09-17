@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_day_tab_root" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.5sp" android:textStyle="bold" android:textColor="#ff1a1f23" android:gravity="center" android:id="@id/tv_day_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T2" />
+    <View android:id="@id/view_day_indicator" android:background="@drawable/sh_day_tab_indicator" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="3.0dip" android:layout_marginTop="8.0dip" />
+    <View android:id="@id/view_day_indicator_placeholder" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="28.0dip" android:layout_height="3.0dip" android:layout_marginTop="8.0dip" />
+</LinearLayout>

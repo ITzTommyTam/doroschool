@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/tvHeaderTitle" android:background="#fff8f8f8" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tiêu đề nhóm" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutUserItem" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgAvatar" android:background="@drawable/bg_circle_blue" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/icon_avatar" android:scaleType="centerCrop" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="Tên User" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/loadingCard" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#00ffffff" app:cardCornerRadius="22.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#00ffffff" android:paddingLeft="25.0dip" android:paddingTop="15.0dip" android:paddingRight="25.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="200.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-110.0dip">
+                <androidx.cardview.widget.CardView android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="10.0dip" app:cardBackgroundColor="#e1f4fbff" app:cardCornerRadius="150.0dip" app:cardElevation="0.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="-50.0dip" android:elevation="20.0dip">
+                <androidx.cardview.widget.CardView android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="80.0dip" app:cardElevation="10.0dip" />
+                <androidx.cardview.widget.CardView android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="80.0dip" app:cardElevation="10.0dip" />
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="28.0dip" android:src="@drawable/ico_vietschool_logo" android:elevation="20.0dip" />
+                <ProgressBar android:id="@id/pbLoading2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:indeterminate="false" android:elevation="30.0dip" android:indeterminateTint="#ff1a6c7a" style="?android:progressBarStyleLarge" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="#e1f4fbff" app:cardCornerRadius="20.0dip" app:cardElevation="1.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" app:cardUseCompatPadding="true">
+                    <View android:layout_width="280.0dip" android:layout_height="1.0dip" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff196977" android:id="@id/tvLoadingTitle" android:padding="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="Đang xử lý" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff454545" android:gravity="center" android:id="@id/tvLoadingMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Đang xử lý, vui lòng đợi trong giây lát." android:lineSpacingExtra="2.0dip" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

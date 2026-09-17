@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#fff9fafb" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/LayoutTimKiem" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_XemTKB_SA" android:background="@drawable/sh_suatan_pill_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="TKB suất ăn" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginEnd="6.0dip" android:elevation="0.0dip" android:stateListAnimator="@null" android:backgroundTint="@color/new_main_color_level0" />
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff6b7280" android:id="@id/btn_DangKy_SA" android:background="@drawable/sh_suatan_pill_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Đăng ký suất ăn" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="6.0dip" android:elevation="0.0dip" android:stateListAnimator="@null" android:backgroundTint="#ffeef0f2" />
+            </LinearLayout>
+            <com.prosoftlib.control.ProDatePicker android:id="@id/pdpTuNgay_SA" android:background="@drawable/bg_student_info_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" app:TextHint="Từ ngày" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip" app:cardElevation="2.0dip" app:cardPreventCornerOverlap="false">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.prosoftlib.control.FreezableGridView_v2 android:id="@id/fgvData_SA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/sh_suatan_note_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+            <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@android:drawable/ic_dialog_info" android:tint="@color/new_main_color_level0" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff3e4a5e" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="HS học 1 buổi (không được đăng ký)" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_SuatAn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

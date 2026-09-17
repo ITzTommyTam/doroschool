@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginEnd="10.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/card_content" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="36.0dip" android:layout_height="36.0dip">
+                <View android:id="@id/icon_bg" android:background="@drawable/bg_icon_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/tv_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:tint="@android:color/white" android:contentDescription="@null" />
+            </FrameLayout>
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TITLE" android:singleLine="true" android:layout_marginStart="8.0dip" android:letterSpacing="0.05" />
+        </LinearLayout>
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="0" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <TextView android:textSize="9.0sp" android:textColor="#b0ffffff" android:ellipsize="end" android:id="@id/tv_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tv_tag" android:background="@drawable/bg_tag_pill" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TAG" android:layout_marginStart="6.0dip" android:paddingHorizontal="10.0dip" android:paddingVertical="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

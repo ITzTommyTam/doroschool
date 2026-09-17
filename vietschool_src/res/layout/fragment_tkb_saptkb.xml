@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutSapTKB" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/groupTieuChi" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.5">
+                <RelativeLayout android:orientation="vertical" android:id="@id/layout_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/button_gray_outline" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn mức độ ép buổi của GV" />
+                            <com.prosoftlib.control.ProComboBox android:gravity="center" android:id="@id/cbMucDoEpBuoi" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <CheckBox android:textSize="15.0sp" android:id="@id/CheckToiUuSoBuoi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tối ưu số buổi sau khi sắp ?" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn mức độ ép số ngày dạy của GV" />
+                            <com.prosoftlib.control.ProComboBox android:textSize="15.0sp" android:gravity="center" android:id="@id/cbMucDoEpNgayDay" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiết trống tối đa cho tất cả GV" />
+                            <com.prosoftlib.control.ProComboBox android:gravity="center" android:id="@id/cbSoTietTrongTD" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <CheckBox android:textSize="15.0sp" android:id="@id/CheckToiUuSoTiet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tối ưu số tiết trống sau khi sắp?" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bỏ qua các tiết khó sắp" />
+                            <com.prosoftlib.control.ProComboBox android:gravity="center" android:id="@id/cbBoQuaKhoSap" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/black" android:id="@id/tvMain" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="Tiêu chí" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                        <com.prosoftlib.control.FreezableGridView android:id="@id/fgvTCMR" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/black" android:id="@id/tvMain1" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="Tiêu chí mở rộng" />
+                    <Button android:id="@id/btn_tap" android:background="@drawable/double_down" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:rotation="90.0" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                        <com.prosoftlib.control.ProComboBox android:gravity="center" android:id="@id/cbLCPhaVoRB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/black" android:id="@id/tvMain3" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Lựa chọn phá vỡ ràng buộc" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                        <com.prosoftlib.control.ProComboBox android:gravity="center" android:id="@id/cbSoPhutToiDa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@android:color/black" android:id="@id/tvMain4" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Số phút tối đa" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                        <Button android:textColor="@color/white" android:id="@id/btnBatDauSap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bắt đầu sắp TKB" android:drawableLeft="@android:drawable/ic_media_play" android:backgroundTint="#ff0d5965" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/groupKetQuaLS" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="9.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                        <com.prosoftlib.control.FreezableGridView android:id="@id/fgvKQLS" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/tvMain5" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="Kết quả lần sắp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ff800480" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="5.0">
+                <Button android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/btnTieuChi" android:background="#ff800480" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Tiêu chí" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="5.0">
+                <Button android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/btnKetQua" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Kết quả" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

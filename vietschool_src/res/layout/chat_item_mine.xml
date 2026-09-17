@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/imgProfile" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/ico_vietschool_logo" android:layout_alignParentRight="true" app:civ_border_color="#ff000000" app:civ_border_width="2.0dip" />
+        <RelativeLayout android:gravity="right" android:id="@id/rlTextZone" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imgProfile" android:layout_below="@id/imgProfile">
+            <TextView android:textStyle="italic" android:textColor="@color/gray" android:id="@id/tvTenNguoiDung" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_alignParentTop="true" android:lineSpacingExtra="2.0dip" />
+            <LinearLayout android:gravity="bottom|center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tvTenNguoiDung">
+                <LinearLayout android:id="@id/llCommand" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/tvTextMessage" android:layout_toStartOf="@id/tvTextMessage">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/bs_success_color" android:gravity="center" android:id="@id/btDaXem" android:background="@drawable/button_gray_outline" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:text="1" android:maxLines="1" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/bs_danger_color" android:gravity="center" android:id="@id/btChuaXem" android:background="@drawable/button_gray_outline" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:text="" android:hint="Đính kèm tập tin" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_primary_background" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true">
+                    <RelativeLayout android:id="@id/rlReplayForCommentZone" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/llShortInfo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:id="@id/line1" android:layout_width="2.0dip" android:layout_height="fill_parent" style="@style/Divider2" />
+                            <ImageView android:id="@id/ivShortIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textStyle="italic" android:textColor="@color/gray" android:id="@id/tvTraLoiCho" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_alignParentTop="true" android:lineSpacingExtra="2.0dip" />
+                                <TextView android:textColor="@color/black" android:ellipsize="end" android:autoLink="all" android:id="@id/tvTraLoiTextMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:maxLines="1" android:layout_weight="1.0" android:layout_below="@id/tvTraLoiCho" android:lineSpacingExtra="2.0dip" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:textColor="@color/black" android:autoLink="all" android:id="@id/tvTextMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:lineSpacingExtra="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="right" android:id="@id/glImageDinhKem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlTextZone" android:layout_alignParentRight="true" />
+        <RelativeLayout android:gravity="right" android:id="@id/glFileDinhKem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/glImageDinhKem" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llTKBGridLayout" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/glFileDinhKem" />
+        <TextView android:textSize="@dimen/small_text_size_sp" android:textStyle="italic" android:textColor="@color/gray" android:gravity="center" android:id="@id/tvGioTao" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_below="@id/llTKBGridLayout" android:layout_alignParentRight="true" android:lineSpacingExtra="2.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

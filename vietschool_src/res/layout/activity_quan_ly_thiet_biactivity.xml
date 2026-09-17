@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_SoThietbi" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Thiết bị đã đăng ký (0/5)" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider2" />
+        <ListView android:id="@id/lvDSQuanLyThietBi" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_QLThietBi" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

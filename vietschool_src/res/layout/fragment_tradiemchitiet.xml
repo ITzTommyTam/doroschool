@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlMainLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlMain" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rlCommon" android:background="@color/lightgrey" android:paddingLeft="18.0dip" android:paddingTop="10.0dip" android:paddingRight="18.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="18.0dip" android:paddingVertical="10.0dip">
+            <ImageView android:id="@id/ivClose" android:background="@color/lightgrey" android:layout_width="0.120000005in" android:layout_height="0.120000005in" android:src="@drawable/close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/small_text_size" android:gravity="center" android:id="@id/tvCommon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="x là thông tin chưa được công bố. Chi tiết vui lòng liên hệ nhà trường." android:layout_toLeftOf="@id/ivClose" android:layout_alignParentTop="true" android:layout_toStartOf="@id/ivClose" />
+        </RelativeLayout>
+        <GridLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rlCommon" android:layout_alignParentBottom="true" android:rowCount="1" android:columnCount="1">
+            <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_column="0" android:layout_row="0" />
+        </GridLayout>
+    </RelativeLayout>
+</RelativeLayout>

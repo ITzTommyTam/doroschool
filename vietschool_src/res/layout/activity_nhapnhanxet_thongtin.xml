@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlDTHS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageButton android:id="@id/imgPre" android:background="@color/white" android:clickable="false" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/back" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <ImageButton android:id="@id/imgNext" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/forward" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="false" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cbHocsinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imgNext" android:layout_toRightOf="@id/imgPre" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/blue" android:id="@id/lblTitleDTB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1. Điểm trung bình" android:layout_below="@id/rlDTHS" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/grdDTB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/lblTitleDTB" />
+    <TextView android:textColor="@color/blue" android:id="@id/lblTitleHanhKiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2. Tổng kết" android:layout_below="@id/grdDTB" />
+    <RelativeLayout android:id="@id/rlHL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/lblTitleHanhKiem">
+        <TextView android:id="@id/lblTBHL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="TBHL : " />
+        <TextView android:id="@id/lblXLHL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="XHHL : " android:layout_toRightOf="@id/lblTBHL" />
+        <TextView android:id="@id/lblTBHK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="TBHL : " android:layout_toRightOf="@id/lblXLHL" />
+        <TextView android:id="@id/lblXLHK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="XHHL : " android:layout_toRightOf="@id/lblTBHK" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/blue" android:id="@id/lblVipham" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="3. Vi phạm" android:layout_below="@id/rlHL" />
+    <RelativeLayout android:background="@color/main_color_level1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lblVipham">
+        <ListView android:id="@id/lstVPhs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pbWaiter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.2" android:layout_alignParentStart="true" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/rlCTDapAnInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true">
+        <Button android:id="@id/btDapAnA" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:text="A" android:layout_centerVertical="true" />
+        <Button android:id="@id/btDapAnB" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.0dip" android:text="B" android:layout_centerVertical="true" />
+        <Button android:id="@id/btDapAnC" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.0dip" android:text="C" android:layout_centerVertical="true" />
+        <Button android:id="@id/btDapAnD" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.0dip" android:text="D" android:layout_centerVertical="true" />
+        <Button android:id="@id/btDapAnE" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.0dip" android:text="E" android:layout_centerVertical="true" />
+        <Button android:id="@id/btDapAnF" android:background="@drawable/button_white_circular_outline_background" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="2.0dip" android:text="F" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/small2_text_size" android:id="@id/lbSTTCau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="1" android:layout_centerVertical="true" />
+</RelativeLayout>

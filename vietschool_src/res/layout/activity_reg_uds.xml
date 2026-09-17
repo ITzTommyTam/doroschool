@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/lbIsGV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Là tài khoản GV:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.prosoftlib.control.TriStateToggleButton android:id="@id/tstbIsGV" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" app:tbIsMidSelectable="false" />
+                <TextView android:id="@id/tbIsGV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Không" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboTinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn tỉnh" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboPGD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn PGD" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboTruong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn trường" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboLop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn lớp" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboQuanHe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn quan hệ" />
+            <RelativeLayout android:id="@id/rlKhongCoTrongDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/lbKhongCoTrongDS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chưa có tên trong danh sách" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.prosoftlib.control.TriStateToggleButton android:id="@id/tstbKhongCoTrongDS" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" app:tbIsMidSelectable="false" />
+                <TextView android:id="@id/tbKhongCoTrongDS" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Không" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboHocSinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn học sinh" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/llHocSinhZone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                <EditText android:id="@id/tbHoLotHS" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Họ lót" android:layout_weight="0.7" />
+                <EditText android:id="@id/tbTenHS" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Tên" android:layout_weight="0.3" />
+            </LinearLayout>
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboGiaoVien" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn giáo viên" />
+            <EditText android:id="@id/tbSoDienThoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Số điện thoại" android:inputType="number" />
+            <EditText android:id="@id/tbMatKhau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Mật khẩu" android:inputType="textPassword" />
+            <EditText android:id="@id/tbReMatKhau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Nhập lại mật khẩu" android:inputType="textPassword" />
+            <Button android:textSize="@dimen/extra1_text_size" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btRegist" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Lưu" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

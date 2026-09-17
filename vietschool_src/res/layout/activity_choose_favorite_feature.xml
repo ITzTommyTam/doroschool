@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="150.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/top_margin_avoid_header" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip" app:srcCompat="@drawable/favorite_24px" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chức năng yêu thích" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_save" android:background="@drawable/bg_button_primary" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:paddingRight="14.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="14.0dip" android:paddingVertical="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/btn_primary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cập nhật" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/section_feature_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/section_feature_container">
+                    <com.google.android.material.tabs.TabLayout android:id="@id/tabIndicator" android:layout_width="wrap_content" android:layout_height="10.0dip" app:tabBackground="@drawable/d1_dot_selector" app:tabGravity="center" app:tabIndicator="@null" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="fixed" app:tabPaddingEnd="10.0dip" app:tabPaddingStart="10.0dip" app:tabRippleColor="@null" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/card_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/accordion" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/white" android:layout_gravity="fill_horizontal|center|top" android:id="@id/btCreateRequest" android:background="@color/main_color_level2" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="(+) Tạo yêu cầu" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/MyButtonDefaultStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/btCreateRequest" android:layout_alignParentBottom="true" />
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

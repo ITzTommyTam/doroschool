@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#fff3f3f3" android:endColor="#ffefefef" android:angle="45.0" />
+    <corners android:topLeftRadius="20.0dip" android:topRightRadius="20.0dip" android:bottomLeftRadius="20.0dip" android:bottomRightRadius="20.0dip" />
+    <stroke android:width="1.0dip" android:color="#ffc7c8cc" android:dashWidth="@dimen/btn_radius" />
+</shape>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+        <FrameLayout android:background="@drawable/bg_timeline_header_gradient" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true">
+                    <ImageView android:id="@id/btn_DangBai" android:background="@drawable/vschat_bg_circle_icon" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="38.0dip" android:layout_height="38.0dip" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/add_box_24px" android:layout_marginEnd="5.0dip" app:tint="@color/timeline_header_icon_fg" />
+                    <ImageView android:id="@id/btn_filter" android:background="@drawable/vschat_bg_circle_icon" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="38.0dip" android:layout_height="38.0dip" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/filter_alt_24px" android:layout_marginEnd="5.0dip" app:tint="@color/timeline_header_icon_fg" />
+                    <ImageView android:id="@id/btn_TimKiem" android:background="@drawable/vschat_bg_circle_icon" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="38.0dip" android:layout_height="38.0dip" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/vschat_ic_search_outline" android:layout_marginEnd="5.0dip" />
+                    <RelativeLayout android:id="@id/btn_Chat" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+                        <ImageView android:id="@id/img_chat" android:background="@drawable/vschat_bg_circle_icon" android:padding="8.0dip" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/vschat_ic_comment" />
+                        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_TinNhan" android:background="@drawable/bg_badge_red" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="99+" android:singleLine="true" android:includeFontPadding="true" android:layout_alignTop="@id/img_chat" android:layout_marginStart="25.0dip" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="1.0sp" android:autoSizeMinTextSize="6.0sp" android:autoSizeMaxTextSize="11.0sp" />
+                        <TextView android:textSize="7.0sp" android:textColor="@color/white" android:background="@drawable/bg_status_badge" android:padding="2.0dip" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:text="Chat" android:layout_below="@id/img_chat" android:layout_marginStart="25.0dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_TimKiem" android:background="@color/primary_color" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_new" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:paddingHorizontal="10.0dip">
+                    <TextView android:textSize="14.0sp" android:id="@id/iconSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍" />
+                    <EditText android:textSize="15.0sp" android:id="@id/edtSearch" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Tìm kiếm" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="8.0dip" />
+                </LinearLayout>
+                <TextView android:textColor="@color/white" android:id="@id/tv_Huy" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hủy" android:paddingStart="12.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <ProgressBar android:id="@id/pb_story_sync" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:max="100" android:progress="0" android:alpha="0.0" android:progressTint="@color/d1_nav_active" android:layout_marginHorizontal="16.0dip" style="?android:progressBarStyleHorizontal" />
+        <View android:id="@id/divider" android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <FrameLayout android:id="@id/story_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_Story" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </FrameLayout>
+        <View android:background="#fff0f2f5" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.vietschool.components.SlowSwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.vietschool.components.postlist.PostListView android:id="@id/timelineWebView" android:background="#fff0f2f5" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.vietschool.components.SlowSwipeRefreshLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutCanhBaoSLLDT" android:background="#fff0f2f5" android:padding="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.prosoftlib.control.TextViewFontAwesome android:textSize="42.0sp" android:textColor="#ff2f80ed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff2f3a4a" android:gravity="center" android:id="@id/tvCanhBaoSLLDT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_timeline" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" />
+    </LinearLayout>
+    <com.vietschool.components.Loading android:id="@id/pb_timeLine" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/btn_DangBai_fab" android:background="@drawable/bg_dangbai_fab" android:padding="10.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_dangbai_plus" android:layout_alignParentBottom="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" android:elevation="6.0dip" />
+    <androidx.cardview.widget.CardView android:id="@id/cardNewPostBadge" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="82.0dip" android:foreground="?selectableItemBackgroundBorderless" android:layout_alignParentBottom="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" android:backgroundTint="@color/primary_color" app:cardCornerRadius="999.0dip" app:cardElevation="8.0dip">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvNewPostBadge" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Có thông báo mới" android:paddingHorizontal="16.0dip" android:paddingVertical="10.0dip" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff5f9f8" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/parentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <com.prosoftlib.control.SegmentedGroup android:orientation="horizontal" android:id="@id/sgMode" android:background="@drawable/bg_segmented_group" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <RadioButton android:id="@id/btnThuong" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:text="Thường" />
+                <RadioButton android:id="@id/btnTuChon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Tự chọn" />
+                <RadioButton android:id="@id/btnChuyenDe" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Chuyên đề" />
+            </com.prosoftlib.control.SegmentedGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <com.vietschool.components.Loading android:id="@id/new_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

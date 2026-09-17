@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_tao_tat_ca" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <ImageView android:id="@id/iv_tao_tat_ca_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/add_circle_24px" android:tint="@android:color/white" android:layout_marginEnd="8.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/tv_tao_tat_ca_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tạo tất cả" />
+                <TextView android:textSize="9.0sp" android:id="@id/tv_tao_tat_ca_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="Nhóm lớp GVCN &amp; GVBM" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="8.0dip" android:layout_height="0.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_cap_nhat" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <ImageView android:id="@id/iv_cap_nhat_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/autorenew_24px" android:tint="@color/qltb_text_tertiary" android:layout_marginEnd="8.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/tv_cap_nhat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cập nhật" />
+                <TextView android:textSize="9.0sp" android:id="@id/tv_cap_nhat_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="Biến động Nhóm GVCN, GVBM" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stats_bar" android:background="@drawable/card_bg" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingStart="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:paddingVertical="7.0dip">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/stat_count" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginEnd="6.0dip" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/stat_bien_dong" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginEnd="6.0dip" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/stat_chua_du" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/tab_container" android:background="@drawable/bg_tab_container" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <View android:id="@id/tab_pill" android:background="@drawable/bg_tab_pill" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tab_toan_truong" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Toàn Trường" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tab_gvcn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="GVCN" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tab_gvbm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="GVBM" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/filter_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/btn_change_filter" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="Có biến động" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/btn_sort" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="Mặc định ▾" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/khoi_chip_scroll" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/khoi_chip_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <HorizontalScrollView android:id="@id/lop_chip_scroll" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lop_chip_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_groups" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="420.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="8.0dip" android:fadeScrollbars="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" android:nestedScrollingEnabled="true" />
+    <TextView android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_group_empty" android:padding="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Không có dữ liệu" />
+</LinearLayout>

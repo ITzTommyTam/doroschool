@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_baitapnhanh_sort" android:id="@id/menu_sort" android:orderInCategory="100" android:title="Sắp xếp" android:iconTint="@color/white" app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/sort_newest" android:title="Mới nhất" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/sort_ending_soon" android:title="Sắp kết thúc" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/sort_alphabetical" android:title="Tên A-Z" android:checkable="true" android:iconTint="@color/primary_color" />
+            </group>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_baitapnhanh_filter" android:id="@id/menu_filter" android:orderInCategory="101" android:title="Lọc" android:iconTint="@color/white" app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/filter_all" android:title="Tất cả" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/filter_upcoming" android:title="Sắp đến" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/filter_ongoing" android:title="Đang diễn ra" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/filter_ended" android:title="Đã kết thúc" android:checkable="true" android:iconTint="@color/primary_color" />
+                <item android:id="@id/filter_week" android:title="Theo tuần" android:checkable="true" android:iconTint="@color/primary_color" />
+            </group>
+        </menu>
+    </item>
+</menu>

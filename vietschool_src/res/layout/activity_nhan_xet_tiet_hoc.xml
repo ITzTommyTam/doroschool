@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="right" android:layout_gravity="end" android:id="@id/tv_NgayVal" android:background="@drawable/bg_input_dvc" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="Ngày" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <GridView android:id="@id/gv_viewButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="auto_fit" />
+                    </LinearLayout>
+                    <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="20.0dip" android:layout_toLeftOf="@id/lbTietHienTai" android:layout_below="@id/Layout" />
+                    <TextView android:id="@id/lbTietHienTai" android:background="@drawable/border_new" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiết 2" android:layout_below="@id/Layout" android:layout_centerHorizontal="true" />
+                    <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/lbTietHienTai" android:layout_below="@id/Layout" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/lbTietHienTai">
+                        <TextView android:id="@id/tvMonHoc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Môn: " />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                            <TextView android:id="@id/tvLop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Lớp: " android:layout_weight="5.0" />
+                            <TextView android:id="@id/tvTietPPCT" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Tiết PPCT: " android:layout_weight="5.0" />
+                        </LinearLayout>
+                        <TextView android:id="@id/tvTenBai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tên bài: " />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LayoutVang" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:weightSum="10.0" android:layout_below="@id/LayoutMon">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_weight="5.0">
+                            <Button android:textColor="@color/white" android:id="@id/btnCoPhep" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="Có phép" android:backgroundTint="@color/new_main_color_level0" />
+                            <TextView android:id="@id/tvCoPhep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_weight="5.0">
+                            <Button android:textColor="@color/white" android:id="@id/btnKhongPhep" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="Không phép" android:backgroundTint="@color/new_main_color_level0" />
+                            <TextView android:id="@id/tvKhongPhep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:background="@drawable/border_new" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="  Vắng  " android:layout_below="@id/LayoutMon" android:backgroundTint="@color/white" />
+                    <TextView android:background="@drawable/border_new" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="  Vắng  " android:layout_below="@id/LayoutMon" />
+                    <LinearLayout android:id="@id/layoutnhanxet" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_below="@id/LayoutVang">
+                        <EditText android:id="@id/EditNhanXet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:singleLine="true" android:imeOptions="actionDone" />
+                    </LinearLayout>
+                    <TextView android:background="@drawable/border_new" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="  Nhận xét  " android:layout_below="@id/LayoutVang" android:backgroundTint="@color/white" />
+                    <TextView android:background="@drawable/border_new" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="  Nhận xét  " android:layout_below="@id/LayoutVang" />
+                    <TextView android:id="@id/tvXepLoai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Xếp loai: " android:layout_below="@id/layoutnhanxet" />
+                    <com.prosoftlib.control.ProComboBox android:id="@id/cboXepLoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/tvXepLoai" android:layout_below="@id/layoutnhanxet" />
+                    <Button android:textColor="@color/white" android:id="@id/btnLuu" android:background="@drawable/border_new" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Lưu" android:layout_below="@id/tvXepLoai" android:layout_centerHorizontal="true" android:backgroundTint="@color/new_main_color_level0" />
+                </RelativeLayout>
+            </ScrollView>
+            <TextView android:gravity="center" android:id="@id/tv_Error" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Bạn chưa có lịch báo giảng hôm nay" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_NXTietHoc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

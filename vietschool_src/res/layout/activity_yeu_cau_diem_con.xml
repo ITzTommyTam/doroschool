@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvLoaiTraTin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Loại trả tin" android:layout_alignParentLeft="true" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgLoaiTraTin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvLoaiTraTin">
+        <RadioButton android:id="@id/rbSMS_APP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App+SMS" />
+        <RadioButton android:id="@id/rbAPP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="App" />
+        <RadioButton android:id="@id/rbSMS" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="SMS" />
+    </RadioGroup>
+    <RelativeLayout android:id="@id/rlDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tvLoaiTraTin"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/tvDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Thời gian trả SMS sau APP" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvDelay" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/LayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/rlDelay">
+        <RelativeLayout android:id="@id/rlKhoiLop" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" />
+        <RelativeLayout android:id="@id/rlDotDiem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/rlKhoiLop" android:layout_toEndOf="@id/rlKhoiLop" />
+    </RelativeLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

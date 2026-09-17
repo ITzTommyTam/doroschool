@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/score_UIBodyBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/containerBCCaNhan" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_td_score_card_white_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baocao_main_item_margin_top" android:elevation="2.0dip">
+            <ImageView android:id="@id/ivBCCaNhan" android:layout_width="@dimen/baocao_main_icon_width" android:layout_height="@dimen/baocao_main_icon_width" android:layout_margin="10.0dip" android:src="@drawable/thong_ke" />
+            <TextView android:textSize="@dimen/baocao_main_btn_font_size" android:gravity="center_vertical" android:id="@id/tvPhieuDiemCaNhan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Phiếu điểm cá nhân" android:layout_toRightOf="@id/ivBCCaNhan" android:layout_alignTop="@id/ivBCCaNhan" android:layout_alignBottom="@id/ivBCCaNhan" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/containerBCTongHop" android:background="@drawable/bg_td_score_card_white_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baocao_main_item_margin_top" android:elevation="2.0dip">
+            <ImageView android:id="@id/ivBCTongHop" android:layout_width="@dimen/baocao_main_icon_width" android:layout_height="@dimen/baocao_main_icon_width" android:layout_margin="10.0dip" android:src="@drawable/thong_ke" android:layout_below="@id/ivBCCaNhan" />
+            <TextView android:textSize="@dimen/baocao_main_btn_font_size" android:gravity="center_vertical" android:id="@id/tvPhieuDiemTongHop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Phiếu điểm Tổng hợp" android:layout_toRightOf="@id/ivBCTongHop" android:layout_alignTop="@id/ivBCTongHop" android:layout_alignBottom="@id/ivBCTongHop" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/containerTKKQGD" android:background="@drawable/bg_td_score_card_white_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baocao_main_item_margin_top" android:elevation="2.0dip">
+            <ImageView android:id="@id/ivTKKQGD" android:layout_width="@dimen/baocao_main_icon_width" android:layout_height="@dimen/baocao_main_icon_width" android:layout_margin="10.0dip" android:src="@drawable/thong_ke" android:layout_below="@id/ivBCTongHop" />
+            <TextView android:textSize="@dimen/baocao_main_btn_font_size" android:gravity="center_vertical" android:id="@id/tvKetQuaGiangDay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kết quả giảng dạy" android:layout_toRightOf="@id/ivTKKQGD" android:layout_alignTop="@id/ivTKKQGD" android:layout_alignBottom="@id/ivTKKQGD" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

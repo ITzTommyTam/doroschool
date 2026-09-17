@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/btnMenu" android:background="@drawable/border_new" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Cấu hình" android:backgroundTint="#ff0000ff"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

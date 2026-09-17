@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/setting" android:id="@id/btConfig" android:orderInCategory="100" android:title="Cấu hình" android:showAsAction="always" android:iconTint="@color/white" />
+    <item android:icon="@drawable/ic_question" android:id="@id/btHuongDanMau" android:orderInCategory="100" android:title="Hướng dẫn" android:showAsAction="always" android:iconTint="@color/white" />
+</menu>

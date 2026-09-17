@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:id="@id/tvLop" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp" />
+            <EditText android:id="@id/edtLopDialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textColor="@color/black" android:id="@id/tvKhoi" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Khối" />
+            <com.prosoftlib.control.ProComboBox android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="start|center" android:id="@id/cboKhoiDialog" android:background="@drawable/button_gray_outline" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:maxLines="1" android:drawableRight="@drawable/combo_down_button" android:layout_weight="1.0" android:paddingStart="5.0dip" android:paddingEnd="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textColor="@color/black" android:id="@id/tvLoaiLop" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loại lớp" />
+            <com.prosoftlib.control.ProComboBox android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="start|center" android:id="@id/cboLoaiLopDialog" android:background="@drawable/button_gray_outline" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="Chọn loại lớp" android:maxLines="1" android:drawableRight="@drawable/combo_down_button" android:layout_weight="1.0" android:paddingStart="5.0dip" android:paddingEnd="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textColor="@color/black" android:id="@id/tvMonHoc" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Môn học" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="start|center" android:id="@id/cbMonHocDialog" android:background="@drawable/button_gray_outline" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="Chọn môn học" android:maxLines="1" android:drawableRight="@drawable/combo_down_button" android:layout_weight="1.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tvBuoiChinhKhoa" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buổi chính khóa" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/radioGroupBuoi" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioButtonSang" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sáng" />
+                <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioButtonChieu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chiều" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="20.0dip">
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btnLuuDialog" android:background="#ff1d6b78" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Lưu" />
+            <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btnHuyDialog" android:background="#ffff0018" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Đóng" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

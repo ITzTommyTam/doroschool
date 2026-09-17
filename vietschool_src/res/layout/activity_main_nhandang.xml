@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_login_fix" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/c_color1" android:id="@id/txtVersion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="V1.0" />
+        <ImageView android:id="@id/iv_logo" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_margin="20.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_login_cardview" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <EditText android:enabled="true" android:textColor="@color/c_color1" android:id="@id/txtUserID" android:background="@drawable/et_primary" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="10.0dip" android:hint="Mã đăng nhập" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:inputType="number" android:drawableStart="@drawable/ic_user" android:paddingStart="10.0dip" android:drawableTint="@color/gray_400" />
+            <EditText android:textColor="@color/c_color1" android:id="@id/txtPassword" android:background="@drawable/et_primary" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="Mật khẩu" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:inputType="numberPassword" android:drawableStart="@drawable/ic_lock" android:paddingStart="10.0dip" android:drawableTint="@color/gray_400" />
+            <androidx.appcompat.widget.AppCompatButton android:textColor="@color/c_color1" android:id="@id/btnDangNhap" android:background="@drawable/btn_elip" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Đăng Nhập" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:layout_centerInParent="true" android:drawableStart="@drawable/ic_login" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:drawableTint="@color/c_color1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

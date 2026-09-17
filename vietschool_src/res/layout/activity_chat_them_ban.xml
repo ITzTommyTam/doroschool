@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:backgroundTint="#ff1f6d78" card_view:cardCornerRadius="10.0dip" card_view:cardElevation="3.0dip" card_view:cardUseCompatPadding="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Hồ Như Ngọc" />
+                <ImageView android:id="@id/imgQR" android:background="@color/white" android:padding="8.0dip" android:layout_width="150.0dip" android:layout_height="150.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ffe0f2f1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Quét QR để thêm bạn với tôi" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" card_view:cardCornerRadius="10.0dip" card_view:cardElevation="3.0dip" card_view:cardUseCompatPadding="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingHorizontal="12.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍 " />
+                <EditText android:id="@id/edtSearch" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="SĐT / CCCD / Họ tên" android:layout_weight="1.0" android:paddingStart="5.0dip" />
+                <TextView android:gravity="center" android:id="@id/tv_TimKiem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" ➡ " />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" card_view:cardCornerRadius="10.0dip" card_view:cardElevation="3.0dip" card_view:cardUseCompatPadding="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingHorizontal="12.0dip">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon_qr_code" />
+                <TextView android:textColor="#ff1f6d78" android:id="@id/tv_ScanQr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Quét mã QR" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Bạn bè có thể quen" />
+        <ListView android:id="@id/lv_BanBeQuen" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_ThemBan" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboTinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn tỉnh" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboPGD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn PGD" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboTruong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn trường" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboLop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn lớp" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboHocSinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:TextHint="Chọn học sinh" />
+            <EditText android:id="@id/tbSoDienThoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Số điện thoại" android:inputType="number" />
+            <EditText android:id="@id/tbMatKhau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Mật khẩu" android:inputType="textPassword" />
+            <EditText android:id="@id/tbReMatKhau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:hint="Nhập lại mật khẩu" android:inputType="textPassword" />
+            <Button android:textSize="@dimen/extra1_text_size" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btRegist" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Lưu" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

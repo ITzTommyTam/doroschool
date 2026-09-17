@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <com.prosoftlib.control.TreeView android:id="@id/rl_DotDiem" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="3.0" />
+            <com.prosoftlib.control.TreeView android:id="@id/rl_MonHoc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="2.0" />
+            <com.prosoftlib.control.TreeView android:id="@id/rl_LoaiDanhGia" android:background="@color/red" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="5.0">
+            <com.prosoftlib.control.TreeView android:id="@id/rl_KhoiLop" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="3.0" />
+            <com.prosoftlib.control.TreeView android:id="@id/rl_Thang" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

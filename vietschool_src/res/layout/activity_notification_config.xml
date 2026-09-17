@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:rowCount="6" android:columnCount="1">
+        <Button android:id="@id/btThoiGianDonHS" android:layout_width="fill_parent" android:layout_margin="5.0dip" android:layout_column="0" android:text="Cấu hình thời gian đón HS" android:layout_row="5" style="?android:buttonStyleSmall" />
+    </GridLayout>
+</RelativeLayout>

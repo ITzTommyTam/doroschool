@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/le" android:id="@id/miInputType" android:orderInCategory="0" android:title="Le" android:showAsAction="always" />
+    <item android:icon="@drawable/edit" android:id="@id/miEditTools" android:orderInCategory="2" android:title="Công cụ" android:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/cut" android:id="@id/miCutColumn" android:orderInCategory="0" android:title="Cắt cột" android:showAsAction="never" />
+            <item android:icon="@drawable/paste" android:id="@id/miPasteColumn" android:orderInCategory="1" android:title="Dán cột" android:showAsAction="never" />
+            <item android:icon="@drawable/fill" android:id="@id/miFillColumn" android:orderInCategory="2" android:title="Fill cột" android:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/sound_menu" android:id="@id/miSoundTools" android:orderInCategory="2" android:title="Đọc điểm" android:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/sound" android:id="@id/miReadMark" android:orderInCategory="3" android:title="đọc" android:showAsAction="always" />
+            <item android:icon="@drawable/sound_all" android:id="@id/miReadAllMark" android:orderInCategory="4" android:title="đọc tất cả" android:showAsAction="always" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_light" android:id="@id/Menu" android:orderInCategory="5" android:title="Menu" android:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/unkey" android:id="@id/miHideKeyboard" android:orderInCategory="0" android:title="Ẩn" android:showAsAction="never" />
+            <item android:icon="@drawable/config" android:id="@id/iDock" android:orderInCategory="1" android:title="Vị trí bàn phím" android:showAsAction="never">
+                <menu>
+                    <item android:icon="@drawable/config" android:id="@id/iDockRB1" android:orderInCategory="0" android:title="Bên Phải 1 cột" android:showAsAction="never" />
+                    <item android:icon="@drawable/config" android:id="@id/iDockRB2" android:orderInCategory="0" android:title="Bên Phải 2 cột" android:showAsAction="never" />
+                    <item android:icon="@drawable/config" android:id="@id/iDockBR1" android:orderInCategory="0" android:title="Bên Dưới 1 cột" android:showAsAction="never" />
+                    <item android:icon="@drawable/config" android:id="@id/iDockBR2" android:orderInCategory="0" android:title="Bên Dưới 2 cột" android:showAsAction="never" />
+                    <item android:icon="@drawable/config" android:id="@id/iDockTR1" android:orderInCategory="0" android:title="Bên Trên 1 cột" android:showAsAction="never" />
+                    <item android:icon="@drawable/config" android:id="@id/iDockTR2" android:orderInCategory="0" android:title="Bên Trên 2 cột" android:showAsAction="never" />
+                </menu>
+            </item>
+            <item android:icon="@drawable/config" android:id="@id/miHideLotColumn" android:orderInCategory="2" android:title="Hiện cột chữ lót" android:showAsAction="always" />
+            <item android:id="@id/miChuThichMauDiem" android:orderInCategory="3" android:title="Chú thích màu điểm" android:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

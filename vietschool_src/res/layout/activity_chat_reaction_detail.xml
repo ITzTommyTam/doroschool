@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/main" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="45.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_tabs" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+    <View android:id="@id/view_underline" android:background="@android:color/holo_blue_dark" android:layout_width="0.0dip" android:layout_height="2.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_reactions" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

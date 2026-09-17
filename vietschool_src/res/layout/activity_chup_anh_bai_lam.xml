@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_ChupAnh" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextureView android:id="@id/texture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/ivConvertPreview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llAfterCaptureHandle" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/tbUpload2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="0.0" />
+        <TextView android:gravity="center" android:id="@id/tbThongKe" android:background="@color/whitesmoke" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="0.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.photoview.PhotoView android:id="@id/ivResult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <Button android:textColor="@color/white" android:gravity="center" android:id="@id/btSend_Continue" android:background="@drawable/button_primary_background" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gởi và tiếp tục" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btLog" android:background="@drawable/button_primary_background" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Xem log" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btReCapture" android:background="@drawable/button_primary_background" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Chụp lại" android:layout_weight="1.0" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:gravity="right" android:id="@id/tbUpload" android:background="@drawable/bg_trongsuot_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="0.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/c_color2" android:gravity="center" android:layout_gravity="center" android:id="@id/txtHuongDan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:fontWeight="600" />
+        <View android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    </LinearLayout>
+</RelativeLayout>

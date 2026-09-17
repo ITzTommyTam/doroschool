@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="12.0dip" app:cardElevation="4.0dip" app:strokeColor="@color/qltb_border" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_primary" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tên loại thông báo" android:maxLines="2" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/qltb_pink" android:id="@id/tv_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0/0" android:singleLine="true" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/qltb_text_tertiary" android:id="@id/tv_sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="Đã xem / Tổng" />
+        <FrameLayout android:id="@id/progress_track" android:background="@color/qltb_border" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="6.0dip">
+            <View android:layout_gravity="start" android:id="@id/progress_fill" android:background="@color/qltb_pink" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_primary" android:gravity="end" android:id="@id/tv_pct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0%" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

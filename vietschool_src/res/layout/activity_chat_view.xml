@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/chat_view_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvChat" android:paddingTop="60.0dip" android:paddingBottom="50.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.vietschool.thongbao_chat.ChatInput android:id="@id/chatInput" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/dimView" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.vietschool.thongbao_chat.PinView android:id="@id/pinView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/btnScrollDown" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginBottom="75.0dip" android:src="@drawable/double_arrow_down" android:layout_alignParentBottom="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" android:elevation="4.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/black" android:id="@id/btnNewMessageLabel" android:background="@drawable/bg_pill_solid" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip" android:text="Có tin nhắn mới" android:drawablePadding="6.0dip" android:layout_alignParentBottom="true" android:paddingStart="14.0dip" android:paddingEnd="14.0dip" android:layout_alignParentEnd="true" android:elevation="4.0dip" app:drawableStartCompat="@drawable/ic_arrow_down_small" />
+</RelativeLayout>

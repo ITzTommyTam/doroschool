@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/LayoutMain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:id="@id/btAll" android:layout_width="220.0dip" android:layout_height="wrap_content" android:text="Tất cả học sinh của lớp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/MyButtonDefaultStyle" />
+        <Button android:id="@id/btChoose" android:layout_width="220.0dip" android:layout_height="wrap_content" android:text="Từng học sinh" android:layout_below="@id/btAll" style="@style/MyButtonDefaultStyle" />
+    </RelativeLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/el_ly_thuyet" android:id="@id/miLyThuyet" android:orderInCategory="100" android:title="Lý thuyết" android:iconTint="@color/white" app:showAsAction="never" />
+    <item android:icon="@drawable/el_bai_tap" android:id="@id/miBaiTap" android:orderInCategory="101" android:title="Bài tập" android:iconTint="@color/white" app:showAsAction="never" />
+    <item android:icon="@drawable/el_thao_luan" android:id="@id/miThaoLuan" android:orderInCategory="102" android:title="Thảo luận" android:iconTint="@color/white" app:showAsAction="never" />
+</menu>

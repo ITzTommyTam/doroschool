@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0b649c" android:padding="5.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <Button android:textColor="@color/white" android:id="@id/btn_ChoDuyet" android:background="@drawable/border" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Chờ duyệt" android:layout_weight="5.0" android:backgroundTint="@color/new_main_color_level0" />
+            <Button android:textColor="@color/white" android:id="@id/btn_DaDuyet" android:background="@drawable/border" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Đã duyệt" android:layout_weight="5.0" android:backgroundTint="@color/darkgray" />
+        </LinearLayout>
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboLop_DuyetPhep" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/Layout_TuNgay" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <com.prosoftlib.control.ProDatePicker android:id="@id/pdpTuNgay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" app:TextHint="Từ ngày" />
+            <com.prosoftlib.control.ProDatePicker android:id="@id/pdpDenNgay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" app:TextHint="Đến ngày" />
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btnLoc" android:background="@drawable/border" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Lọc" android:backgroundTint="@color/new_main_color_level0" />
+        <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/tv_header_duyet" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Xin phép chưa được duyệt" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider2" />
+        <ListView android:id="@id/lvDSXinPhepDuyet" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line1" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_duyetxinphep" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/play_circle_48px" android:id="@id/mBTDangDienRa" android:orderInCategory="100" android:title="Đang diễn ra" android:iconTint="@color/white" app:showAsAction="never" />
+    <item android:icon="@drawable/stop_circle_48px" android:id="@id/mBTDaKetThuc" android:orderInCategory="101" android:title="Đã kết thúc" android:iconTint="@color/white" app:showAsAction="never" />
+</menu>

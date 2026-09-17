@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/rlView" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/containerOption" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/rlOption1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:ellipsize="end" android:id="@id/textView14" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="Mẫu" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" />
+                <com.prosoftlib.control.ProComboBox android:id="@id/cboMau" android:background="@drawable/bg_input_dvc" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textView14" android:layout_alignParentTop="true" android:layout_toEndOf="@id/textView14" android:paddingHorizontal="5.0dip" android:paddingVertical="10.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlOption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_above="@id/rlOption1">
+                <TextView android:ellipsize="end" android:id="@id/textView15" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="Cột điểm" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" />
+                <com.prosoftlib.control.ProComboBox android:id="@id/cboCotDiem" android:background="@drawable/bg_input_dvc" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textView15" android:layout_alignParentTop="true" android:layout_toEndOf="@id/textView15" android:paddingHorizontal="5.0dip" android:paddingVertical="10.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button android:textSize="@dimen/medium_text_size" android:textColor="@color/white" android:id="@id/btView" android:background="@drawable/bg_button_login" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="Xem" android:layout_centerInParent="true" android:layout_marginStart="10.0dip" android:backgroundTint="@color/dich_vu_cong_ho_so_btn_save_bg" />
+    </LinearLayout>
+    <com.prosoftlib.control.TreeView android:id="@id/rlDotDiem" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_above="@id/rlView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.vietschool.components.Loading android:id="@id/new_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

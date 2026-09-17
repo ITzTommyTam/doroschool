@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/medium_text_size" android:id="@id/tvHoTen" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="" android:layout_toLeftOf="@id/cboxChoose" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/cboxChoose" android:layout_alignParentStart="true" />
+    <CheckBox android:id="@id/cboxChoose" android:background="@color/white" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

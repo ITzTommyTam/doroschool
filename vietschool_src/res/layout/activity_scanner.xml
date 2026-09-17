@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_login" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vietschool.nhandang.FaceDetectionUtil.common.CameraSourcePreview android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vietschool.nhandang.FaceDetectionUtil.common.GraphicOverlay android:id="@id/barcodeOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vietschool.nhandang.FaceDetectionUtil.common.CameraSourcePreview>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <LinearLayout android:orientation="horizontal" android:background="@color/cv_capture_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_laugh" android:layout_weight="0.0" />
+            <TextView android:textColor="@color/c_color4" android:id="@id/txtDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="0.0" />
+            <TextView android:textColor="@color/white" android:gravity="right" android:id="@id/txtDonVi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Trường Học" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+        <TextView android:id="@id/txtLogCountdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Text" android:textAlignment="textEnd" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlCapture" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textColor="#ffff8c32" android:id="@id/txtNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffff0063" android:id="@id/txtNguoiDung" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/cv_capture_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                <androidx.appcompat.widget.AppCompatButton android:enabled="true" android:textColor="@color/white" android:id="@id/btnChangeCam" android:background="@drawable/btn_primary" android:layout_width="50.0pt" android:layout_height="48.0dip" android:layout_margin="5.0dip" android:text="Đổi cam" android:layout_weight="1.0" android:drawableStart="@drawable/ic_rotate" android:paddingStart="10.0dip" />
+                <androidx.appcompat.widget.AppCompatButton android:enabled="true" android:textColor="@color/white" android:id="@id/btnSetting" android:background="@drawable/btn_primary" android:layout_width="50.0pt" android:layout_height="48.0dip" android:layout_margin="5.0dip" android:text="Cấu hình" android:shadowColor="@color/white" android:layout_weight="1.0" android:drawableStart="@drawable/ic_setting" android:paddingStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

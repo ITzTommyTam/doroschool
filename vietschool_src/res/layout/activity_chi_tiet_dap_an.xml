@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center_vertical" android:id="@id/lbMaDe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã đề: " android:layout_alignTop="@id/tvMaDe" android:layout_alignBottom="@id/tvMaDe" />
+        <EditText android:gravity="center_vertical" android:id="@id/tvMaDe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignTop="@id/tvMaDe" android:layout_alignBottom="@id/tvMaDe" android:layout_alignParentRight="true" android:inputType="number" android:layout_toEndOf="@id/lbMaDe" />
+        <View android:id="@id/vLine1" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="-5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/tvMaDe" />
+        <TextView android:id="@id/lbDapAn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Đáp án" android:layout_below="@id/vLine1" />
+        <View android:id="@id/vLine2" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/lbDapAn" />
+        <ListView android:id="@id/lvCTDapAn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" android:layout_below="@id/lbDapAn" />
+    </RelativeLayout>
+</RelativeLayout>

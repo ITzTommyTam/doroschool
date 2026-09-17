@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="12.0sp" android:id="@id/btnThemMoi" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Thêm mới" />
+                <Button android:textSize="12.0sp" android:id="@id/btnSua" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Sửa" />
+                <Button android:textSize="12.0sp" android:id="@id/btnXoa" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Xóa" />
+                <Button android:textSize="12.0sp" android:id="@id/btnSapSTT" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Sắp lại STT" />
+                <Button android:textSize="12.0sp" android:id="@id/btnGiamSTT" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Giảm STT" />
+                <Button android:textSize="12.0sp" android:id="@id/btnTangSTT" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="Tăng STT" />
+                <Button android:textSize="12.0sp" android:id="@id/btnVideoHD" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Video hướng dẫn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="6.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.prosoftlib.control.FreezableGridView android:id="@id/fgvData" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

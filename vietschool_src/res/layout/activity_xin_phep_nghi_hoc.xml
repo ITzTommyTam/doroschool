@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/leave_request_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:paddingBottom="24.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:background="@color/bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/pnEditor" android:background="@drawable/card_bg" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tv_FormTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tạo đơn xin phép" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/tv_FormSubtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Học sinh *" />
+                        <com.prosoftlib.control.ProComboBox android:id="@id/cboHocSinh" android:background="@drawable/bg_leave_request_input" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loại phép *" />
+                        <com.prosoftlib.control.ProComboBox android:id="@id/cboLoaiXinPhep" android:background="@drawable/bg_leave_request_input" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thời gian *" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="11.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Từ" />
+                                <com.prosoftlib.control.ProDatePicker android:id="@id/pdpTuNgay" android:background="@drawable/bg_leave_request_input" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <Space android:layout_width="8.0dip" android:layout_height="1.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="11.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Đến" />
+                                <com.prosoftlib.control.ProDatePicker android:id="@id/pdpDenNgay" android:background="@drawable/bg_leave_request_input" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lý do *" />
+                        <EditText android:textSize="13.0sp" android:textColor="@color/leave_request_text_primary" android:textColorHint="@color/leave_request_text_hint" android:gravity="start|center|top" android:id="@id/etLyDo" android:background="@drawable/bg_leave_request_input" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginTop="8.0dip" android:hint="Nhập lý do xin nghỉ phép..." />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btChonHinh" android:background="@drawable/bg_leave_request_evidence" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <ImageView android:background="@drawable/bg_leave_request_evidence_icon" android:padding="10.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_image" android:tint="@color/primary_color" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tv_EvidenceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hình minh chứng" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/tv_EvidenceHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Chạm để chọn ảnh hoặc file đính kèm" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvImages" android:paddingBottom="8.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llSignatureRow" android:background="@drawable/bg_leave_request_evidence" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <ImageView android:background="@drawable/bg_leave_request_evidence_icon" android:padding="10.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@android:drawable/ic_menu_edit" android:tint="@color/primary_color" android:contentDescription="Chữ ký" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chữ ký phụ huynh" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/tvSignatureHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Chạm để thêm chữ ký" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/flSignaturePreview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="8.0dip">
+                        <ImageView android:id="@id/ivSignaturePreview" android:background="@drawable/bg_signature_canvas" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/btnDeleteSignature" android:background="@drawable/button_primary_circular_background" android:focusable="true" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" android:text="×" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                        <Button android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_secondary" android:id="@id/btClear" android:background="@drawable/bg_leave_request_ghost_button" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="Xóa nhập liệu" android:layout_weight="1.0" android:textAllCaps="false" />
+                        <Space android:layout_width="10.0dip" android:layout_height="1.0dip" />
+                        <Button android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btOk" android:background="@drawable/bg_leave_request_primary_button" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="Gửi xin phép" android:layout_weight="1.0" android:textAllCaps="false" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tv_HistoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lịch sử xin phép" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/tv_HistoryCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0/0 đơn" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <HorizontalScrollView android:paddingBottom="12.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/llSummaryStrip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:gravity="center" android:id="@id/tvEmptyHistory" android:background="@drawable/bg_leave_request_empty_state" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Không tìm thấy dữ liệu" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                    <ExpandableListView android:id="@id/elvThongKe" android:paddingBottom="16.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:childDivider="@android:color/transparent" android:divider="@android:color/transparent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <TextView android:textSize="40.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/btShow_pnEditor" android:background="@drawable/button_primary_circular_background" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="15.0dip" android:text="+" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:translationY="-15.0dip" />
+</RelativeLayout>

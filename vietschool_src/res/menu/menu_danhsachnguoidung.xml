@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/iSLChon" android:orderInCategory="0" android:title="Đã chọn: 0" android:showAsAction="always" />
+    <item android:icon="@drawable/go_next" android:id="@id/iNext" android:orderInCategory="0" android:title="Đã chọn: 0" android:showAsAction="always" />
+</menu>

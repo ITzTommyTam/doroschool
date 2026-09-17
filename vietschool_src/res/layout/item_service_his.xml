@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_marginHorizontal="16.0dip" card_view:cardBackgroundColor="@android:color/white" card_view:cardCornerRadius="16.0dip" card_view:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff111827" android:id="@id/txtServiceTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Đăng ký môn tự chọn" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvTrangThai" android:layout_width="wrap_content" android:layout_height="28.0dip" android:minWidth="88.0dip" android:text="Đang xử lý" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff6b7280" android:id="@id/tvNgayGui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="10:11 03/04/2026" />
+        <View android:background="#ffe5e7eb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/gray_400" android:id="@id/btnHuy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✕ Hủy" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

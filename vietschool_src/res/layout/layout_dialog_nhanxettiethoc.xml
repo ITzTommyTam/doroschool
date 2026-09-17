@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="90.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/Layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/new_main_color_level0" android:id="@id/tv_ThongBao" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Thông báo" android:layout_weight="8.0" />
+        <Button android:textColor="@color/red" android:id="@id/btn_dong" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=" X " android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/Layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/Layout3" android:layout_below="@id/Layout1">
+        <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" />
+        <ListView android:id="@id/lvNhanXetTietHoc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/Layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" />
+        <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btnChon" android:background="@drawable/border" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Chọn" android:backgroundTint="@color/new_main_color_level0" />
+    </LinearLayout>
+</RelativeLayout>

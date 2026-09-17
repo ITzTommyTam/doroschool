@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <androidx.core.widget.NestedScrollView android:layout_width="0.0dip" android:layout_height="250.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/treeMonHocDCM" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="250.0dip" android:layout_weight="1.0">
+                <android.widget.EditText android:textSize="15.0sp" android:id="@id/searchBar" android:background="@android:drawable/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Tìm kiếm giáo viên" />
+                <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/treeNguoiDungDCM" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <RadioGroup android:orientation="vertical" android:id="@id/radioGroupDCM" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioKHCM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:text="Kết hợp chuyên môn được chọn với chuyên môn đang có của giáo viên" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioLBCM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Loại bỏ chuyên môn người dùng đang có và đặt lại các chuyên môn đang chọn cho giáo viên" />
+        </RadioGroup>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_DongDCM" android:background="#ffff0018" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Hủy" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_LuuDCM" android:background="#ff1d6b78" android:padding="2.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="OK" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

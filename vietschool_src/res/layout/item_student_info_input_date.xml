@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:id="@id/tv_ControlText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nhãn" />
+    <com.prosoftlib.control.ProDatePicker android:id="@id/pdpNgay_CNTT_hocSinh" android:background="@drawable/bg_student_info_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvLoaiTraTin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Loại trả tin" android:layout_alignParentLeft="true" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgLoaiTraTin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvLoaiTraTin">
+        <RadioButton android:id="@id/rbSMS_APP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App+SMS" />
+        <RadioButton android:id="@id/rbAPP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="App" />
+        <RadioButton android:id="@id/rbSMS" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="SMS" />
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/llNoiDungTratin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rlDelay" android:layout_below="@id/rgLoaiTraTin">
+        <RelativeLayout android:id="@id/rlNoiDungAPP" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/tvLabelAPP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Nội dung App" />
+            <TextView android:textColor="@color/white" android:id="@id/btCopySMS" android:background="@color/main_color_level1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="Copy từ SMS" android:layout_toEndOf="@id/tvLabelAPP" />
+            <TextView android:id="@id/tvLengthAPP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="(0 ký tự)" android:layout_alignParentRight="true" />
+            <EditText android:gravity="center|left|top" android:id="@id/etNoiDungAPP" android:background="@drawable/edit_text_border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tvLengthAPP" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rlNoiDungSMS" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_below="@id/rlNoiDungAPP"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/tvLabelSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Nội dung SMS" />
+            <TextView android:textColor="@color/white" android:id="@id/btCopyAPP" android:background="@color/main_color_level1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="Copy từ App" android:layout_toEndOf="@id/tvLabelSMS" />
+            <TextView android:id="@id/tvLengthSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="(0 ký tự)" android:layout_alignParentRight="true" />
+            <EditText android:gravity="center|left|top" android:id="@id/etNoiDungSMS" android:background="@drawable/edit_text_border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tvLengthSMS" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/btSave"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/tvDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Thời gian trả SMS sau APP" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tvDelay" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button android:id="@id/btSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gởi yêu cầu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MyButtonDefaultStyle" />
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qltb_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/summary_bar" android:background="@drawable/bg_summary_bar_hs" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_total_hs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="9.0sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tổng HS" />
+            </LinearLayout>
+            <View android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_installed_hs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="9.0sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đã cài App" />
+            </LinearLayout>
+            <View android:background="#33ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_rate_hs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+                <TextView android:textSize="9.0sp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tỉ lệ" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="10.0dip">
+            <View android:id="@id/progress_track_hs" android:background="#40ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/progress_fill_hs" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_tree" android:background="#fffafafa" android:layout_width="152.0dip" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <View android:background="@color/qltb_border" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:textSize="12.0sp" android:id="@id/et_search" android:background="@drawable/bg_search_field_qltb" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="4.0dip" android:hint="Tìm học sinh..." android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="12.0dip" android:paddingEnd="8.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/qltb_text_tertiary" android:id="@id/tv_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/btn_sort_hs" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="HS App ↕" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginEnd="4.0dip" />
+                <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/btn_sort_ph" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="PH App ↕" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            </LinearLayout>
+            <View android:background="@color/qltb_border" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_students" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+            <TextView android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_hs_empty" android:padding="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Chọn lớp để xem danh sách" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

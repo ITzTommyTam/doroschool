@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvWarming" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Vào hôm nay, trường đã yêu cầu trả các tin nhắn cho cả lớp của bạn như bên dưới. GVCN vui lòng không yêu cầu với nội dung như vậy nữa" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_above="@id/tvThongKe" android:layout_below="@id/tvWarming" />
+    <TextView android:id="@id/tvThongKe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_above="@id/btOK" />
+    <Button android:textColor="@color/white" android:layout_gravity="fill_horizontal|center|top" android:id="@id/btOK" android:background="@color/main_color_level2" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Đồng ý" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MyButtonDefaultStyle" />
+    <com.vietschool.components.Loading android:id="@id/new_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="128.0dip" android:width="128.0dip" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M64,64m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0" android:strokeColor="@color/baitapnhanh_icon_filter_fg" android:strokeWidth="6.0" />
+    <path android:fillColor="#ff000000" android:pathData="M38,50L90,50" android:strokeColor="@color/baitapnhanh_icon_filter_fg" android:strokeWidth="6.0" android:strokeLineCap="round" />
+    <path android:fillColor="#ff000000" android:pathData="M44,64L84,64" android:strokeColor="@color/baitapnhanh_icon_filter_fg" android:strokeWidth="6.0" android:strokeLineCap="round" />
+    <path android:fillColor="#ff000000" android:pathData="M52,78L76,78" android:strokeColor="@color/baitapnhanh_icon_filter_fg" android:strokeWidth="6.0" android:strokeLineCap="round" />
+</vector>

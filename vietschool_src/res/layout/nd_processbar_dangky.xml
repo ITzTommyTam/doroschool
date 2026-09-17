@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivHuongLeft" android:background="@drawable/nd_huong_pin" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/go_next" android:layout_centerVertical="true" android:rotation="180.0" />
+        <ImageView android:id="@id/ivHuongTop" android:background="@drawable/nd_huong_pin" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/go_next" android:layout_centerHorizontal="true" android:rotation="-90.0" />
+        <ImageView android:id="@id/ivHuongRight" android:background="@drawable/nd_huong_pin" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/go_next" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/ivHuongBottom" android:background="@drawable/nd_huong_pin" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/go_next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:rotation="90.0" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlayout18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25.0dip" android:layout_centerHorizontal="true">
+        <View android:id="@id/view18" android:background="@drawable/custom_progressbar_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ivProcessDangKy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <ProgressBar android:id="@id/pbDangKy" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="0" android:secondaryProgress="0" android:indeterminate="false" android:progressDrawable="@drawable/nd_cus_progressbar" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

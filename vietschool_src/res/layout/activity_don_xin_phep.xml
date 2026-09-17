@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_leave_request_card" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/leave_request_primary" android:id="@id/tvStatusPill" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:gravity="center" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ĐƠN XIN PHÉP NGHỈ HỌC" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kính gửi:  - Ban giám hiệu nhà trường\n                  - Thầy cô giáo chủ nhiệm, thầy cô bộ môn" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/tvTenPhuHuynhContainer" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tên tôi là: " />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvTenPhuHuynh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/tvTenHocSinhLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phụ huynh em: " />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvTenHocSinh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lớp: " />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvLop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/xinphepLabel" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lý do: " />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_danger" android:id="@id/tvLyDo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/rowKhac" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Khác: " />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_danger" android:id="@id/tvKhac" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/camketLabel" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Gia đình cam kết giúp cháu tự ôn tập, làm đầy đủ bài tập được giao trong thời gian nghỉ học.\nTrân trọng cảm ơn!" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvGuiLuc" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/rowMinhChung" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Minh chứng:" />
+                    <ImageView android:id="@id/imgMinhChung" android:background="@drawable/bg_preview_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/rowChuKy" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Người làm đơn\n(Ký và ghi rõ họ tên)" android:textAlignment="center" />
+                        <ImageView android:id="@id/imgChuKy" android:layout_width="65.0dip" android:layout_height="65.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/hotenChuKy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[Họ và tên]" android:textAlignment="center" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/rowTuChoi" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_danger" android:id="@id/tvLyDoTuChoi" android:background="@drawable/bg_leave_request_status_rejected" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/rowXuLy" android:background="@drawable/card_bg" android:padding="10.0dip" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/leave_request_light_info">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/leave_request_info" android:id="@id/tvXuLyTitle" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Người xử lý: " />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvNguoiXuLy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thời gian: " />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:id="@id/tvThoiGianXuLy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

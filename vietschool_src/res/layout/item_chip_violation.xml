@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_chip_violation" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:foreground="?selectableItemBackgroundBorderless" android:minHeight="32.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/vi_pham" android:layout_marginEnd="6.0dip" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff92400e" android:ellipsize="end" android:id="@id/tvChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+</LinearLayout>

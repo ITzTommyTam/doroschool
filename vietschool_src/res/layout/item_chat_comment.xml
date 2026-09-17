@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivAvatar" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_avatar" app:civ_border_color="@color/gray" app:civ_border_width="1.5dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/txt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_comment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_margin="10.0dip" />
+        <TextView android:textSize="14.0sp" android:id="@id/txt_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff1877f2" android:id="@id/btn_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Trả lời" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="16.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Huỷ" android:backgroundTint="#ff8e8e93" style="@style/AiPrimaryButton" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sửa nội dung nhận dạng" android:layout_weight="1.0" />
+        <Button android:id="@id/saveButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lưu" style="@style/AiPrimaryButton" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/detailTitleLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffa500" android:id="@id/diffsSummaryLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    <EditText android:textColor="@android:color/black" android:gravity="start|center|top" android:id="@id/editText" android:background="@drawable/bg_ai_card" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+</LinearLayout>

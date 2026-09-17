@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/grpNhap" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/blue" android:id="@id/lblThongtinmau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1. Nhập mẫu" />
+        <TextView android:id="@id/line" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/lblThongtinmau" />
+        <TextView android:id="@id/lblNoidung" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Nội dung: " android:layout_below="@id/line" />
+        <EditText android:textColor="@color/blue" android:gravity="center|left|top" android:id="@id/edNoidung" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_toRightOf="@id/lblNoidung" android:layout_below="@id/line" android:inputType="textMultiLine" />
+        <TextView android:id="@id/lblTen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Tên mẫu: " android:layout_below="@id/edNoidung" />
+        <EditText android:textColor="@color/blue" android:id="@id/edTenmau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/lblTen" android:layout_below="@id/edNoidung" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/grDSMau" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/grpNhap">
+        <TextView android:textColor="@color/blue" android:id="@id/lblDanhsachmau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2. Danh sách mẫu" />
+        <TextView android:id="@id/lineds" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/lblDanhsachmau" />
+        <HorizontalScrollView android:id="@id/scrLstHS" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/lineds">
+            <ListView android:id="@id/lstDanhsachmau" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pbWaiter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="fitXY" android:alpha="0.2" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

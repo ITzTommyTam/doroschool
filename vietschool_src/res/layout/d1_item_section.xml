@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_margin" android:layout_marginTop="@dimen/card_margin" android:layout_marginRight="@dimen/card_margin" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <ImageView android:id="@id/section_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="5.0dip" app:srcCompat="@drawable/favorite_24px" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nổi bật" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/section_feature_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabIndicator" android:layout_width="wrap_content" android:layout_height="10.0dip" app:tabBackground="@drawable/d1_dot_selector" app:tabGravity="center" app:tabIndicator="@null" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="fixed" app:tabPaddingEnd="10.0dip" app:tabPaddingStart="10.0dip" app:tabRippleColor="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

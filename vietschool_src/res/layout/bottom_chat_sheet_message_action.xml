@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/btnReply" android:text="Trả lời" />
+    <TextView android:id="@id/btnForward" android:text="Chuyển tiếp" />
+    <TextView android:id="@id/btnCopy" android:text="Sao chép" />
+    <TextView android:id="@id/btnPin" android:text="Ghim" />
+    <TextView android:id="@id/btnReminder" android:text="Nhắc hẹn" />
+    <TextView android:id="@id/btnDelete" android:text="Xóa" />
+    <TextView android:id="@id/btnRead" android:text="Đọc" />
+</LinearLayout>

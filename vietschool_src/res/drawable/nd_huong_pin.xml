@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:startColor="#ffffdd00" android:endColor="#ffffd740" android:angle="0.0" android:type="radial" android:centerX="1.0" android:centerY="0.0" android:gradientRadius="100.0%" android:centerColor="#fff4ff85" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="2.0dip" android:color="#ffffd740" android:dashWidth="@dimen/btn_radius" />
+        </shape>
+    </item>
+</layer-list>

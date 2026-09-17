@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/pageImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="end" android:id="@id/sideGradePanel" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/togglePanelButton" android:background="@drawable/bg_xem_bai_cham_toggle" android:padding="6.0dip" android:layout_width="20.0dip" android:layout_height="60.0dip" android:src="@drawable/arrow_forward_ios_24px" android:contentDescription="Mở bảng điểm" app:tint="@color/white" />
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/sideGradePanelInside" android:background="#fffafafa" android:focusable="true" android:clickable="true" android:layout_width="320.0dip" android:layout_height="fill_parent" android:elevation="8.0dip">
+            <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/baitapnhanh_chambai_tongdiem_fg" android:gravity="center" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tổng điểm" />
+            <TextView android:textSize="27.0sp" android:textStyle="bold" android:textColor="@color/baitapnhanh_chambai_tongdiem_diem_fg" android:gravity="center" android:id="@id/totalScoreValueLabel" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0.00" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/gradeRecyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/white" android:id="@id/btnAddRow" android:background="@drawable/button_primary_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Thêm Câu" android:layout_weight="1.0" android:backgroundTint="@color/baitapnhanh_chambai_tongdiem_btn_bg" />
+                <Button android:textColor="@color/white" android:id="@id/btnSave" android:background="@drawable/button_primary_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Lưu Điểm" android:layout_weight="1.0" android:backgroundTint="@color/baitapnhanh_chambai_tongdiem_btn_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/scanReviewOverlay" android:background="#e6000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:padding="16.0dip" android:layout_width="340.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="Xác nhận kết quả AI Quét" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/scanReviewRecyclerView" android:layout_width="fill_parent" android:layout_height="260.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <Button android:textColor="@color/white" android:id="@id/btnOverwrite" android:background="@drawable/button_primary_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Ghi đè" android:layout_weight="1.0" android:backgroundTint="@color/baitapnhanh_chambai_tongdiem_btn_bg" />
+                <Button android:textColor="@color/white" android:id="@id/btnAppend" android:background="@drawable/button_primary_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Thêm mới" android:layout_weight="1.0" android:backgroundTint="@color/baitapnhanh_chambai_tongdiem_btn_bg" />
+                <Button android:textColor="@color/white" android:id="@id/btnCancelScan" android:background="@drawable/button_primary_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Hủy" android:layout_weight="1.0" android:backgroundTint="@color/baitapnhanh_chambai_tongdiem_btn_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/loadingOverlay" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/scanLine" android:background="#ff00bcd4" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/statusLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI ĐANG PHÂN TÍCH..." />
+    </FrameLayout>
+</FrameLayout>

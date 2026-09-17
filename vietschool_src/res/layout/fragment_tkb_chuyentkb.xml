@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerHorizontal="true" android:elevation="8.0dip">
+        <RelativeLayout android:id="@id/layoutTop" android:background="@drawable/button_gray_outline" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="200.0dip" android:layout_marginTop="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <com.prosoftlib.control.FreezableGridView android:id="@id/fgvNH" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_NH" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/tvMain" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="Chuyển TKB từ niên học 2023 sang 2024" />
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/layoutTop">
+            <Button android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/btnChuyenNH" android:background="#ffdc3545" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text=">> Chuyển niên học" android:textAllCaps="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

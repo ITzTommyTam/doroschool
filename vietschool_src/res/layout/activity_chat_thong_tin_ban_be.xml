@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imgGr_Avata" android:background="@drawable/bg_circle_blue" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/icon_avatar" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/tv_Name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Trần Minh Nhật" />
+        <TextView android:gravity="center" android:id="@id/tv_Status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0 bạn chung" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:backgroundTint="#fff3f1f1" card_view:cardCornerRadius="10.0dip" card_view:cardElevation="3.0dip" card_view:cardUseCompatPadding="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_SoDienThoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Số điện thoại: " />
+                <TextView android:id="@id/tv_ID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="ID: " />
+                <EditText android:gravity="start|center|top" android:id="@id/edtNoiDung" android:background="@color/white" android:padding="5.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="Nhập nội dung tại đây..." android:lines="3" android:minLines="5" android:scrollHorizontally="false" android:singleLine="false" android:inputType="textMultiLine" android:imeOptions="actionDone" android:overScrollMode="always" />
+                <TextView android:textSize="13.0dip" android:gravity="right" android:id="@id/tv_SoLuong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="60/150" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button android:textColor="#ffffffff" android:id="@id/btn_GuiYeuCau" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text=" 📤️ Gửi yêu cầu  " android:textAllCaps="false" android:backgroundTint="#ff0288d1" />
+        <Button android:textColor="#ffffffff" android:id="@id/btn_XoaYeuCau" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text=" ✖ Hủy yêu cầu  " android:textAllCaps="false" android:backgroundTint="#fff44336" />
+    </LinearLayout>
+</RelativeLayout>

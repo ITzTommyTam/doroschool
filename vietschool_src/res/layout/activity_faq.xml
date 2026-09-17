@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="#fff8fafd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/headerDivider" android:background="#ffeaecf0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="56.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bodyContainer" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <HorizontalScrollView android:id="@id/categoryScrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:fillViewport="false" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/categoryPillContainer" android:layout_width="wrap_content" android:layout_height="fill_parent" android:spacing="8.0dip" />
+        </HorizontalScrollView>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/searchFieldWrapper" android:background="@drawable/bg_search_field" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="10.0dip">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/vschat_ic_search_outline" android:tint="#ff98a2b3" android:contentDescription="Tìm kiếm" />
+                <EditText android:textSize="14.0sp" android:textColor="#ff101828" android:textColorHint="#ff98a2b3" android:id="@id/etSearch" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="Search" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" android:layout_marginStart="8.0dip" />
+                <ImageButton android:id="@id/btnClearSearch" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/close_24px" android:tint="#ff9ca3af" android:contentDescription="Xóa tìm kiếm" />
+            </LinearLayout>
+        </FrameLayout>
+        <androidx.cardview.widget.CardView android:id="@id/listCard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="12.0dip" app:cardElevation="2.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvFaq" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff667085" android:gravity="center" android:layout_gravity="center" android:id="@id/tvEmpty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không tìm thấy câu hỏi phù hợp." android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

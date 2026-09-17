@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff2f2f7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="12.0dip" app:cardElevation="@dimen/post_card_elevation" app:cardUseCompatPadding="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="40.0dip" android:paddingHorizontal="12.0dip">
+                    <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_grade_chart_24" app:tint="#ff1a80e6" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip">
+                        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:id="@id/pl_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff1a80e6" android:id="@id/pl_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="#ff9e9e9e" android:id="@id/pl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/pl_collapsed" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="#ffb0b0b0" android:ellipsize="end" android:id="@id/pl_preview" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:paddingStart="14.0dip" android:paddingEnd="40.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/pl_expanded" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:paddingRight="14.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="14.0dip">
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff4a4a4a" android:id="@id/pl_dsg_ten_ky_thi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Môn học" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:gravity="end" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="Điểm" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/pl_dsg_rows" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/pl_dsg_tong_hop_box" android:background="#fff5f7ff" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tổng hợp" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/pl_dsg_tong_hop_rows" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/pl_dsg_nhan_xet_box" android:background="#fffffae0" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nhận xét chủ nhiệm" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff4a4a4a" android:id="@id/pl_dsg_nhan_xet_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/pl_dsg_ket_qua_box" android:background="#ffe6f7ea" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff1a80e6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kết quả" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff4a4a4a" android:id="@id/pl_dsg_ket_qua_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingEnd="40.0dip">
+                        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ff9e9e9e" android:id="@id/pl_nguoi_gui" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:id="@id/pl_chi_tiet_btn" android:background="@drawable/border_new" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chi tiết" android:backgroundTint="@color/gray" android:paddingHorizontal="10.0dip" android:paddingVertical="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/pl_blur" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/pl_pin" android:padding="6.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icons_chat_pin" android:layout_marginEnd="6.0dip" />
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/pl_chevron" android:padding="3.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/keyboard_arrow_down_24px" android:layout_marginEnd="8.0dip" app:tint="#ffc7c7cc" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

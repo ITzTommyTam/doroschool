@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:backgroundTint="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/Layout_header" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/new_main_color_level0" android:id="@id/tv_ThongBao_bg" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Thông tin " android:layout_weight="1.0" />
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@id/tv_Dong" android:layout_width="30.0dip" android:layout_height="fill_parent" android:text="X" />
+    </LinearLayout>
+    <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/Layout_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/EditNhanXet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="Nhập nhận xét" android:singleLine="true" android:imeOptions="actionDone" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Học tập:" />
+                <com.sodaubai.combobox_Dialog.ComboEditText android:id="@id/editCombo_HocTap" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kỷ luật:" />
+                <com.sodaubai.combobox_Dialog.ComboEditText android:id="@id/editCombo_KyLuat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vệ sinh:" />
+                <com.sodaubai.combobox_Dialog.ComboEditText android:id="@id/editCombo_VeSinh" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hình thức dạy:" />
+                <com.prosoftlib.control.ProComboBox android:id="@id/cbo_HinThucDay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/new_main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="0.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffffff" android:id="@id/btn_Dong" android:background="@drawable/border_new" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:text="Đóng" android:backgroundTint="#ff0288d1" />
+        <Button android:textColor="#ffffffff" android:id="@id/btn_Luu" android:background="@drawable/border_new" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_margin="5.0dip" android:text="Lưu" android:backgroundTint="#ff0288d1" />
+    </LinearLayout>
+</LinearLayout>

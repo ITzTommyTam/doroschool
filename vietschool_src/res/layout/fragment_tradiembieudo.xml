@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlMainLayoutBD" android:background="@color/bg" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.prosoftlib.control.ProComboBox android:id="@id/cboBieuDo" android:background="@drawable/bg_input_dvc" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyboard_arrow_down_24px" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/black" />
+    </com.prosoftlib.control.ProComboBox>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_input_dvc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cboBieuDo" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="4.0dip">
+            <ImageView android:id="@id/ivPrevious" android:padding="5.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="@drawable/tradiembieudo_arrow_active" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Top 10 xếp hạng thi" />
+                <TextView android:textSize="10.0sp" android:ellipsize="end" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Xem chi tiết dữ liệu theo danh sách" />
+            </LinearLayout>
+            <ImageView android:id="@id/ivNext" android:padding="5.0dip" android:layout_width="47.0dip" android:layout_height="47.0dip" android:src="@drawable/tradiembieudo_arrow_active" android:rotation="180.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+            <GridLayout android:id="@id/glChartDisplay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.github.mikephil.charting.charts.BarChart android:id="@id/chart1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </GridLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llListDisplay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/llBlank" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cboBieuDo" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/medium_text_size" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không có dữ liệu" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.vietschool.components.Loading android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

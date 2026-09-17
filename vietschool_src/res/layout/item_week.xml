@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="14.0dip" app:cardElevation="0.0dip" app:strokeColor="#ffe7e7e7" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="72.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+        <RadioButton android:id="@id/radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:buttonTint="#ff2196f3" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="Tuần 36" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/radio" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="04/05/2026 - 10/05/2026" android:layout_below="@id/tvTitle" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/radio" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff2196f3" android:id="@id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hiện tại" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

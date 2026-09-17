@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioCPCD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:text="Chép phân công dạy dựa vào phân công chủ nhiệm" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/radioDVM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Dựa vào môn" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cbMonHocPCD" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <androidx.core.widget.NestedScrollView android:layout_width="0.0dip" android:layout_height="250.0dip" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/treeMonHocPCD" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="250.0dip" android:layout_weight="1.0">
+                <android.widget.EditText android:textSize="15.0sp" android:id="@id/searchBarPCD" android:background="@android:drawable/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Tìm kiếm giáo viên" android:inputType="text" android:imeOptions="actionSend" />
+                <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/treeNguoiDungPCD" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_DongPCM" android:background="#ffff0018" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Hủy" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_PCD" android:background="#ff1d6b78" android:padding="2.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="OK" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

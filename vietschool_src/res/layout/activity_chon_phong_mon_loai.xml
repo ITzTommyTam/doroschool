@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0b649c" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true">
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboKTTT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" />
+        <CheckBox android:id="@id/cbNhapDiemHSV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Nhập điểm cho học sinh vắng" android:layout_below="@id/cboKTTT" />
+        <CheckBox android:id="@id/cbNhapDiemPhucKhao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Nhập điểm phúc khảo" android:layout_below="@id/cbNhapDiemHSV" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboMonKTTT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cbNhapDiemPhucKhao" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboLoaiDiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cboMonKTTT" />
+        <Button android:textColor="@color/white" android:id="@id/btOk" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:text="Chọn" android:layout_below="@id/cboLoaiDiem" />
+    </RelativeLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:id="@id/tv_tenlienhe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nguyễn Văn A" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <TextView android:textColor="#ff186b79" android:id="@id/tv_goidien" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="☎ Call" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff186b79" android:id="@id/tv_goizalo" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="📞 Zalo" android:layout_weight="1.0" />
+            <TextView android:textColor="#ff186b79" android:id="@id/tv_email" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="📧 Email" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_secondary" android:gravity="center" android:id="@id/tv_TabTitle" android:background="@drawable/bg_student_info_tab_inactive" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="Cá nhân" android:paddingStart="14.0dip" android:paddingEnd="14.0dip" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

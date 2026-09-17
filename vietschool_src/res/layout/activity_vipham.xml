@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:paddingBottom="24.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Từ ngày" />
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="7.0dip">
+                                <Button android:textSize="13.0sp" android:textColor="@color/student_info_text_secondary" android:gravity="start|center" android:id="@id/btn_FromDate" android:background="@drawable/bg_student_info_input" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="Tất cả" android:textAllCaps="false" android:paddingStart="14.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                                <ImageView android:id="@id/btn_remove_FromDate" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="0.0dip" android:src="@drawable/cancel_24px" android:tint="@color/login_foreground" android:layout_marginEnd="3.0dip" android:elevation="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                        <Space android:layout_width="10.0dip" android:layout_height="1.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đến ngày" />
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="7.0dip">
+                                <Button android:textSize="13.0sp" android:textColor="@color/student_info_text_secondary" android:gravity="start|center" android:id="@id/btn_ToDate" android:background="@drawable/bg_student_info_input" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Tất cả" android:textAllCaps="false" android:paddingStart="14.0dip" />
+                                <ImageView android:id="@id/btn_remove_ToDate" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="0.0dip" android:src="@drawable/cancel_24px" android:tint="@color/login_foreground" android:layout_marginEnd="3.0dip" android:elevation="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Tìm kiếm" />
+                    <EditText android:textSize="13.0sp" android:textColor="@color/student_info_text_secondary" android:textColorHint="@color/student_info_text_hint" android:id="@id/edt_Search" android:background="@drawable/bg_student_info_input" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="7.0dip" android:hint="Tìm theo nội dung vi phạm..." android:paddingStart="14.0dip" android:paddingEnd="14.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:id="@id/tv_TimelineTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Danh sách ghi nhận" android:layout_weight="1.0" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/student_info_text_secondary" android:id="@id/tv_ResultCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 ghi nhận" />
+                    </LinearLayout>
+                    <View android:background="@color/student_info_border" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_EmptyState" android:padding="32.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/student_info_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không tìm thấy dữ liệu" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvTimeline" android:paddingTop="14.0dip" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

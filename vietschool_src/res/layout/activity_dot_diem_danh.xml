@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pnEditor" android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentTop="true" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông tin" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider2" />
+        <EditText android:gravity="center|left|top" android:id="@id/etTenDotDiemDanh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="Tên đợt điểm danh" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cboLoaiDiemDanh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" />
+        <com.prosoftlib.control.ProDatePicker android:id="@id/pdpNgayDiemDanh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:TextHint="Ngày điểm danh [dd/MM/yyyy]" />
+        <Button android:textColor="@color/white" android:id="@id/btOk" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Tạo đợt điểm danh" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/pnEditor" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Danh sách" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/textView1" style="@style/Divider2" />
+        <ListView android:id="@id/lvThongKe" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/line1" />
+    </RelativeLayout>
+    <TextView android:textSize="40.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/btShow_pnEditor" android:background="@drawable/button_primary_circular_background" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="15.0dip" android:text="+" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:translationY="-15.0dip" />
+</RelativeLayout>

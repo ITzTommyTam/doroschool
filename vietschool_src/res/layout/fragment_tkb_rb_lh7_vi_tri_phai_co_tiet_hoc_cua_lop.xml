@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/layout_btn">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/txt_Lop" android:background="@drawable/button_gray_outline" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:hint="Chọn lớp" android:drawableRight="@drawable/combo_down_button" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/chk_CPPhaVo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:text="Cho phép phá vỡ" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_tkb1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_tkb2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" />
+            <Button android:layout_gravity="right" android:id="@id/btn_Tap" android:background="@drawable/double_up" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_btn" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <Button android:id="@id/btn_CanhBao" android:background="@drawable/tkb_warning_30" android:layout_width="wrap_content" android:layout_height="40.0dip" android:backgroundTint="@color/colorAccent" />
+        <Button android:id="@id/btn_HuongDan" android:background="@drawable/tkb_camera" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:backgroundTint="@color/darkgray" />
+        <Button android:id="@id/btn_Luu" android:background="@drawable/tkb_save_30" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+        <Button android:id="@id/btn_Xoa" android:background="@drawable/tkb_del_30" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterViTriTietHoc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

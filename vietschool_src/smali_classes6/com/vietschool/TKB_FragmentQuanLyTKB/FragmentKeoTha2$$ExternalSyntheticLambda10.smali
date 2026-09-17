@@ -1,0 +1,38 @@
+.class public final synthetic Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2$$ExternalSyntheticLambda10;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lvietschool/prosocket/DataRowCollection$RowPredicate;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2$$ExternalSyntheticLambda10;->f$0:Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Lvietschool/prosocket/DataRow;)Z
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2$$ExternalSyntheticLambda10;->f$0:Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2;
+
+    invoke-virtual {v0, p1}, Lcom/vietschool/TKB_FragmentQuanLyTKB/FragmentKeoTha2;->lambda$LoadTKBLop$10$com-vietschool-TKB_FragmentQuanLyTKB-FragmentKeoTha2(Lvietschool/prosocket/DataRow;)Z
+
+    move-result p1
+
+    return p1
+.end method

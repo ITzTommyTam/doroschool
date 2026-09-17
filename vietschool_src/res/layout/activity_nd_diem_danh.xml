@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vietschool.nhandang.utils.CameraSourcePreview android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vietschool.nhandang.utils.GraphicOverlay android:id="@id/barcodeOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vietschool.nhandang.utils.CameraSourcePreview>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <LinearLayout android:orientation="horizontal" android:background="@color/cv_capture_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_laugh" android:layout_weight="0.0" />
+            <TextView android:textColor="@color/cadetblue" android:id="@id/txtDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="0.0" />
+            <TextView android:textColor="@color/white" android:gravity="right" android:id="@id/txtDonVi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="Thiết bị" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="23.0dip">
+        <TextView android:id="@id/txtLogCountdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="Text" android:textAlignment="textEnd" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlCapture" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ffff8c32" android:id="@id/txtNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffff0063" android:id="@id/txtNguoiDung" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                <ImageButton android:enabled="true" android:textColor="@color/white" android:id="@id/btnChangeCam" android:layout_width="50.0pt" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:src="@drawable/ic_rotate" android:text="Đổi cam" android:layout_weight="1.0" android:paddingStart="10.0dip" />
+                <ImageButton android:enabled="true" android:textColor="@color/white" android:id="@id/btnSetting" android:layout_width="50.0pt" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:src="@drawable/ic_setting" android:text="Cấu hình" android:shadowColor="@color/white" android:layout_weight="1.0" android:paddingStart="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

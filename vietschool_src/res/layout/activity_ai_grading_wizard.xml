@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topBar" android:layout_width="0.0dip" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageButton android:id="@id/closeButton" android:background="?selectableItemBackgroundBorderless" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/close_24px" android:contentDescription="Đóng" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="✨ AI Chấm nhanh" android:layout_weight="1.0" />
+        <CheckBox android:textSize="16.0sp" android:id="@id/soundToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="🔔" />
+    </LinearLayout>
+    <com.vietschool.baitapnhanh.aigrading.ui.AIStepHeaderView android:id="@id/stepHeaderView" android:layout_width="0.0dip" android:layout_height="60.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topBar" />
+    <androidx.core.widget.NestedScrollView android:layout_width="0.0dip" android:layout_height="0.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" app:layout_constraintBottom_toTopOf="@id/bottomBar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/stepHeaderView">
+        <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/stepInputForm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap" android:showDividers="middle">
+                <TextView android:text="Đề bài" style="@style/AiSectionLabel" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_ai_card" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap_small" android:showDividers="middle">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/deBaiTitleLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/deBaiPreviewLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff007aff" android:id="@id/deBaiViewFullButton" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem đầy đủ đề bài ›" />
+                </LinearLayout>
+                <TextView android:text="Bài học (không bắt buộc)" style="@style/AiSectionLabel" />
+                <EditText android:id="@id/baiHocTieuDeField" android:hint="Tiêu đề bài học" android:singleLine="true" style="@style/AiInputField" />
+                <EditText android:gravity="start|center|top" android:id="@id/baiHocNoiDungView" android:hint="Nội dung bài học (nếu có)" android:minLines="3" style="@style/AiInputField" />
+                <TextView android:text="Ảnh minh hoạ bài học (không bắt buộc)" style="@style/AiSectionLabel" />
+                <HorizontalScrollView android:id="@id/imagesScrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="76.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/imagesRow" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                </HorizontalScrollView>
+                <TextView android:text="Tiêu chí chấm điểm *" style="@style/AiSectionLabel" />
+                <EditText android:gravity="start|center|top" android:id="@id/tieuChiView" android:hint="VD:\nCâu 1 đúng đáp án: 2 điểm\nTrình bày sạch đẹp: 1 điểm\nLàm đúng phương pháp: 2 điểm" android:minLines="4" style="@style/AiInputField" />
+                <TextView android:text="Thông tin dùng khi chấm (bước 2)" style="@style/AiSectionLabel" />
+                <EditText android:id="@id/thangDiemField" android:text="10" android:hint="Thang điểm (VD: 10)" android:singleLine="true" android:inputType="numberDecimal" style="@style/AiInputField" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8fa0b5" android:id="@id/infoLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stepReview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap" android:showDividers="middle">
+                <TextView android:text="Bài nào nhận dạng xong sẽ hiện ngay — sửa nội dung nếu cần trước khi chấm" android:maxLines="3" style="@style/AiSectionLabel" />
+                <TextView android:text="📄 Đề bài" style="@style/AiGroupHeaderLabel" />
+                <LinearLayout android:orientation="vertical" android:id="@id/deBaiRowContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap" android:showDividers="middle" />
+                <TextView android:id="@id/studentGroupHeaderLabel" android:text="🧑‍🎓 Danh sách học sinh" style="@style/AiGroupHeaderLabel" />
+                <LinearLayout android:orientation="vertical" android:id="@id/studentRowsStack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap" android:showDividers="middle">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/studentRowsWaiting" android:paddingTop="32.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/studentRowsWaitingIcon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_ai_robot" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff8fa0b5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Đang chờ AI nhận dạng bài làm..." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stepPhase2Summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap_small" android:showDividers="middle">
+                <TextView android:text="Thông tin chấm điểm" style="@style/AiSectionLabel" />
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/phase2InfoLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffa500" android:id="@id/phase2WarnLabel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8fa0b5" android:id="@id/phase2CountLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/stepGrading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:divider="@drawable/divider_ai_content_gap_small" android:showDividers="middle">
+                <TextView android:text="✅ Kết quả đã chấm" style="@style/AiGroupHeaderLabel" />
+                <LinearLayout android:orientation="vertical" android:id="@id/gradedResultsStack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap" android:showDividers="middle">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gradedResultsWaiting" android:paddingTop="32.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/gradedResultsWaitingIcon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_ai_robot" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ff8fa0b5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Đang chờ AI chấm bài..." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomBar" android:paddingTop="12.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <Button android:id="@id/nhanDangButton" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="🔍 Nhận dạng ảnh bài làm" style="@style/AiPrimaryButton" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/loadingRow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/loadingRobotIcon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_ai_robot" android:layout_marginEnd="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/loadingLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/huyDongYRow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <Button android:id="@id/huyButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Huỷ" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" android:backgroundTint="#ff8e8e93" style="@style/AiPrimaryButton" />
+            <Button android:id="@id/dongYButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="✨ Chấm bài" android:layout_weight="1.0" android:layout_marginStart="6.0dip" style="@style/AiPrimaryButton" />
+        </LinearLayout>
+        <Button android:id="@id/chamBaiButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="✨ Chấm bài" style="@style/AiPrimaryButton" />
+        <LinearLayout android:orientation="vertical" android:id="@id/progressGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_ai_content_gap_small" android:showDividers="middle">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/progressLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ProgressBar android:id="@id/progressView" android:layout_width="fill_parent" android:layout_height="6.0dip" android:max="100" style="?android:progressBarStyleHorizontal" />
+            <Button android:id="@id/okButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="✔ Lưu kết quả chấm" style="@style/AiPrimaryButton" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

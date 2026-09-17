@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_chip_add_violation" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/add_48px" android:tint="#ff1f2937" android:layout_marginEnd="3.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff1f2937" android:ellipsize="end" android:id="@id/tvChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thêm vi phạm" android:maxLines="1" android:layout_marginEnd="3.0dip" />
+</LinearLayout>

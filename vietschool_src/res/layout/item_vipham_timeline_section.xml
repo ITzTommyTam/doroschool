@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="18.0dip" android:layout_height="fill_parent">
+        <View android:background="@drawable/bg_vipham_timeline_dot" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="14.0dip" />
+        <View android:background="@color/student_info_border" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+        <LinearLayout android:background="@color/student_info_primary_soft" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/student_info_text_primary" android:id="@id/tv_DayLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thứ 2 - 12/05/2026" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ViolationItems" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

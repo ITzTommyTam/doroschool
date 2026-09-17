@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/main_color_level0" android:id="@id/lbThongTinHS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Thông tin học sinh" />
+            <TextView android:id="@id/lbLineThongTinHS" android:background="@color/main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbHoTen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Họ tên:" />
+                <com.prosoftlib.control.ProComboBox android:id="@id/cbHocSinh" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" app:DisplayMemberPath="HoTen" app:SelectedValuePath="HocSinhID" />
+            </LinearLayout>
+            <TextView android:id="@id/lbNgaySinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Ngày sinh: " />
+            <TextView android:id="@id/lbGioiTinh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Giới tính: " />
+            <TextView android:id="@id/lbDanToc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Dân tộc: " />
+            <TextView android:id="@id/lbDienThoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Điện thoại: " />
+            <TextView android:id="@id/lbDiaChi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Địa chỉ: " />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbHienThiDiem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hiển thị mở rộng" />
+                <com.prosoftlib.control.TriStateToggleButton android:id="@id/switchMoRong" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:tbIsMidSelectable="false" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/lbLegendDiem" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_border_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/lbCoHKTP" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Có HK thành phố: " />
+                    <TextView android:id="@id/lbKoHKTP" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Không HK thành phố: " />
+                    <TextView android:id="@id/lbCoKT3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Có KT3: " />
+                    <TextView android:id="@id/lbHocBaHopLe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Học bạ hợp lệ: " />
+                    <TextView android:id="@id/lbKhaiSinhHopLe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Khai sinh hợp lệ: " />
+                    <TextView android:id="@id/lbDTBMonCaNam" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="ĐTB môn cả năm: " />
+                    <TextView android:id="@id/lbSoBuoiNghiLop9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Số buổi nghỉ lớp 9: " />
+                    <TextView android:id="@id/lbLoaiXetTN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Loại xét tốt nghiệp: " />
+                    <TextView android:id="@id/lbDBQNguVan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="ĐBQ ngữ văn: " />
+                    <TextView android:id="@id/lbDBQToan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="ĐBQ toán: " />
+                    <TextView android:id="@id/lbDBQMonThapNhat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="ĐBQ môn thấp nhất: " />
+                    <TextView android:id="@id/lbDBQThapNhat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="ĐBQ thấp nhất: " />
+                </LinearLayout>
+                <TextView android:background="@drawable/button_white_border_background" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Điểm" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lbLegendHocLuc" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_border_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/lbHocLucLop6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Học lực lớp 6: " />
+                    <TextView android:id="@id/lbHocLucLop7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Học lực lớp 7: " />
+                    <TextView android:id="@id/lbHocLucLop8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Học lực lớp 8: " />
+                    <TextView android:id="@id/lbHocLucLop9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Học lực lớp 9: " />
+                </LinearLayout>
+                <TextView android:background="@drawable/button_white_border_background" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Học lực" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lbLegendHanhKiem" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_border_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/lbHanhKiemLop6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Hạnh kiểm lớp 6: " />
+                    <TextView android:id="@id/lbHanhKiemLop7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Hạnh kiểm lớp 7: " />
+                    <TextView android:id="@id/lbHanhKiemLop8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Hạnh kiểm lớp 8: " />
+                    <TextView android:id="@id/lbHanhKiemLop9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Hạnh kiểm lớp 9: " />
+                </LinearLayout>
+                <TextView android:background="@drawable/button_white_border_background" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Hạnh kiểm" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lbLegendDienUTXetTNTHCS" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_border_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/lbDienUT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Diện ưu tiên: " />
+                    <TextView android:id="@id/lbGhiChuUT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Ghi chú ưu tiên: " />
+                </LinearLayout>
+                <TextView android:background="@drawable/button_white_border_background" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Diện ưu tiên xét tốt nghiệp THCS" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/lbLegendDienUTTS10" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/button_white_border_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:id="@id/lbDienUTTS10_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="Diện ưu tiên 1: " />
+                    <TextView android:id="@id/lbDienUT_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="Diện ưu tiên: " />
+                    <TextView android:id="@id/lbMaDienUTTS10_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="Mã ưu tiên: " />
+                    <TextView android:id="@id/lbDiemUTTS10_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Điểm ưu tiên: " />
+                    <TextView android:id="@id/lbDienUTTS10_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="Diện ưu tiên 2: " />
+                    <TextView android:id="@id/lbDienUT_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="Diện ưu tiên: " />
+                    <TextView android:id="@id/lbMaDienUTTS10_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="Mã ưu tiên: " />
+                    <TextView android:id="@id/lbDiemUTTS10_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="Điểm ưu tiên: " />
+                </LinearLayout>
+                <TextView android:background="@drawable/button_white_border_background" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Diện ưu tiên Tuyển sinh 10" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/main_color_level0" android:id="@id/lbNguyenVongTruongChuyen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Nguyện vọng vào trường không chuyên" />
+            <TextView android:id="@id/lbLineNguyenVongTruongChuyen" android:background="@color/main_color_level0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/lbNguyenVong1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Nguyện vọng 1:" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cbNguyenVong1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:DisplayMemberPath="TenTruong" app:SelectedValuePath="SchoolID" />
+            <TextView android:textColor="@color/gray" android:id="@id/lbDistanceNV1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:text="Khoảng cách đến trường:" />
+            <TextView android:id="@id/lbNguyenVong2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Nguyện vọng 2:" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cbNguyenVong2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:DisplayMemberPath="TenTruong" app:SelectedValuePath="SchoolID" />
+            <TextView android:textColor="@color/gray" android:id="@id/lbDistanceNV2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:text="Khoảng cách đến trường:" />
+            <TextView android:id="@id/lbNguyenVong3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Nguyện vọng 3:" />
+            <com.prosoftlib.control.ProComboBox android:id="@id/cbNguyenVong3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:DisplayMemberPath="TenTruong" app:SelectedValuePath="SchoolID" />
+            <TextView android:textColor="@color/gray" android:id="@id/lbDistanceNV3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:text="Khoảng cách đến trường:" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rlCommandZone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

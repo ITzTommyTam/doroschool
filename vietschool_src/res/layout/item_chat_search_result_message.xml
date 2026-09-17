@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_header" android:background="#ffdcdcdc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="TIN NHẮN" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <LinearLayout android:id="@id/layoutAvatar" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tvGroupName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tên nhóm tìm thấy" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff007aff" android:id="@id/tvMessageCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5 tin nhắn được tìm thấy" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:id="@id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:00" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/btHuongDan" android:orderInCategory="0" android:title="Hướng dẫn" app:showAsAction="never" />
+    <item android:id="@id/btVaoPhong" android:orderInCategory="1" android:title="Vào phòng" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/btDangDienRa" android:orderInCategory="0" android:title="Đang diễn ra" app:showAsAction="never" />
+            <item android:id="@id/btDaKetThuc" android:orderInCategory="1" android:title="Đã kết thúc" app:showAsAction="never" />
+            <item android:id="@id/btChuaBatDau" android:orderInCategory="2" android:title="Chưa bắt đầu" app:showAsAction="never" />
+            <item android:id="@id/btBaiHocCu" android:orderInCategory="3" android:title="Bài học cũ" app:showAsAction="never" />
+        </menu>
+    </item>
+    <item android:id="@id/btDiem" android:orderInCategory="2" android:title="Điểm" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/btDiemGanDay" android:orderInCategory="0" android:title="Bài học gần đây" app:showAsAction="never" />
+            <item android:id="@id/btDiemCu" android:orderInCategory="1" android:title="Bài học cũ" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

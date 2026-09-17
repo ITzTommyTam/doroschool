@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/gainsboro">
+            <TextView android:textColor="@color/black" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ID người dùng :" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_IDNguoiDung" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ID người dùng" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:backgroundTint="@color/gainsboro">
+            <TextView android:textColor="@color/black" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tên người dùng :" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_TenNguoiDung" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tên người dùng" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:backgroundTint="@color/gainsboro">
+            <TextView android:textColor="@color/black" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CMND/MST :" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_CMND" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CMND/MST" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:backgroundTint="@color/gainsboro">
+            <TextView android:textColor="@color/black" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Email  :" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_email" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Email " />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:backgroundTint="@color/gainsboro">
+            <TextView android:textColor="@color/black" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Số điện thoại :" />
+            <TextView android:textColor="@color/black" android:id="@id/tv_SDT" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Số điện thoại" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterTT" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

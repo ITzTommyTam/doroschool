@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/bg_accordian" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/tvIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="5.0dip" app:srcCompat="@drawable/favorite_24px" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/tvNumberOfItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:layout_marginRight="5.0dip" android:text="5/5" />
+        <ImageView android:id="@id/arrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/accordion_arrow_down_24px" android:rotation="0.0" />
+    </LinearLayout>
+    <View android:background="@color/card_stroke" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/card_radius" android:layout_marginRight="@dimen/card_radius" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/tvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/notification_container" android:background="@drawable/d1_circle_icon_bg" android:layout_width="65.0dip" android:layout_height="65.0dip" app:layout_constraintTop_toTopOf="@id/avatar">
+        <ImageView android:layout_gravity="center" android:id="@id/feature_icon" android:background="@drawable/d1_feature_bg" android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/feature_badge" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/feature_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="Test" android:maxLines="2" android:textAlignment="center" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+</LinearLayout>

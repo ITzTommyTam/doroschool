@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_ThongBao" android:background="@drawable/bg_dialog" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Duyệt nghỉ phép" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:id="@id/tv_ViPham" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Vi phạm đã xét:" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <LinearLayout android:background="@drawable/button_gray_outline" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                <ListView android:id="@id/lvNgayDuyetPhep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+            <TextView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="  Ngày  " />
+            <TextView android:background="@drawable/button_gray_outline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="  Ngày  " />
+        </RelativeLayout>
+        <RadioGroup android:id="@id/RadioGroup_TrangThai" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/radio_CoPhep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Có phép" />
+            <ListView android:id="@id/lv_CoPhep" android:background="@drawable/button_gray_outline" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+            <RadioButton android:id="@id/radio_KhongPhep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không phép" />
+            <ListView android:id="@id/lv_KhongPhep" android:background="@drawable/button_gray_outline" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+            <RadioButton android:id="@id/radio_KhongDuyet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Không duyệt" />
+        </RadioGroup>
+        <EditText android:id="@id/edt_LyDoTuChoi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="Nhập lý do từ chối" android:imeOptions="actionDone" />
+        <EditText android:id="@id/edt_GhiChu" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="Nhập ghi chú" android:imeOptions="actionDone" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <Button android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/btn_dialog_Dong" android:background="@drawable/bg_dialog_dong" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Đóng" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:id="@id/btn_dialog_OK" android:background="@drawable/button_white_outline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Tiếp tục" android:layout_weight="1.0" android:backgroundTint="@color/new_main_color_level0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

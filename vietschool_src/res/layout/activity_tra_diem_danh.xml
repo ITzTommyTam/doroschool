@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pnEditor" android:background="@drawable/button_white_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:animateLayoutChanges="true">
+        <com.prosoftlib.control.ProDatePicker android:id="@id/pdpTuNgay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:TextHint="Từ ngày [dd/MM/yyyy]" />
+        <com.prosoftlib.control.ProDatePicker android:id="@id/pdpDenNgay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:TextHint="Từ ngày [dd/MM/yyyy]" />
+        <Button android:textColor="@color/white" android:id="@id/btOk" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Xem" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <ListView android:id="@id/lvDSDiemDanh" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/pnEditor" />
+</RelativeLayout>

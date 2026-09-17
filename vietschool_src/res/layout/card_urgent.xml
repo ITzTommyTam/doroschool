@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/card_bg_baitapnhanh_urgent_deadline" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/baitapnhanh_urgentdealine_fg" android:id="@id/titleTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bài tập" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/darkgray" android:id="@id/groupTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Nhóm: XYZ" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/baitapnhanh_urgentdealine_fg_deadline" android:id="@id/deadlineTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="⏱ Hạn nộp: ..." />
+    </LinearLayout>
+</LinearLayout>

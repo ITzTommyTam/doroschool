@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvCount" android:background="@drawable/bg_badge_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:height="27.0dip" android:width="27.0dip" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff3a4c68" android:id="@id/tvLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="hồ sơ chờ bổ sung" android:layout_weight="1.0" android:layout_marginEnd="5.0dip" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvChip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:minWidth="88.0dip" android:text="Đang xử lý" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        </LinearLayout>
+        <View android:id="@id/viewDivider" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

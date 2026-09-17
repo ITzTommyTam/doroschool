@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:description="@string/app_widget_description" android:minWidth="40.0dip" android:minHeight="40.0dip" android:updatePeriodMillis="86400000" android:initialLayout="@layout/slider_viewer" android:previewImage="@drawable/example_appwidget_preview" android:resizeMode="horizontal|vertical" android:initialKeyguardLayout="@layout/slider_viewer" android:widgetCategory="home_screen" android:previewLayout="@layout/slider_viewer" android:targetCellWidth="1" android:targetCellHeight="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

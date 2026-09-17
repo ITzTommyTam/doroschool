@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="22.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/tv_header_CTS" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Thông tin" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_ThongTinCTS" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <GridView android:id="@id/gv_thongtinCTS" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="15.0dip" android:numColumns="1" />
+    </LinearLayout>
+</LinearLayout>

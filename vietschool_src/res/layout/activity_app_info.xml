@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/score_UIBodyBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrollView" android:layout_width="0.0dip" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/cardHeader" android:background="@drawable/card_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/score_UIBackground" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/tvLogo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginBottom="12.0dip" android:contentDescription="App Logo" app:srcCompat="@drawable/ico_vietschool_logo" />
+                    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/score_UIText800" android:layout_gravity="center_horizontal" android:id="@id/tvAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vietschool" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/score_UISecondary" android:layout_gravity="center_horizontal" android:id="@id/tvAppDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Nền tảng quản lý giáo dục" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/cardVersion" android:background="@drawable/card_bg" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardHeader">
+                <LinearLayout android:orientation="vertical" android:background="@color/score_UIBackground" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Phiên bản" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/score_UIText600" android:id="@id/tvVersion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Phiên bản hiện tại:" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/cardSupport" android:background="@drawable/card_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardVersion">
+                <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Hỗ trợ" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/score_UIText600" android:id="@id/tvWebSite" android:background="?selectableItemBackground" android:padding="8.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="vietschool.vn" android:drawablePadding="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/cardLegal" android:background="@drawable/card_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardSupport">
+                <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/score_UIText700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="Tài liệu" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/primary_color" android:id="@id/tvHDSD" android:background="?selectableItemBackground" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hướng dẫn sử dụng" android:drawablePadding="12.0dip" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/primary_color" android:id="@id/tvDieuKhoanSuDung" android:background="?selectableItemBackground" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điều khoản sử dụng" android:drawablePadding="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.vietschool.components.Loading android:id="@id/new_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

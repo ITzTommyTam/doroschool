@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:color="#66ff0000">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView2" android:layout_width="300.0dip" android:layout_height="300.0dip" android:src="@drawable/check_circle_48px" android:tint="#ff1ca2bb" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+            <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/buttonXemLichSu" android:background="@drawable/btn_primary" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Xem lịch sử điểm danh" android:layout_weight="1.0" android:drawableStart="@drawable/ic_check" android:paddingStart="10.0dip" />
+            <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/buttonThoat" android:background="@drawable/btn_primary" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Thoát" android:layout_weight="1.0" android:drawableStart="@drawable/ic_close" android:paddingStart="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

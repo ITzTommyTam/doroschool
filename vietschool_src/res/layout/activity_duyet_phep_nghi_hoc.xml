@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0b649c" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xin phép chưa được duyệt" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/textView1" style="@style/Divider2" />
+        <ListView android:id="@id/lvDSXinPhep" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/line1" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lvGroupContact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:layout_above="@id/etTenNhomMoi" android:layout_alignParentTop="true" />
+    <EditText android:id="@id/etTenNhomMoi" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="Nhóm mới" android:layout_above="@id/llCommandZone" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llCommandZone" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/btChooseGroup" android:background="@drawable/button_success_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0px" android:text="Chọn nhóm" android:layout_weight="0.5" />
+        <Button android:textColor="@color/white" android:id="@id/btClose" android:background="@drawable/button_danger_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:text="Đóng" android:layout_weight="0.5" />
+    </LinearLayout>
+</RelativeLayout>

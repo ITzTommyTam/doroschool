@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/border_new" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:layout_gravity="center" android:id="@id/edtValue" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="Nhập hoặc chọn giá trị" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    <ImageButton android:id="@id/btnDropdown" android:background="@drawable/border_new" android:layout_width="40.0dip" android:layout_height="35.0dip" android:src="@drawable/combo_down_button" />
+</LinearLayout>

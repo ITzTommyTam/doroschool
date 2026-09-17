@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlCommandFilter" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/btSearch" android:background="@drawable/button_gray_outline" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:text="" android:layout_alignParentRight="true" />
+        <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/btRefresh" android:background="@drawable/button_gray_outline" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:text="" android:layout_toStartOf="@id/btSearch" />
+        <EditText android:id="@id/etSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Số báo danh" android:layout_centerVertical="true" android:layout_toStartOf="@id/btRefresh" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlCommandNhomPhong" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlCommandFilter">
+        <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/btPrev" android:background="@drawable/button_gray_outline" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="" android:layout_alignParentLeft="true" />
+        <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/btNext" android:background="@drawable/button_gray_outline" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/red" android:gravity="center" android:id="@id/tbTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn phòng thi" android:layout_centerVertical="true" android:layout_toStartOf="@id/btNext" android:layout_toEndOf="@id/btPrev" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/svRightBottom" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rlCommandNhomPhong" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <HorizontalScrollView android:id="@id/svTopRight" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rlCommandNhomPhong" android:layout_alignParentRight="true" />
+    <HorizontalScrollView android:id="@id/svBottomRight" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/svRightBottom" android:layout_above="@id/svBottomRight" android:layout_below="@id/rlCommandNhomPhong" />
+    <RelativeLayout android:id="@id/pbReadWaiter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivOverlay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="fitXY" android:alpha="0.2" />
+        <ImageView android:id="@id/ivPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icopause" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

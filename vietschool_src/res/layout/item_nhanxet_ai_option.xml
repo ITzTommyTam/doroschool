@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_nhanxet_ai_option_unselected" android:padding="14.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/rbOption" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" android:buttonTint="@color/score_UIPrimary" />
+    <FrameLayout android:id="@id/flIconBadge" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginEnd="12.0dip">
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tvIconBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvOptionTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.5sp" android:textColor="@color/score_UIText500" android:id="@id/tvOptionSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

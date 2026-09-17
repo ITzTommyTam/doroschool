@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="15.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tên TKB: " />
+                        <EditText android:id="@id/txt_TenTKB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Nhập tên TKB" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày áp dụng: " />
+                        <com.prosoftlib.control.ProDatePicker android:id="@id/pdpNgayApDung" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                    </LinearLayout>
+                    <RadioGroup android:id="@id/RadioGroup_Check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <RadioButton android:id="@id/radio_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="1. Mỗi môn học của lớp thì sáng học tiết mấy, chiều học tiết mấy" />
+                        <RadioButton android:id="@id/radio_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Mỗi môn học, người dùng không được khai báo học sáng hay chiều, chỉ khai báo tổng tiết rồi phần mềm tự sắp ngẫu nhiên" />
+                    </RadioGroup>
+                    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <Button android:textSize="15.0dip" android:id="@id/btn_Them" android:background="@drawable/border_new" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text=" + Thêm " />
+                        <Button android:textSize="15.0dip" android:id="@id/btn_VideoHD" android:background="@drawable/border_new" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Video hướng dẫn" android:drawableLeft="@android:drawable/ic_media_play" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="center" android:background="@drawable/border_new" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="  TKB  " android:backgroundTint="@color/white" />
+            <TextView android:id="@id/tv_tapLeft" android:background="@drawable/double_down" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentRight="true" android:rotation="90.0" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/Layout2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_tapRight" android:background="@drawable/double_down" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="20.0dip" android:rotation="270.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_TKB" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterTKB" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

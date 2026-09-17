@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlDTHS" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/imgPre" android:background="@color/white" android:clickable="false" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_left" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <ImageButton android:id="@id/imgNext" android:background="@color/white" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_right" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="false" />
+        <com.prosoftlib.control.ProComboBox android:id="@id/cbHocsinh" android:background="@drawable/bg_input_dvc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/imgNext" android:layout_toRightOf="@id/imgPre" android:layout_marginHorizontal="10.0dip" android:layout_marginVertical="5.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyboard_arrow_down_24px" android:tint="@color/black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </com.prosoftlib.control.ProComboBox>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/grDiem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/rlDTHS">
+        <LinearLayout android:orientation="horizontal" android:id="@id/grdDTB" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/grDiem" android:layout_below="@id/rlDTHS">
+        <TextView android:textColor="@color/blue" android:id="@id/lblTitleHanhKiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Tổng kết" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rlXepLoai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="1.0" android:layout_below="@id/lblTitleHanhKiem">
+            <TextView android:id="@id/lblTBHL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="TBHL : " />
+            <TextView android:id="@id/lblXLHL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="XHHL : " android:layout_below="@id/lblTBHL" />
+            <TextView android:id="@id/lblTBHK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="TBHL : " />
+            <TextView android:id="@id/lblXLHK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="XHHL : " android:layout_below="@id/lblTBHK" />
+        </LinearLayout>
+        <TextView android:textColor="@color/blue" android:id="@id/lblVipham" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="Vi phạm" android:layout_below="@id/rlXepLoai" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_below="@id/lblVipham">
+            <ListView android:id="@id/lstVPhs" android:background="@color/azure" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pbWaiter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.2" android:layout_alignParentStart="true" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

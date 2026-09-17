@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlNgayNghi" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/blue" android:id="@id/lblNgaynghi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1. Số ngày nghỉ" />
+        <TextView android:id="@id/lblLine" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/lblNgaynghi" />
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lblLine">
+            <RelativeLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <TextView android:id="@id/lblCP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Có phép " android:layout_centerVertical="true" />
+                <EditText android:enabled="false" android:id="@id/edNgayCP" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_toRightOf="@id/lblCP" android:layout_alignParentRight="true" android:inputType="number" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <TextView android:id="@id/lblKP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Không phép " android:layout_centerVertical="true" />
+                <EditText android:enabled="false" android:id="@id/edNgayKP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_toRightOf="@id/lblKP" android:layout_alignParentRight="true" android:inputType="number" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlHanhkiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlNgayNghi">
+        <TextView android:textColor="@color/blue" android:id="@id/lblHanhkiem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="2. Xếp loại" />
+        <TextView android:id="@id/lblLineHK" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/lblHanhkiem" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lblLineHK">
+            <RadioButton android:id="@id/rbTot" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Tốt" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbKha" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Khá" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbTB" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="TB" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbYeu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Yếu" android:layout_weight="0.25" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlHanhkiemCN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlHanhkiem">
+        <TextView android:textColor="@color/blue" android:id="@id/lblHanhkiemCN" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="3. Xếp loại cả năm" />
+        <TextView android:id="@id/lblLineHKCN" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/lblHanhkiemCN" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lblLineHKCN">
+            <RadioButton android:id="@id/rbTotCN" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Tốt" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbKhaCN" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Khá" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbTBCN" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="TB" android:layout_weight="0.25" />
+            <RadioButton android:id="@id/rbYeuCN" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Yếu" android:layout_weight="0.25" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/groupNhapxet" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/rlHanhkiemCN">
+        <TextView android:textColor="@color/blue" android:id="@id/lblNhanxet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="3. Nhận xét" />
+        <Button android:id="@id/btnSave" android:background="@drawable/icon_save" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+        <Button android:id="@id/btnHuy" android:background="@drawable/icon_delete" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btnSave" />
+        <Button android:id="@id/btnThemMau" android:background="@drawable/icon_plus" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btnHuy" />
+        <Button android:id="@id/btnKeyboard" android:background="@drawable/icon_unikey" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btnThemMau" />
+        <Button android:id="@id/btnEnter" android:background="@drawable/icon_enter" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btnKeyboard" />
+        <Button android:id="@id/btnSpeechInput" android:background="@null" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btnEnter" />
+    </RelativeLayout>
+    <TextView android:id="@id/lblLineGroupNX" android:background="@color/main_color_level2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/groupNhapxet" />
+    <RelativeLayout android:id="@id/idNhanxet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/groupNhapxet">
+        <RelativeLayout android:id="@id/rlListMau" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <HorizontalScrollView android:id="@id/scrLstHS" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <ListView android:gravity="center|left|top" android:id="@id/lstMau" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:ems="10" android:inputType="textMultiLine" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <EditText android:gravity="center|left|top" android:id="@id/edNhapnhanxet" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:ems="10" android:layout_toLeftOf="@id/rlListMau" android:inputType="textMultiLine" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pbWaiter" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:alpha="0.2" />
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

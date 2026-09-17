@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_TenGroup" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="T" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/avatarContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_Online" android:background="@drawable/circle_red" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:backgroundTint="#ff8bc34a" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/tv_Ten" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Nguyễn Văn A" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:id="@id/tv_NoiDung" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Đang hoạt động" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_RoleTag" android:background="@drawable/bg_chip_gray" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="GV" android:paddingHorizontal="6.0dip" android:paddingVertical="1.0dip" />
+            <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/tv_right" android:background="@drawable/bg_bubble_left" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:paddingHorizontal="10.0dip" android:paddingVertical="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

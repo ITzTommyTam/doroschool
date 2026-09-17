@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/viewEmptyState" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutEmptyState" android:padding="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:background="@drawable/bg_empty_circle" android:padding="22.0dip" android:layout_width="108.0dip" android:layout_height="108.0dip">
+                <TextView android:textSize="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💤" />
+            </FrameLayout>
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff22324a" android:gravity="center" android:id="@id/tvEmptyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="Không có nội dung" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff6b7a90" android:gravity="center" android:id="@id/tvEmptyMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Vui lòng quay về danh sách phòng hoặc chọn chức năng khác để tiếp tục." android:lineSpacingExtra="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/viewBaiHoc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/main_color_level0" android:gravity="center_vertical" android:id="@id/lbMon" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Môn: " />
+            <TextView android:textStyle="bold" android:textColor="@color/main_color_level0" android:ellipsize="end" android:id="@id/lbValTenMon" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:lines="1" android:layout_weight="1.0" android:layout_toRightOf="@id/lbMon" />
+            <Button android:textColor="@color/white" android:ellipsize="end" android:id="@id/btnDinhKem" android:background="@drawable/btn_primary" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_margin="2.0dip" android:text="Đính kèm" android:lines="1" android:layout_toRightOf="@id/lbValTenMon" android:layout_alignParentRight="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+        </LinearLayout>
+        <TextView android:textColor="@color/main_color_level0" android:id="@id/lbBai" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bài: " android:layout_below="@id/LinearLayout1" android:layout_alignParentStart="true" />
+        <TextView android:textStyle="bold" android:textColor="@color/main_color_level0" android:ellipsize="end" android:id="@id/lbValTenBai" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" android:layout_toRightOf="@id/lbBai" android:layout_below="@id/LinearLayout1" android:layout_alignParentRight="true" />
+        <View android:id="@id/vLine" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/lbValTenBai" />
+        <TextView android:textColor="@color/main_color_level0" android:id="@id/btLiveStream" android:background="@drawable/btn_light" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bấm vào để mở LiveStream" android:layout_below="@id/vLine" android:textAlignment="center" />
+        <com.prosoftlib.control.ProWebView android:id="@id/wvBaiHoc" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:layout_below="@id/btLiveStream" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginStart="1.0px" android:layout_marginEnd="1.0px" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/viewBaiTap" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rlHeaderBaiTap" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/main_color_level0" android:id="@id/lbDaLam" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Làm: " android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/main_color_level0" android:id="@id/btThongTin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🧊Thông tin" android:layout_toRightOf="@id/lbDaLam" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/red" android:id="@id/btSaveChuDong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Chưa lưu: 0" android:layout_toLeftOf="@id/ivConLai" android:layout_centerVertical="true" />
+            <TextView android:id="@id/ivConLai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⌛" android:layout_toLeftOf="@id/lbConLai" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/main_color_level0" android:id="@id/lbConLai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/vLine1" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/rlHeaderBaiTap" />
+        <RelativeLayout android:id="@id/rlFooterBaiTap" android:background="@drawable/btn_light" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/rlSendOrView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/white" android:id="@id/sendButton" android:background="@drawable/btn_primary" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Nộp bài" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/white" android:id="@id/xembaiButton" android:background="@drawable/btn_secondary" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Xem bài" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/small2_text_size_sp" android:textColor="@color/white" android:id="@id/btLamLai" android:background="@drawable/btn_secondary" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_marginLeft="5.0dip" android:text="Làm lại" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+            <ImageButton android:id="@id/preButton" android:background="@drawable/btn_light_border_none" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="2.0dip" android:src="@drawable/arrow_back_48px" android:scaleType="fitCenter" android:tint="@color/main_color_level0" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_toStartOf="@id/rlSendOrView" />
+            <ImageButton android:id="@id/nextButton" android:background="@drawable/btn_light_border_none" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="2.0dip" android:src="@drawable/arrow_forward_48px" android:scaleType="fitCenter" android:tint="@color/main_color_level0" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_toEndOf="@id/rlSendOrView" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rlFooterBaiTap" android:layout_below="@id/vLine1">
+            <TextView android:textSize="@dimen/medium_text_size_sp" android:textStyle="bold" android:textColor="@color/main_color_level0" android:id="@id/lbCau" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Câu 1" />
+            <ScrollView android:id="@id/scrollViewCauHoi" android:background="@drawable/button_lightgrey_border_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="0.5">
+                <com.prosoftlib.control.ProWebView android:id="@id/lbNoiDungCauHoi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ScrollView>
+            <LinearLayout android:orientation="horizontal" android:id="@id/rlKhongCoTrongDS" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/medium_text_size_sp" android:id="@id/lbBaiLam" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bài làm" android:layout_weight="1.0" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rlKhongCoTrongDS1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <com.prosoftlib.control.TriStateToggleButton android:id="@id/switchXemLai" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" app:tbIsMidSelectable="false" />
+                    <TextView android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/orange" android:id="@id/lbKhongCoTrongDS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cần xem lại" android:layout_toLeftOf="@id/switchXemLai" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView android:id="@id/viewTn4_Tn2" android:background="@drawable/button_lightgrey_border_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="0.5">
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/rlDapAnA" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:id="@id/btDapAnA" android:background="@drawable/selector_dapan" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="A" android:layout_centerVertical="true" android:elevation="4.0dip" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnA" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/btDapAnA" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA1" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <Button android:id="@id/btDapAnB" android:background="@drawable/selector_dapan" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="B" android:layout_centerVertical="true" android:elevation="4.0dip" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/btDapAnB" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA2" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <Button android:id="@id/btDapAnC" android:background="@drawable/selector_dapan" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="C" android:layout_centerVertical="true" android:elevation="4.0dip" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/btDapAnC" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA3" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <Button android:id="@id/btDapAnD" android:background="@drawable/selector_dapan" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="D" android:layout_centerVertical="true" android:elevation="4.0dip" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/btDapAnD" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/viewTNDS" android:background="@drawable/button_lightgrey_border_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="0.5">
+                <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/rlDapAnA_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.prosoftlib.control.TriStateToggleButton android:id="@id/btDapAnA_TNDS" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="false" app:tbIsMidSelectable="false" />
+                        <TextView android:textSize="@dimen/small2_text_size_sp" android:id="@id/txtDapAnA_TNDS" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A." android:layout_toEndOf="@id/btDapAnA_TNDS" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnA_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/txtDapAnA_TNDS" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA1_TNDS" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnB_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <com.prosoftlib.control.TriStateToggleButton android:id="@id/btDapAnB_TNDS" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="false" app:tbIsMidSelectable="false" />
+                        <TextView android:textSize="@dimen/small2_text_size_sp" android:id="@id/txtDapAnB_TNDS" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B." android:layout_toEndOf="@id/btDapAnB_TNDS" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnB_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/txtDapAnB_TNDS" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA2_TNDS" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnC_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <com.prosoftlib.control.TriStateToggleButton android:id="@id/btDapAnC_TNDS" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="false" app:tbIsMidSelectable="false" />
+                        <TextView android:textSize="@dimen/small2_text_size_sp" android:id="@id/txtDapAnC_TNDS" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C." android:layout_toEndOf="@id/btDapAnC_TNDS" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnC_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/txtDapAnC_TNDS" />
+                    </RelativeLayout>
+                    <View android:id="@id/vLineDA3_TNDS" android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+                    <RelativeLayout android:id="@id/rlDapAnD_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <com.prosoftlib.control.TriStateToggleButton android:id="@id/btDapAnD_TNDS" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="false" app:tbIsMidSelectable="false" />
+                        <TextView android:textSize="@dimen/small2_text_size_sp" android:id="@id/txtDapAnD_TNDS" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D." android:layout_toEndOf="@id/btDapAnD_TNDS" />
+                        <com.prosoftlib.control.ProWebView android:gravity="center_vertical" android:id="@id/lbDapAnD_TNDS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/txtDapAnD_TNDS" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/viewTNNS" android:background="@drawable/button_lightgrey_border_background" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="0.5">
+                <TextView android:textSize="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" Nhập giá trị số thực tối đa 4 ký tự bao gồm dấu trừ (-) và dấu chấm (.). Nhấn vào nút [Chấp nhận và kiểm tra] để kiểm tra và cập nhật kết quả mới của câu hỏi này. " />
+                <EditText android:gravity="center" android:id="@id/txtTNNS" android:background="@drawable/border_new" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="" />
+                <TextView android:textColor="#ffb8001f" android:id="@id/txtKetQuaKiemTra" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <Button android:textColor="@color/white" android:id="@id/btnChapNhanVaKiemTra" android:background="@drawable/btn_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Chấp nhận và kiểm tra" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/viewTuLuan" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="2.0dip" android:layout_weight="0.5">
+                <EditText android:id="@id/txtTuLuanOLD" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="" />
+                <EditText android:textSize="@dimen/small2_text_size_sp" android:id="@id/txtTuLuan" android:background="@drawable/button_lightgrey_border_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip" android:text="" />
+                <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/main_color_level0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="File trả lời đính kèm" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/white" android:id="@id/uploadFile" android:background="@drawable/button_primary_background" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload file" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/white" android:id="@id/captureImage" android:background="@drawable/button_primary_background" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Chụp ảnh" android:layout_toLeftOf="@id/uploadFile" />
+                </RelativeLayout>
+                <HorizontalScrollView android:id="@id/svListFilePending" android:background="@drawable/button_lightgrey_border_background" android:visibility="gone" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/llListFilePending" android:layout_width="wrap_content" android:layout_height="60.0dip" />
+                </HorizontalScrollView>
+                <ScrollView android:id="@id/svListFileUploaded" android:background="@drawable/button_lightgrey_border_background" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/scrollViewFile" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+                </ScrollView>
+                <RelativeLayout android:id="@id/viewLuuTuLuan" android:paddingLeft="10.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phải lưu nội dung tự luận trước khi chuyển câu" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/white" android:id="@id/saveTuLuanButton" android:background="@drawable/button_primary_background" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lưu tự luận" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/viewThaoLuan" android:background="@color/whitesmoke" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tabTVTLHeader" android:background="@drawable/btn_elip" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <Button android:textColor="@color/gray" android:id="@id/btTabThanhVien" android:tag="4001" android:background="@drawable/btn_elip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_margin="2.0dip" android:text="Thành viên" android:layout_weight="0.5" />
+            <Button android:textColor="@color/white" android:id="@id/btTabThaoLuan" android:tag="4002" android:background="@drawable/st_btn_elip_pressed" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_margin="2.0dip" android:text="Thảo luận" android:layout_weight="0.5" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/viewChat" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabTVTLHeader">
+            <EditText android:gravity="center|left|top" android:id="@id/etThaoLuan" android:background="@drawable/st_btn_elip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:hint="📨 Nhập tin nhắn" android:maxLines="4" android:layout_toLeftOf="@id/llCommand" android:layout_alignParentBottom="true" android:inputType="textMultiLine" android:paddingStart="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+            <LinearLayout android:id="@id/llCommand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <com.prosoftlib.control.TextViewFontAwesome android:textSize="@dimen/extra2_text_size" android:textColor="#ff05798c" android:gravity="center" android:id="@id/btSend" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="" android:hint="Gởi tin" />
+            </LinearLayout>
+            <TextView android:background="@color/lightgrey" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@id/etThaoLuan" />
+            <RelativeLayout android:id="@id/rlThaoLuan" android:background="@color/white" android:padding="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/etThaoLuan"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ListView android:id="@id/lvDSThaoLuan" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/viewThanhVien" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabTVTLHeader">
+            <ExpandableListView android:id="@id/elvDSThanhVien" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:childDivider="@null" android:divider="@null" android:dividerHeight="0.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/viewDinhKem" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/dinhkem1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_login" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="@color/main_color_level0" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Học liệu đính kèm" android:layout_weight="1.0" />
+                <Button android:textColor="@color/white" android:id="@id/btnDongDinhKem" android:background="@drawable/btn_secondary" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="-5.0dip" android:text="Đóng" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+            </LinearLayout>
+            <ScrollView android:orientation="vertical" android:id="@id/dinhkem2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/dinhkem11" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/shapenhandien" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                        <TextView android:textColor="#ffffffff" android:id="@id/tvDinhKemTuongTac" android:background="@drawable/button_primary_background" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Học liệu tương tác" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/dinhkemTuongTac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/shapenhandien" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                        <TextView android:textColor="#ffffffff" android:id="@id/tvDinhKemOffice" android:background="@drawable/button_primary_background" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bài giảng điện tử" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/dinhkemOfice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/shapenhandien" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                        <TextView android:textColor="#ffffffff" android:id="@id/tvDinhKemKhac" android:background="@drawable/button_primary_background" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Dữ liệu khác" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/dinhkemKhac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

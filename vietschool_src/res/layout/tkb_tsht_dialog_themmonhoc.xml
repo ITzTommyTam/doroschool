@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tvLop" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Tên môn" />
+            <EditText android:textSize="18.0sp" android:id="@id/edtTenMon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tvKhoi" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="Tên tắt" />
+            <EditText android:textSize="18.0sp" android:id="@id/edtTenTat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btnHuyVoHieu" android:background="#ff1d6b78" android:padding="2.0dip" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Hủy vô hiệu" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_Dong" android:background="#ffff0018" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Đóng" />
+            <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_Luu" android:background="#ff1d6b78" android:padding="2.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Lưu" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

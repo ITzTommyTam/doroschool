@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/selected_border" android:background="@color/qltb_indigo" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/tv_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/qltb_text_primary" android:id="@id/tv_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingMultiplier="1.1" android:layout_marginEnd="8.0dip" />
+</LinearLayout>

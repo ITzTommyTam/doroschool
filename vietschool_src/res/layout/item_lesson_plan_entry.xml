@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="14.0dip" android:paddingEnd="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/lesson_plan_primary" android:id="@id/tv_Session" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sáng" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/lesson_plan_text_secondary" android:id="@id/tv_Period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiết 1" />
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/lesson_plan_text_primary" android:id="@id/tv_Subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Toán" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/lesson_plan_text_secondary" android:id="@id/tv_LessonTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="Bài dạy" />
+</LinearLayout>

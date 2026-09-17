@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/qltb_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/primary_color" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingHorizontal="8.0dip" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/btnBack" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/arrow_back_ios_24px" android:tint="@color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tvHeaderTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btnSearchToggle" app:layout_constraintStart_toEndOf="@id/btnBack" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/searchFieldWrapper" android:background="@drawable/bg_search_dashboard_chat" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:addStatesFromChildren="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip" android:paddingHorizontal="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btnSearchToggle" app:layout_constraintStart_toEndOf="@id/btnBack" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iconSearchInline" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/vschat_ic_search_outline" app:tint="@color/black" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/black" android:textColorHint="@color/black" android:id="@id/edtSearchMember" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="Tìm học sinh..." android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/btnSearchToggle" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/vschat_ic_search_outline" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/qltb_indigo" android:id="@id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/qltb_text_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Học sinh" />
+            </LinearLayout>
+            <View android:background="@color/qltb_border" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/qltb_emerald" android:id="@id/tv_installed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/qltb_text_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đã cài app" />
+            </LinearLayout>
+            <View android:background="@color/qltb_border" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/qltb_indigo" android:id="@id/tv_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/qltb_text_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tỉ lệ" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:id="@id/tv_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginStart="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/qltb_emerald" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ Đã cài" android:layout_marginEnd="14.0dip" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/qltb_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✕ Chưa cài" android:layout_marginEnd="14.0dip" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="— Không có dữ liệu" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff0f4ff" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:layout_width="22.0dip" android:layout_height="wrap_content" android:text="STT" />
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="HỌ TÊN" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_col_hs" android:layout_width="24.0dip" android:layout_height="wrap_content" />
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_col_cha" android:layout_width="24.0dip" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" />
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_col_me" android:layout_width="24.0dip" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/qltb_text_tertiary" android:gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="Không có học sinh nào phù hợp" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_students" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+</LinearLayout>

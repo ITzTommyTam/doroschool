@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff666666" android:id="@id/tvHeaderDate" android:background="#fff5f5f5" android:padding="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/layoutVisual" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <ImageView android:id="@id/ivThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/ivPlayVideo" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_play" android:alpha="0.8" />
+        </FrameLayout>
+        <com.vietschool.thongbao_chat.DocumentView android:id="@id/viewDocument" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.vietschool.thongbao_chat.ChatLinkPreviewView android:id="@id/viewLink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.vietschool.thongbao_chat.VoiceAudioView android:id="@id/viewVoice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tkb_lock" android:id="@id/menu_optionkhoa" android:title="Khóa tiết (*)" />
+    <item android:icon="@drawable/tkb_unlock" android:id="@id/menu_optionmokhoa" android:title="Mở khóa tiết (*)" />
+    <item android:icon="@drawable/tkb_add" android:id="@id/menu_optionthemtiet" android:title="Thêm tiết" />
+    <item android:icon="@drawable/tkb_tru" android:id="@id/menu_optionxoatiet" android:title="Xóa tiết" />
+    <item android:icon="@drawable/tkb_add" android:id="@id/menu_optionthemnghi" android:title="Thêm tiết nghỉ" />
+    <item android:icon="@drawable/tkb_tru" android:id="@id/menu_optionxoanghi" android:title="Xóa tiết nghỉ" />
+</menu>

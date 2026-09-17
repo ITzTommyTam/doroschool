@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pnEditor" android:background="@drawable/button_white_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:animateLayoutChanges="true">
+        <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loại điểm danh" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider2" />
+        <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/rbVaoTruong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vào trường" />
+            <RadioButton android:id="@id/rbRaTruong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ra khỏi trường" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/extra2_text_size" android:gravity="center" android:id="@id/tbInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <fragment android:name="com.barcodereader.BarcodeReader" android:id="@id/barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tbInfo" android:layout_below="@id/pnEditor" app:auto_focus="true" app:use_flash="false" />
+    <com.barcodereader.ScannerOverlay android:background="#22000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tbInfo" app:line_color="#ffff0000" app:line_speed="6" app:line_width="4" app:square_height="200" app:square_width="200" />
+</RelativeLayout>

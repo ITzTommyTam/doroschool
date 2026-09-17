@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootBaseCanvas" android:background="#ff0f1721" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageViewBaseCanvas" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="Bài nộp" />
+    <FrameLayout android:id="@id/overlayContainerBaseCanvas" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <com.vietschool.baitapnhanh.view.DrawingOverlayView android:id="@id/drawingView" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:id="@id/actionReceiverView" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/floatingControlView" android:background="@drawable/bg_xem_bai_cham_chip" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:elevation="6.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/closeButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/ic_baitapnhanh_chambai_x" />
+            <ImageView android:id="@id/drawToolButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/brush_24px" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/shapeToolButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/crop_square_24px" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/arrowToolButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/call_made_24px" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/noteToolButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/ic_baitapnhanh_chambai_ghichu" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/ocrButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/ic_baitapnhanh_chambai_ocr" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/undoButton" android:layout_width="@dimen/baitapnhanh_chambai_icon_size" android:layout_height="@dimen/baitapnhanh_chambai_icon_size" android:src="@drawable/ic_baitapnhanh_chambai_undo" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+            <ImageView android:id="@id/saveButton" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_baitapnhanh_chambai_check" android:layout_marginStart="@dimen/baitapnhanh_chambai_icon_margin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/navStack" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/prevButton" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_baitapnhanh_chambai_left" />
+            <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/pageLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="1 / 1" android:layout_marginHorizontal="16.0dip" />
+            <ImageView android:id="@id/nextButton" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_baitapnhanh_chambai_right" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

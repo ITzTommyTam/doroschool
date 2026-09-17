@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/Layout_TuNgay" android:paddingTop="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+            <com.prosoftlib.control.ProDatePicker android:id="@id/pdpTuNgay_ThongBao" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" app:TextHint="Từ ngày" />
+            <com.prosoftlib.control.ProDatePicker android:id="@id/pdpDenNgay_ThongBao" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" app:TextHint="Đến ngày" />
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btnXem_ThongBao" android:background="@drawable/border" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Xem" android:backgroundTint="@color/new_main_color_level0" />
+        <ListView android:id="@id/lvThongBaoDiemDanh" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_ThongBao" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

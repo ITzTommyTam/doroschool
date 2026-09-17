@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vietschool.components.postlist.PostAndCommentView android:id="@id/rv_Comment" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_above="@id/layout_footer" android:layout_below="@id/divider" />
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutReply" android:background="#fff3f3f3" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="#ff2196f3" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="8.0dip">
+                    <TextView android:textSize="14.0dip" android:id="@id/tv_reply" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:id="@id/btnCloseReply" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@android:drawable/ic_menu_close_clear_cancel" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutImagePreview" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imgPreview" android:background="#fff0f0f0" android:layout_width="56.0dip" android:layout_height="56.0dip" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/btnRemoveImagePreview" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@android:drawable/ic_menu_close_clear_cancel" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/btnMore" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icons_chat_dinhkem" />
+                <EditText android:id="@id/edtMessage" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:hint="Nhập tin nhắn..." android:maxLines="4" android:layout_weight="1.0" android:paddingVertical="10.0dip" />
+                <ImageView android:id="@id/btnSend" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/icons_chat_gui" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_Comment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

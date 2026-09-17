@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutThuongTuChon" android:background="#fff5f9f8" android:padding="6.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="1.0">
+            <com.prosoftlib.control.TreeView android:id="@id/rlDotDiem" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="2.0" />
+            <com.prosoftlib.control.TreeView android:id="@id/rlMonHoc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="6.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.prosoftlib.control.TreeView android:id="@id/rlKhoiLop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="6.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.vietschool.components.Loading android:id="@id/new_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tvtkStt" android:background="@drawable/border_cell" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="" />
+    <LinearLayout android:background="@drawable/border_cell" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="left" android:id="@id/tvtkName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/border_cell" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btntkXemAnh" android:background="@drawable/btn_primary" android:layout_width="56.0dip" android:layout_height="25.0dip" android:text="Xem" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/border_cell" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btntkDangky" android:background="@drawable/btn_primary" android:layout_width="96.0dip" android:layout_height="25.0dip" android:text="Đăng ký" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

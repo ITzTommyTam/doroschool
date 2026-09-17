@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="#ff1b7c83" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="Chỉnh sửa danh sách ghim" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icons_chat_ghim" />
+        <TextView android:textColor="#ff666666" android:gravity="center" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kéo thả để sắp xếp thứ tự ghim" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:textColor="@color/white" android:id="@id/btnDone" android:background="@drawable/button_white_outline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Xong" android:backgroundTint="@color/new_main_color_level0" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RadioGroup android:orientation="horizontal" android:id="@id/rgTab" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <RadioButton android:textSize="16.0sp" android:textColor="@drawable/tab_text_selector" android:gravity="center" android:id="@id/rbDaNhan" android:background="@drawable/tab_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="Đã nhận" android:layout_weight="1.0" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@drawable/tab_text_selector" android:gravity="center" android:id="@id/rbDaGui" android:background="@drawable/tab_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="Đã gửi" android:layout_weight="1.0" />
+        </RadioGroup>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView_LoiMoi" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_LoiMoi" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

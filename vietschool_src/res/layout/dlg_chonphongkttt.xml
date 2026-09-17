@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llCommandZone" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/btOk" android:background="@drawable/button_success_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0px" android:text="Chọn" android:layout_weight="0.5" />
+        <Button android:textColor="@color/white" android:id="@id/btCancel" android:background="@drawable/button_danger_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:text="Bỏ qua" android:layout_weight="0.5" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlNhomPhong" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llCommandZone" android:layout_alignParentTop="true" />
+</RelativeLayout>

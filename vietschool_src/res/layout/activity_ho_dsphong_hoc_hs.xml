@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/whitesmoke" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_light" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:textColor="@color/white" android:id="@id/btnTuanTruoc" android:background="@drawable/btn_light_border_none" android:padding="4.0dip" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ic_left_thin" android:scaleType="centerInside" android:tint="@color/gray_600" />
+                <Spinner android:id="@id/cboTuan" android:background="@drawable/btn_light_border_none" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="center" />
+                <ImageButton android:textColor="@color/white" android:id="@id/btnTuanSau" android:background="@drawable/btn_light_border_none" android:padding="4.0dip" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ic_right_thin" android:scaleType="centerInside" android:tint="@color/gray_600" android:text="Làm mới" />
+            </LinearLayout>
+            <ImageButton android:textColor="@color/white" android:id="@id/btRefresh" android:background="@drawable/btn_light" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_rotate" android:scaleType="centerInside" android:tint="@color/gray_600" />
+        </LinearLayout>
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:flexWrap="wrap">
+            <RadioButton android:textSize="13.0dip" android:textColor="@color/blue" android:id="@id/radTT_TatCa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tất cả" />
+            <RadioButton android:textSize="13.0dip" android:textColor="@color/teal" android:id="@id/radTT_DangDienRa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diễn ra" />
+            <RadioButton android:textSize="13.0dip" android:textColor="@color/green" android:id="@id/radTT_TrongNgayDienRa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sắp tới" />
+            <RadioButton android:textSize="13.0dip" android:textColor="@color/green" android:id="@id/radTT_SapDienRa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày mai" />
+            <RadioButton android:textSize="13.0dip" android:textColor="@color/red" android:id="@id/radTT_DaKetThuc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kết thúc" />
+        </com.google.android.flexbox.FlexboxLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="13.0dip" android:id="@id/txtSearch" android:background="@drawable/st_btn_elip" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="🔍 Tìm theo môn, giáo viên, bài học" android:paddingStart="10.0dip" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/divDSPhongHoc" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

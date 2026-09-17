@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llmahs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã HS/BH-HS: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbmahs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llgiovao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giờ vào: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbgiovao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llcaudalam" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số câu đã làm: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbcaudalam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llcauchualuu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số câu chưa lưu: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbcauchualuu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llLine" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llsophutlambai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số phút quy định: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbsophutlambai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llthoigianconlai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TG đã làm/còn lại: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbthoigianconlai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llnopbai" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+            <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nộp bài: " />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:id="@id/lbnopbai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

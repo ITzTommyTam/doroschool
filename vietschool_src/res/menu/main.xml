@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_light" android:id="@id/Menu" android:orderInCategory="0" android:title="Menu" android:showAsAction="always">
+        <menu>
+            <item android:id="@id/CreatePassword" android:orderInCategory="0" android:title="Đặt mật khẩu" />
+            <item android:id="@id/ChangePassword" android:orderInCategory="1" android:title="Đổi mật khẩu" />
+            <item android:id="@id/ChangeUser" android:orderInCategory="2" android:title="Thay đổi người dùng" />
+            <item android:id="@id/ShowConfig" android:orderInCategory="3" android:title="Cấu hình thông báo" />
+            <item android:id="@id/LogOff" android:orderInCategory="4" android:title="Đăng xuất" />
+        </menu>
+    </item>
+</menu>

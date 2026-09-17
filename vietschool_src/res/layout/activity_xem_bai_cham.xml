@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/sideGradePanel" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.84">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/gradeToggleButton" android:background="@drawable/bg_xem_bai_cham_toggle" android:padding="6.0dip" android:layout_width="32.0dip" android:layout_height="72.0dip" android:src="@drawable/arrow_forward_ios_24px" android:contentDescription="Mở bảng điểm" app:tint="@android:color/white" />
+        <LinearLayout android:orientation="vertical" android:id="@id/gradePanel" android:background="@drawable/bg_xem_bai_cham_panel" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/score_UIText500" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tổng điểm" />
+            <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="@color/score_UISuccess" android:layout_gravity="center_horizontal" android:id="@id/tvTotalScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0.00" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvGradeItems" android:paddingBottom="20.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="18.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

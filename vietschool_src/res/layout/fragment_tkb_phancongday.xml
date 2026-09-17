@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutPhanCongDay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="12.0sp" android:id="@id/btnLocDuLieu" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="Lọc dữ liệu" />
+                    <Button android:textSize="12.0sp" android:id="@id/btnPhanCongDay" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="(+)Phân công" />
+                    <Button android:textSize="12.0sp" android:id="@id/btnHuyPCD" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="(+)Hủy phân công" />
+                    <Button android:textSize="12.0sp" android:id="@id/btnTienIch" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="Tiện ích" />
+                    <Button android:textSize="12.0sp" android:id="@id/btnVDHDPCD" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="Video hướng dẫn" />
+                    <Button android:textSize="12.0sp" android:id="@id/btnHDPCDTH" android:background="@drawable/border_new" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:text="HD PC cho tiểu học" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+            <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip">
+                <RelativeLayout android:id="@id/treeGVPCD" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.prosoftlib.control.FreezableGridView android:id="@id/fgvDataPCD" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

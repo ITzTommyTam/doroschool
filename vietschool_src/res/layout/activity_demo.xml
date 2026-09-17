@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/button4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Button" android:layout_alignRight="@id/button5" />
+    <Button android:id="@id/button5" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="Button" android:layout_below="@id/button4" />
+    <com.prosoftlib.control.TextViewFontAwesome android:gravity="center" android:id="@id/textView5" android:background="@drawable/button_danger_circular_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="c" android:layout_below="@id/button5" android:rotation="-45.0" />
+</RelativeLayout>

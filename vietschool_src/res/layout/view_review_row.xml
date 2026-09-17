@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_ai_card" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/avatarImageView" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/titleLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/previewLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="4" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff007aff" android:id="@id/detailButton" android:background="?selectableItemBackground" android:padding="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Chi tiết ›" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@color/teal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/txtThongKeHeader" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Danh sách" android:layout_weight="1.0" />
+            <Button android:textColor="@color/white" android:layout_gravity="right" android:id="@id/btnLamTuoiDanhSachHS" android:background="@drawable/btn_secondary" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_margin="3.0dip" android:text="Làm tươi" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/DanhSachDiemDanh" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvDSHocSinh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

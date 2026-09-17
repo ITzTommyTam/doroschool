@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_nhap_nhan_xet_surface" android:paddingLeft="14.0dip" android:paddingTop="12.0dip" android:paddingRight="14.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/actionWrap" android:layout_toStartOf="@id/actionWrap">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvMauID" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/score_UIText600" android:ellipsize="end" android:id="@id/tvNoiDung" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/actionWrap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="14.0sp" android:textColor="@color/score_UIPrimary" android:gravity="center" android:id="@id/btEdit" android:background="@drawable/bg_nhap_nhan_xet_action_edit" android:layout_width="32.0dip" android:layout_height="32.0dip" android:text="" />
+        <com.prosoftlib.control.TextViewFontAwesome android:textSize="14.0sp" android:textColor="@color/score_UIRed" android:gravity="center" android:id="@id/btXoa" android:background="@drawable/bg_nhap_nhan_xet_action_delete" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

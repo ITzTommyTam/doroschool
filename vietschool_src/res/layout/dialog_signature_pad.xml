@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:background="#ffcccccc" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="4.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="6.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/leave_request_text_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Chữ ký phụ huynh" android:layout_weight="1.0" />
+        <ImageView android:id="@id/btnCloseSignature" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@android:drawable/ic_menu_close_clear_cancel" android:contentDescription="Đóng" />
+    </LinearLayout>
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:gravity="center" android:paddingTop="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ký tên trong khung bên dưới hoặc tải ảnh chữ ký" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <com.vietschool.xinphep.SignatureCanvasView android:id="@id/signatureCanvas" android:background="@drawable/bg_signature_canvas" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <Button android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/btnUploadSignature" android:background="@drawable/bg_leave_request_ghost_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="Tải ảnh chữ ký" android:layout_weight="1.0" android:textAllCaps="false" />
+        <Space android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        <Button android:textSize="12.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/btnClearCanvas" android:background="@drawable/bg_leave_request_ghost_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="Xoá canvas" android:layout_weight="1.0" android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <Button android:textSize="13.0sp" android:textColor="@color/leave_request_text_secondary" android:id="@id/btnRemoveSignature" android:background="@drawable/bg_leave_request_ghost_button" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="Loại bỏ" android:layout_weight="1.0" android:textAllCaps="false" />
+        <Space android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btnConfirmSignature" android:background="@drawable/bg_leave_request_primary_button" android:layout_width="0.0dip" android:layout_height="42.0dip" android:text="Xác nhận" android:layout_weight="1.0" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

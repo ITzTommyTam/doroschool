@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menus" android:orderInCategory="100" android:title="Hướng dẫn" android:showAsAction="always" app:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/icon_info" android:id="@id/mn_huongdanimage" android:orderInCategory="100" android:title="Hướng dẫn bằng ảnh" />
+            <item android:icon="@drawable/icon_info" android:id="@id/mn_huongdanvideo" android:orderInCategory="100" android:title="Hướng dẫn bằng video" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_while_conner_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tvLop" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="Họ và tên" />
+                <EditText android:textSize="15.0sp" android:id="@id/edtHoTen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tvTenTat" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tên tắt TKB" />
+                <EditText android:textSize="15.0sp" android:id="@id/edtTenTatND" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tvEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:text="Email" />
+                <EditText android:textSize="15.0sp" android:id="@id/edtEmail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tvSDT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="58.0dip" android:text="SĐT" />
+                <EditText android:textSize="15.0sp" android:id="@id/edtSDT" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:background="#ffcce5ff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Dạy môn" />
+                <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="200.0dip">
+                    <RelativeLayout android:id="@id/treeMonHoc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btnHuyVoHieuND" android:background="#ff1d6b78" android:padding="2.0dip" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Hủy vô hiệu" />
+                <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_DongND" android:background="#ffff0018" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="Hủy" />
+                <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_dialog_LuuND" android:background="#ff1d6b78" android:padding="2.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="OK" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

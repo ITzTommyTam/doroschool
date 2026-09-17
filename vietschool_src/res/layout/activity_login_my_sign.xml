@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:windowSoftInputMode="adjustResize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutInput" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginRight="20.0sp" android:layout_marginBottom="220.0dip" android:layout_alignParentBottom="true">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tài khoản" />
+        <EditText android:textSize="16.0dip" android:id="@id/txtTaiKhoan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:hint="Nhập tài khoản" android:inputType="textEmailAddress" />
+        <Button android:textColor="@color/white" android:id="@id/btnDangNhap" android:background="@drawable/button_white_outline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Đăng nhập" android:backgroundTint="@color/new_main_color_level0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layoutImg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_above="@id/LayoutInput">
+        <RelativeLayout android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo_chukydientu" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/red" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MySign" android:layout_below="@id/layoutImg" />
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterMySign" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

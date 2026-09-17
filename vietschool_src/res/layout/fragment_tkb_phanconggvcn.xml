@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <Button android:textSize="15.0dip" android:id="@id/btn_PhanCong" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="Phân công" />
+                    <Button android:textSize="15.0dip" android:id="@id/btn_HuyPhanCong" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="Hủy phân công" />
+                    <Button android:textSize="15.0dip" android:id="@id/btn_CopyPC" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="Copy từ quản lý điểm" />
+                    <Button android:textSize="15.0dip" android:textColor="@color/red" android:id="@id/btn_Video" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:text="Video hướng dẫn" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <EditText android:id="@id/itemSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Tìm kiếm giáo viên" android:inputType="text" android:imeOptions="actionSend" />
+            <RelativeLayout android:id="@id/rl_GiaoVien" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_GVCN" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="4.0" />
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterPhanCongGVCN" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

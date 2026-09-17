@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/lbTenMon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tên nhóm câu" />
+    <EditText android:id="@id/txtTenNhom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:hint="Tên nhóm câu" android:singleLine="true" android:layout_below="@id/lbTenMon" android:imeOptions="actionNext" />
+    <TextView android:id="@id/spl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/txtTenNhom" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/lbTuCau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Từ câu" android:layout_below="@id/txtTenNhom" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/spl1" />
+    <EditText android:id="@id/txtTuCau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:hint="Từ câu" android:layout_below="@id/lbTuCau" android:layout_alignParentLeft="true" android:inputType="number" android:imeOptions="actionNext" android:layout_toStartOf="@id/spl1" />
+    <TextView android:id="@id/lbDenCau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Đến câu" android:layout_toLeftOf="@id/spl1" android:layout_below="@id/txtTenNhom" android:layout_alignParentRight="true" android:layout_toEndOf="@id/spl1" />
+    <EditText android:id="@id/txtDenCau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:hint="Đến câu" android:layout_below="@id/lbDenCau" android:layout_alignParentRight="true" android:inputType="number" android:imeOptions="actionDone" android:layout_toEndOf="@id/spl1" />
+    <ImageView android:id="@id/ivDelete" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_delete" android:tint="@color/red" android:layout_alignParentRight="true" />
+</RelativeLayout>

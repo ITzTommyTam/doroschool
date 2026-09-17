@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff9fafb" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/filterCard" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.vietschool.components.Combobox.N_ComboBox android:id="@id/cbo_tkb" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/lnGroupFilterLopGV" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <RelativeLayout android:id="@id/rl_segmented" android:background="@drawable/sh_segmented_bg" android:padding="3.0dip" android:layout_width="110.0dip" android:layout_height="fill_parent">
+                <View android:id="@id/view_seg_thumb" android:background="@drawable/sh_segmented_thumb" android:layout_width="52.0dip" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_seg_lop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Lớp" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff6b7280" android:gravity="center" android:id="@id/tv_seg_gv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="GV" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.vietschool.components.Combobox.N_ComboBox android:id="@id/cbo_lop_gv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_lop_cn" android:background="@drawable/sh_spinner_select" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:paddingHorizontal="12.0dip">
+            <TextView android:textSize="14.5sp" android:textStyle="bold" android:textColor="#ff374151" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Chỉ lớp chủ nhiệm" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_lop_cn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_day_tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/groupSangChieu" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff18848c" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sáng" android:layout_weight="1.0" />
+                <View android:layout_width="40.0dip" android:layout_height="1.0dip" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff18848c" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Chiều" android:layout_weight="1.0" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_timeline" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="120.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="16.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_empty_state" android:background="#fff9fafb" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="20.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/sh_empty_state_bg" android:paddingTop="50.0dip" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:outlineProvider="background" android:paddingVertical="50.0dip">
+                <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_empty_box" android:tint="#ff43bdb2" android:alpha="0.8" />
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff6b7280" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Không có tiết" android:letterSpacing="-0.02" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@id/cvLayoutMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+        <com.vietschool.components.Loading android:layout_gravity="center" android:id="@id/pb_waiter_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationZ="100.0dip" android:indeterminateTint="#ff43bdb2" />
+    </FrameLayout>
+</LinearLayout>

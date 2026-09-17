@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:startColor="#ff7b9593" android:endColor="#ff7b9593" android:angle="90.0" android:centerColor="#ff226b63" />
+            <corners android:topLeftRadius="@dimen/btn_radius" android:topRightRadius="@dimen/btn_radius" android:bottomLeftRadius="@dimen/btn_radius" android:bottomRightRadius="@dimen/btn_radius" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:startColor="#ff7b9593" android:endColor="#ff7b9593" android:angle="90.0" android:centerColor="#ff35756e" />
+            <corners android:topLeftRadius="@dimen/btn_radius" android:topRightRadius="@dimen/btn_radius" android:bottomLeftRadius="@dimen/btn_radius" android:bottomRightRadius="@dimen/btn_radius" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:startColor="#ffdedede" android:endColor="#ffdbdbdb" android:angle="90.0" android:centerColor="#ffc7c7c7" />
+            <corners android:topLeftRadius="@dimen/btn_radius" android:topRightRadius="@dimen/btn_radius" android:bottomLeftRadius="@dimen/btn_radius" android:bottomRightRadius="@dimen/btn_radius" />
+        </shape>
+    </item>
+</selector>

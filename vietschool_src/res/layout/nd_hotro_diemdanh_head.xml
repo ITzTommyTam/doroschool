@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/c_color2" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@color/aliceblue" android:gravity="center" android:id="@id/tv_ht_stt_head" android:layout_width="35.0dip" android:layout_height="wrap_content" android:text="STT" />
+    <TextView android:textStyle="bold" android:textColor="@color/aliceblue" android:gravity="center" android:id="@id/tv_ht_name_head" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Họ và tên" android:layout_weight="1.0" />
+    <TextView android:textStyle="bold" android:textColor="@color/aliceblue" android:gravity="center" android:id="@id/tv_ht_diemdanh_head" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Chức năng" />
+</LinearLayout>

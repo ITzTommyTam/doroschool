@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/qltb_indigo" android:gravity="center" android:id="@id/tv_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/qltb_text_primary" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="9.0sp" android:textStyle="bold" android:id="@id/tv_leader_badge" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trưởng nhóm" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@color/qltb_text_tertiary" android:id="@id/tv_role" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="9.0sp" android:textStyle="bold" android:id="@id/tv_app_badge" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

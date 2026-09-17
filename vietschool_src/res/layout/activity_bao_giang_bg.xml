@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.prosoftlib.control.ProComboBox android:id="@id/cboTuan" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.prosoftlib.control.FreezableGridView android:id="@id/fgv_BaoGiang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cboTuan" />
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_BaoGiang" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

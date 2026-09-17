@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/btnNavigate" android:background="#ff1d6b78" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ico_menutkb" />
+            <HorizontalScrollView android:background="#ff1d6b78" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.prosoftlib.control.ProComboBox android:gravity="center" android:layout_gravity="center" android:id="@id/cboTKB" android:background="@drawable/button_gray_outline" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:backgroundTint="@color/white" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_DS_TKB" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Danh sách" android:backgroundTint="#ff1d6b78" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_SoTietHoc" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2. Số tiết học" android:drawableRight="@drawable/combo_down_button" android:backgroundTint="#ff1d6b78" android:drawableTint="@color/gray_400" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_TaoRangBuoc" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. Tạo ràng buộc" android:drawableRight="@drawable/combo_down_button" android:backgroundTint="#ff1d6b78" android:drawableTint="@color/gray_400" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_SapTKB" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. Sắp TKB" android:backgroundTint="#ff1d6b78" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_XemKeoTha" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. Xem và kéo thả TKB" android:drawableRight="@drawable/combo_down_button" android:backgroundTint="#ff1d6b78" android:drawableTint="@color/gray_400" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_InAn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. In" android:backgroundTint="#ff1d6b78" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/gray_400" android:id="@id/btn_CongBo" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7. Công bố" android:backgroundTint="#ff1d6b78" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:id="@id/Layout1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/conten_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/Layout2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/Layout_Left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:id="@id/rl_ThuMuc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/btn_moveTKB" android:paddingLeft="5.0dip" android:layout_width="30.0dip" android:layout_height="wrap_content" android:src="@drawable/tkb_move_v1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/Layout_Right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" android:layout_alignLeft="@id/Layout_Left" android:layout_alignParentRight="true">
+                <FrameLayout android:id="@id/layout_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterTKB" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

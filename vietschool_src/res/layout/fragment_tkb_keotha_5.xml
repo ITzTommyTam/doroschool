@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearlayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout1TestTouch" android:background="#ffe3fffe" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                        <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="Thời khóa biểu Học Sinh" />
+                    </LinearLayout>
+                    <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="35.0dip" android:fillViewport="true" android:scrollIndicators="left|right"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="200.0dip" android:layout_height="35.0dip">
+                            <RadioButton android:layout_gravity="center_horizontal" android:id="@id/checkboxSang" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:checked="true" android:text="Sáng" />
+                            <RadioButton android:layout_gravity="center_horizontal" android:id="@id/checkboxChieu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="Chiều" />
+                            <CheckBox android:layout_gravity="center_horizontal" android:id="@id/checkboxHienTenMon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="Hiện tên Phòng" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.prosoftlib.control.FreezableGridView_TKB android:id="@id/fgvDataKTLop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbKTWaiter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

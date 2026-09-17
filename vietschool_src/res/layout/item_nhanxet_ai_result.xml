@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_nhap_nhan_xet_surface" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/dotResultStatus" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/score_UIText900" android:id="@id/tvResultName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/cbResultSelected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/score_UIPrimary" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/score_UIText700" android:id="@id/tvResultText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+</LinearLayout>

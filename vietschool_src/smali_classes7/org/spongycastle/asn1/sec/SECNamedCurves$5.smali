@@ -1,0 +1,174 @@
+.class final Lorg/spongycastle/asn1/sec/SECNamedCurves$5;
+.super Lorg/spongycastle/asn1/x9/X9ECParametersHolder;
+.source "SECNamedCurves.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/spongycastle/asn1/sec/SECNamedCurves;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 144
+    invoke-direct {p0}, Lorg/spongycastle/asn1/x9/X9ECParametersHolder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected createParameters()Lorg/spongycastle/asn1/x9/X9ECParameters;
+    .locals 16
+
+    .line 148
+    const-string v0, "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFAC73"
+
+    invoke-static {v0}, Lorg/spongycastle/asn1/sec/SECNamedCurves;->access$000(Ljava/lang/String;)Ljava/math/BigInteger;
+
+    move-result-object v2
+
+    .line 149
+    sget-object v3, Lorg/spongycastle/math/ec/ECConstants;->ZERO:Ljava/math/BigInteger;
+
+    const-wide/16 v0, 0x7
+
+    .line 150
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    move-result-object v4
+
+    .line 152
+    const-string v0, "0100000000000000000001B8FA16DFAB9ACA16B6B3"
+
+    invoke-static {v0}, Lorg/spongycastle/asn1/sec/SECNamedCurves;->access$000(Ljava/lang/String;)Ljava/math/BigInteger;
+
+    move-result-object v5
+
+    const-wide/16 v0, 0x1
+
+    .line 153
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    move-result-object v6
+
+    .line 155
+    new-instance v7, Lorg/spongycastle/math/ec/endo/GLVTypeBParameters;
+
+    new-instance v8, Ljava/math/BigInteger;
+
+    const-string v0, "9ba48cba5ebcb9b6bd33b92830b2a2e0e192f10a"
+
+    const/16 v1, 0x10
+
+    invoke-direct {v8, v0, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    new-instance v9, Ljava/math/BigInteger;
+
+    const-string v0, "c39c6c3b3a36d7701b9c71a1f5804ae5d0003f4"
+
+    invoke-direct {v9, v0, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    new-instance v0, Ljava/math/BigInteger;
+
+    const-string v10, "9162fbe73984472a0a9e"
+
+    invoke-direct {v0, v10, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    new-instance v11, Ljava/math/BigInteger;
+
+    const-string v12, "-96341f1138933bc2f505"
+
+    invoke-direct {v11, v12, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    const/4 v12, 0x2
+
+    new-array v13, v12, [Ljava/math/BigInteger;
+
+    const/4 v14, 0x0
+
+    aput-object v0, v13, v14
+
+    const/4 v0, 0x1
+
+    aput-object v11, v13, v0
+
+    new-instance v11, Ljava/math/BigInteger;
+
+    const-string v15, "127971af8721782ecffa3"
+
+    invoke-direct {v11, v15, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    new-instance v15, Ljava/math/BigInteger;
+
+    invoke-direct {v15, v10, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    new-array v10, v12, [Ljava/math/BigInteger;
+
+    aput-object v11, v10, v14
+
+    aput-object v15, v10, v0
+
+    new-instance v12, Ljava/math/BigInteger;
+
+    const-string v0, "9162fbe73984472a0a9d0590"
+
+    invoke-direct {v12, v0, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    move-object v11, v10
+
+    move-object v10, v13
+
+    new-instance v13, Ljava/math/BigInteger;
+
+    const-string v0, "96341f1138933bc2f503fd44"
+
+    invoke-direct {v13, v0, v1}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;I)V
+
+    const/16 v14, 0xb0
+
+    invoke-direct/range {v7 .. v14}, Lorg/spongycastle/math/ec/endo/GLVTypeBParameters;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;[Ljava/math/BigInteger;[Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;I)V
+
+    .line 168
+    new-instance v1, Lorg/spongycastle/math/ec/ECCurve$Fp;
+
+    invoke-direct/range {v1 .. v6}, Lorg/spongycastle/math/ec/ECCurve$Fp;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+
+    invoke-static {v1, v7}, Lorg/spongycastle/asn1/sec/SECNamedCurves;->access$200(Lorg/spongycastle/math/ec/ECCurve;Lorg/spongycastle/math/ec/endo/GLVTypeBParameters;)Lorg/spongycastle/math/ec/ECCurve;
+
+    move-result-object v0
+
+    .line 171
+    new-instance v7, Lorg/spongycastle/asn1/x9/X9ECPoint;
+
+    const-string v1, "043B4C382CE37AA192A4019E763036F4F5DD4D7EBB938CF935318FDCED6BC28286531733C3F03C4FEE"
+
+    invoke-static {v1}, Lorg/spongycastle/util/encoders/Hex;->decode(Ljava/lang/String;)[B
+
+    move-result-object v1
+
+    invoke-direct {v7, v0, v1}, Lorg/spongycastle/asn1/x9/X9ECPoint;-><init>(Lorg/spongycastle/math/ec/ECCurve;[B)V
+
+    move-object v8, v5
+
+    .line 175
+    new-instance v5, Lorg/spongycastle/asn1/x9/X9ECParameters;
+
+    const/4 v10, 0x0
+
+    move-object v9, v6
+
+    move-object v6, v0
+
+    invoke-direct/range {v5 .. v10}, Lorg/spongycastle/asn1/x9/X9ECParameters;-><init>(Lorg/spongycastle/math/ec/ECCurve;Lorg/spongycastle/asn1/x9/X9ECPoint;Ljava/math/BigInteger;Ljava/math/BigInteger;[B)V
+
+    return-object v5
+.end method

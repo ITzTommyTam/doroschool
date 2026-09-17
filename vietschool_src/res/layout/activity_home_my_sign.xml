@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:padding="10.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="9.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutChungThuSo" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_chungthuso" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Danh sách chứng thư số" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutDSXacThuc" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_dsxacthuc" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Danh sách xác thực" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutDangKyThietBi" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_thietbi" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tv_thietbi" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Đăng ký thiết bị" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="9.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutQuanLyTB" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_quanlythietbi" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Quản lý thiết bị" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutThongTinNguoiDung" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_thongtinnguoidung" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Thông tin người dùng" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutLichSuKy" android:padding="20.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/chukyso_lichsuky" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Lịch sử ký" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiterMySign" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

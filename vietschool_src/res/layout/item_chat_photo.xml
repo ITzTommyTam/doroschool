@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <ImageView android:id="@id/imgPhoto" android:background="@drawable/border_new" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:id="@id/overlay" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/tvOrder" android:background="@drawable/icon_avatar" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_margin="6.0dip" />
+    </FrameLayout>
+</LinearLayout>

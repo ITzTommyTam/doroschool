@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRootLayout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/svRightBottom" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <HorizontalScrollView android:id="@id/svTopRight" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <HorizontalScrollView android:id="@id/svBottomRight" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/svRightBottom" android:layout_above="@id/svBottomRight" android:layout_below="@id/svTopRight" />
+    <RelativeLayout android:id="@id/pbWaiter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivOverlay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="fitXY" android:alpha="0.2" />
+        <ImageView android:id="@id/ivPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icopause" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/ibTop" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/top" android:layout_alignBottom="@id/LayoutMain" android:layout_alignParentLeft="true" android:layout_alignParentBottom="false" android:alpha="0.5" />
+</RelativeLayout>

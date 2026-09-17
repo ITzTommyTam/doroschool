@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="4.0">
+            <com.prosoftlib.control.ProComboBox android:id="@id/cboGiaoVien" android:background="@drawable/button_gray_outline" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@drawable/border_new" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <CheckBox android:id="@id/chk_Sang" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Sáng" />
+                    <CheckBox android:id="@id/chk_Chieu" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Chiều" />
+                </LinearLayout>
+                <TextView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Chọn buổi" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/border_new" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_Mau" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="8.0">
+                        <RadioButton android:textSize="13.0dip" android:id="@id/radio_M1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:text="Mẫu 1" android:layout_weight="2.0" />
+                        <RadioButton android:textSize="13.0dip" android:id="@id/radio_M2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Mẫu 2" android:layout_weight="2.0" />
+                        <RadioButton android:textSize="13.0dip" android:id="@id/radio_M3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Mẫu 3" android:layout_weight="2.0" />
+                        <RadioButton android:textSize="13.0dip" android:id="@id/radio_M4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Mẫu 4" android:layout_weight="2.0" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Chọn mẫu thống kê" />
+            </RelativeLayout>
+            <Button android:layout_gravity="right" android:id="@id/btn_Xem" android:background="@drawable/border_new" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Xem" android:drawableLeft="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="3.0">
+            <RelativeLayout android:id="@id/rl_KhoiLop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="3.0">
+            <RelativeLayout android:id="@id/rl_MonHoc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.prosoftlib.control.WaiterProcess android:id="@id/pbWaiter_ThongKeTiet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

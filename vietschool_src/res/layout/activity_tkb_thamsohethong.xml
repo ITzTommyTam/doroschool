@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="#ff1d6b78" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center" android:id="@id/btnNavigate" android:background="@android:color/transparent" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_menutkb" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:tabMode="scrollable" />
+    </LinearLayout>
+    <com.vietschool.TKB_QuanLyTKB.NonSwipeableViewPager android:id="@id/viewPageTSHT" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

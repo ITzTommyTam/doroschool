@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_nav" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.prosoftlib.control.SegmentedGroup android:orientation="horizontal" android:id="@id/sgMode" android:background="@drawable/bg_segmented_group" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <RadioButton android:id="@id/btnThuong" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:text="Chi tiết" />
+            <RadioButton android:id="@id/btnTuChon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Tổng kết" />
+            <RadioButton android:id="@id/btnChuyenDe" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Phân tích" />
+        </com.prosoftlib.control.SegmentedGroup>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/card_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:clipToOutline="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tab_nav">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

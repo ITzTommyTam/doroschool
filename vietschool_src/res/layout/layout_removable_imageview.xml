@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.prosoftlib.control.TextViewFontAwesome android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/btn_close" android:background="@drawable/button_danger_circular_background" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="" />
+</FrameLayout>
