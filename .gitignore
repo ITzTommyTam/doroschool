@@ -1,0 +1,18 @@
+# Build & caches
+**/build/
+.gradle/
+*.dex
+
+# APKs & ZIPs
+*.apk
+*.apks
+*.idsig
+*.zip
+splits_to_merge/
+
+# Tool JARs (không nên đưa lên repo vì dung lượng lớn)
+*.jar
+
+# OS junk
+.DS_Store
+Thumbs.db
