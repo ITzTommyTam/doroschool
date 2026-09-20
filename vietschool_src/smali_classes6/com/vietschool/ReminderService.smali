@@ -438,32 +438,9 @@
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 0
-
-    .line 181
-    :try_start_0
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/vietschool/ReminderService;->h:Ljava/lang/Thread$UncaughtExceptionHandler;
-
-    invoke-virtual {p1, p2}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p1
-
-    .line 183
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
-
-    :goto_0
-    const/4 p1, 0x2
-
-    return p1
+    .registers 4
+    const/4 v0, 0x2
+    return v0
 .end method
 
 .method public onTaskRemoved(Landroid/content/Intent;)V
