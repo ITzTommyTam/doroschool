@@ -17,9 +17,9 @@
         <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/groups_24px" app:tint="#ff555555" />
         <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đổi mật khẩu thành viên" android:maxLines="1" android:layout_marginStart="14.0dip" />
     </LinearLayout>
-    <LinearLayout android:gravity="center_vertical" android:id="@id/thong_tin_ung_dung" android:background="?selectableItemBackground" android:layout_width="200.0dip" android:layout_height="48.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/thong_tin_ung_dung" android:background="?selectableItemBackground" android:layout_width="200.0dip" android:layout_height="48.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:visibility="gone">
         <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/info_24px" app:tint="#ff555555" />
-        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông tin ứng dụng" android:maxLines="1" android:layout_marginStart="14.0dip" />
+        <TextView android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="" />
     </LinearLayout>
     <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="1.0dip" />
     <LinearLayout android:gravity="center_vertical" android:id="@id/dang_xuat" android:background="?selectableItemBackground" android:layout_width="200.0dip" android:layout_height="48.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">

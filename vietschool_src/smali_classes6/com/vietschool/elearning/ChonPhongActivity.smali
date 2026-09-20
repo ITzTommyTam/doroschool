@@ -355,13 +355,11 @@
 
     move-result-object v5
 
-    sget v6, Lcom/vietschool/R$color;->white:I
+    const v5, -0xe7e7e8
 
-    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Lcom/prosoftlib/control/FreezableGridView;->SetAlternateRowColor(I)V
+        const v5, -0xe7e7e8
+    # Bỏ qua SetAlternateRowColor để nền đồng nhất
+    invoke-virtual {v4, v5}, Lcom/prosoftlib/control/FreezableGridView;->setBackgroundColor(I)V
 
     .line 462
     iget-object v4, p0, Lcom/vietschool/elearning/ChonPhongActivity;->fgHSPhong:Lcom/prosoftlib/control/FreezableGridView;
@@ -547,7 +545,7 @@
     .line 493
     :cond_4
     :goto_1
-    const-string v3, "#808080"
+    const-string v3, "#212121"
 
     .line 494
     sget p1, Lcom/prosoftlib/R$drawable;->button_history_background:I

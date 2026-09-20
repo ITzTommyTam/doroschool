@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btRefresh" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutMain" android:background="#121212" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btRefresh" />
     <Button android:textSize="@dimen/medium_text_size_sp" android:textColor="@color/white" android:id="@id/btRefresh" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Làm mới danh sách" android:layout_alignParentBottom="true" />
     <com.vietschool.components.Loading android:id="@id/pbWaiter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </RelativeLayout>

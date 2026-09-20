@@ -76,8 +76,8 @@
     <color name="bs_danger_color">#aadc3545</color>
     <color name="bs_info_color">#aa17a2b8</color>
     <color name="bs_light_color">#aacacaca</color>
-    <color name="bs_primary_color">#aa1e88e5</color>
-    <color name="bs_primary_color_act">#aa43a3f8</color>
+    <color name="bs_primary_color">#ff242424</color>
+    <color name="bs_primary_color_act">#ff383838</color>
     <color name="bs_secondary_color">#aab1beca</color>
     <color name="bs_success_color">#aa28a745</color>
     <color name="bs_success_color_pressed">#aa12d33e</color>

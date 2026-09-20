@@ -74,7 +74,8 @@
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getColor(I)I
 
-    move-result p2
+    move-result p2    const/4 p2, -0x1
+
 
     invoke-virtual {p1, p2}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V
 

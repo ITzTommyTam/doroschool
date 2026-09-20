@@ -3559,7 +3559,8 @@
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
 
-    move-result v2
+    move-result v2    const/4 v2, -0x1
+
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -5325,7 +5326,8 @@
 
     if-eqz p5, :cond_0
 
-    .line 1658
+    .line 1658    const/4 p5, -0x1
+
     invoke-virtual {p4, p5}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_0
@@ -5826,7 +5828,8 @@
 
     invoke-static {v3}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
-    move-result v3
+    move-result v3    const/4 v3, -0x1
+
 
     invoke-virtual {v12, v3}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V
 
@@ -6467,7 +6470,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 343
+    .line 343    const/4 p3, -0x1
+
     invoke-virtual {p1, p3}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V
 
     :cond_0
@@ -7179,7 +7183,8 @@
 
     if-eqz v2, :cond_0
 
-    .line 1875
+    .line 1875    const/4 p2, -0x1
+
     invoke-virtual {v2, p2}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_0
@@ -7253,7 +7258,8 @@
 
     if-eqz v2, :cond_0
 
-    .line 1936
+    .line 1936    const/4 p2, -0x1
+
     invoke-virtual {v2, p2}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_0
@@ -7444,7 +7450,8 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 1779
+    .line 1779    const/4 p1, -0x1
+
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
     add-int/lit8 v0, v0, 0x1
@@ -7995,7 +8002,8 @@
 
     const/high16 p2, -0x1000000
 
-    .line 1457
+    .line 1457    const/4 p2, -0x1
+
     invoke-virtual {p1, p2}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V
 
     .line 1458
@@ -8073,7 +8081,8 @@
 
     invoke-static {p1, v1}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
-    move-result p1
+    move-result p1    const/4 p1, -0x1
+
 
     invoke-virtual {v0, p1}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V
 

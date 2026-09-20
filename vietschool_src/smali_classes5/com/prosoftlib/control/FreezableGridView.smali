@@ -7562,6 +7562,14 @@
 
     invoke-direct {v0, v1}, Lcom/prosoftlib/control/ProTextView;-><init>(Landroid/content/Context;)V
 
+    const v1, -0xe7e7e8
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundColor(I)V
+
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
     const/4 v1, -0x1
 
     .line 1402
@@ -7599,6 +7607,10 @@
     .line 1407
     invoke-virtual {v0, p1}, Lcom/prosoftlib/control/ProTextView;->setGravity(I)V
 
+        const v1, -0xe7e7e8
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundColor(I)V
+    const/4 v1, -0x1
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
     return-object v0
 .end method
 
@@ -7884,6 +7896,14 @@
 
     invoke-direct {p1, v0}, Lcom/prosoftlib/control/ProTextView;-><init>(Landroid/content/Context;)V
 
+    const v0, -0xdedede
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setBackgroundColor(I)V
+
+    const/4 v0, -0x1
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
+
     .line 1428
     invoke-virtual {p1, p2}, Lcom/prosoftlib/control/ProTextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -7920,6 +7940,14 @@
     iget-object v1, p0, Lcom/prosoftlib/control/FreezableGridView;->context:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/prosoftlib/control/ProTextView;-><init>(Landroid/content/Context;)V
+
+    const v1, -0xe7e7e8
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackgroundColor(I)V
+
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     const/4 v1, -0x1
 
