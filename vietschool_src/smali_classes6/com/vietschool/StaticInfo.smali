@@ -1162,7 +1162,7 @@
 
     move-result-object v3
 
-    const-string v4, "VietSchool: "
+    const-string v4, "Doroschool: "
 
     invoke-static {v4, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1293,7 +1293,7 @@
 
     move-result-object v4
 
-    const-string v5, "VietSchool: "
+    const-string v5, "Doroschool: "
 
     invoke-static {v5, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

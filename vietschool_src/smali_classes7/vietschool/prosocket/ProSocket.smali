@@ -3411,11 +3411,7 @@
 
     move-result-object v6
 
-    iget v6, v6, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    invoke-static {v6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v2
+    const-string v2, "551" 
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_1

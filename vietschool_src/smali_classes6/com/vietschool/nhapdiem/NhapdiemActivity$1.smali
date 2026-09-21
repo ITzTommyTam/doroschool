@@ -82,7 +82,7 @@
 
     const-string v4, "L\u01b0u \u0111i\u1ec3m kh\u00f4ng th\u00e0nh c\u00f4ng do kh\u00f4ng k\u1ebft n\u1ed1i \u0111\u01b0\u1ee3c v\u1edbi m\u00e1y ch\u1ee7. (L\u01b0u \u00fd: C\u00e1c con \u0111i\u1ec3m m\u00e0u \u0111\u1ecf s\u1ebd kh\u00f4ng \u0111\u01b0\u1ee3c l\u01b0u v\u00e0o h\u1ec7 th\u1ed1ng cho \u0111\u1ebfn khi n\u00f3 chuy\u1ec3n sang m\u00e0u xanh)."
 
-    const-string v5, "Vietschool"
+    const-string v5, "Doroschool"
 
     const v6, 0x1080027
 

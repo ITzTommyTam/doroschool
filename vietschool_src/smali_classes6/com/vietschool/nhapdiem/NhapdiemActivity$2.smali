@@ -82,7 +82,7 @@
 
     const-string/jumbo v4, "\u0110\u00e3 hi\u1ec3u"
 
-    const-string v5, "Vietschool"
+    const-string v5, "Doroschool"
 
     const v6, 0x1080027
 

@@ -229,7 +229,7 @@
 
     const/16 v4, 0x1a
 
-    const-string v5, "VietSchool"
+    const-string v5, "Doroschool"
 
     if-lt v3, v4, :cond_5
 

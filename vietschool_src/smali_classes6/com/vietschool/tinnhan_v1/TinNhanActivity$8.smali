@@ -67,7 +67,7 @@
     if-nez v2, :cond_4
 
     .line 329
-    const-string v2, "VietSchool:Tin"
+    const-string v2, "Doroschool:Tin"
 
     const-string v3, "setOnItemClickListener: "
 

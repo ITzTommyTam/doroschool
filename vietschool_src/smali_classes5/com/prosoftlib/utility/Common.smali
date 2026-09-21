@@ -399,10 +399,12 @@
 .method public static ForceUpdate_VersionDialog(Landroid/content/Context;)V
     .locals 2
 
+    return-void
+
     .line 189
     const-string v0, "Th\u00f4ng b\u00e1o"
 
-    const-string v1, "Phi\u00ean b\u1ea3n VietSchool \u0111\u00e3 c\u0169, Vui l\u00f2ng \u0111\u1ebfn CHPlay \u0111\u1ec3 c\u1eadp nh\u1eadt (Ho\u1eb7c G\u1ee1 c\u00e0i \u0111\u1eb7t v\u00e0 C\u00e0i \u0111\u1eb7t l\u1ea1i n\u1ebfu kh\u00f4ng c\u00f3 n\u00fat C\u1eadp nh\u1eadt)"
+    const-string v1, "Phi\u00ean b\u1ea3n Doroschool \u0111\u00e3 c\u0169, Vui l\u00f2ng \u0111\u1ebfn CHPlay \u0111\u1ec3 c\u1eadp nh\u1eadt (Ho\u1eb7c G\u1ee1 c\u00e0i \u0111\u1eb7t v\u00e0 C\u00e0i \u0111\u1eb7t l\u1ea1i n\u1ebfu kh\u00f4ng c\u00f3 n\u00fat C\u1eadp nh\u1eadt)"
 
     invoke-static {p0, v0, v1}, Lcom/prosoftlib/utility/Common;->ForceUpdate_VersionDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -411,6 +413,8 @@
 
 .method public static ForceUpdate_VersionDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+
+    return-void
 
     .line 166
     invoke-static {p0}, Lcom/prosoftlib/utility/Common;->isValidContext(Landroid/content/Context;)Z
@@ -579,11 +583,7 @@
 
     move-result-object p0
 
-    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p0
+    const-string p0, "551" 
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

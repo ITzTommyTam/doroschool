@@ -1498,7 +1498,7 @@
     invoke-virtual {v2, v0}, Landroid/app/DownloadManager$Request;->setTitle(Ljava/lang/CharSequence;)Landroid/app/DownloadManager$Request;
 
     .line 1152
-    const-string v0, "T\u1ea3i t\u1eeb Vietschool"
+    const-string v0, "T\u1ea3i t\u1eeb Doroschool"
 
     invoke-virtual {v2, v0}, Landroid/app/DownloadManager$Request;->setDescription(Ljava/lang/CharSequence;)Landroid/app/DownloadManager$Request;
 

@@ -2244,6 +2244,12 @@
     .line 1148
     invoke-virtual {v0, p1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
+    const v1, -0xddddde
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
+
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setBackgroundColor(I)V
+
     .line 1150
     iget-object p1, p0, Lcom/prosoftlib/control/FreezableGridView;->_ElementStore:Lcom/prosoftlib/control/FreezableGridviewElement;
 
@@ -6020,61 +6026,8 @@
 .end method
 
 .method public SetAlternateRowColor(I)V
-    .locals 5
+    .locals 0
 
-    .line 1705
-    iput p1, p0, Lcom/prosoftlib/control/FreezableGridView;->_AlternateRowColorStore:I
-
-    .line 1707
-    iget-object v0, p0, Lcom/prosoftlib/control/FreezableGridView;->_DataSource:Lcom/prosoftlib/control/FreezableGridViewData;
-
-    if-eqz v0, :cond_2
-
-    .line 1708
-    invoke-virtual {v0}, Lcom/prosoftlib/control/FreezableGridViewData;->RowCount()I
-
-    move-result v0
-
-    .line 1709
-    iget-object v1, p0, Lcom/prosoftlib/control/FreezableGridView;->_DataSource:Lcom/prosoftlib/control/FreezableGridViewData;
-
-    invoke-virtual {v1}, Lcom/prosoftlib/control/FreezableGridViewData;->ColumnCount()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    :goto_0
-    if-ge v2, v0, :cond_2
-
-    const/4 v3, 0x0
-
-    :goto_1
-    if-ge v3, v1, :cond_1
-
-    .line 1713
-    iget-object v4, p0, Lcom/prosoftlib/control/FreezableGridView;->_ElementStore:Lcom/prosoftlib/control/FreezableGridviewElement;
-
-    invoke-virtual {v4, v2, v3}, Lcom/prosoftlib/control/FreezableGridviewElement;->GetElementAt(II)Lcom/prosoftlib/control/ProTextView;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_0
-
-    .line 1715
-    invoke-virtual {v4, p1}, Landroid/widget/TextView;->setBackgroundColor(I)V
-
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v2, v2, 0x2
-
-    goto :goto_0
-
-    :cond_2
     return-void
 .end method
 
@@ -7233,6 +7186,8 @@
 .method public SetHeaderColor(I)V
     .locals 2
 
+    const p1, -0xe0e0e1
+
     const/4 v0, 0x0
 
     .line 1691
@@ -7907,7 +7862,7 @@
     .line 1428
     invoke-virtual {p1, p2}, Lcom/prosoftlib/control/ProTextView;->setText(Ljava/lang/CharSequence;)V
 
-    const/high16 p2, -0x1000000
+    const/4 p2, -0x1
 
     .line 1429
     invoke-virtual {p1, p2}, Lcom/prosoftlib/control/ProTextView;->setTextColor(I)V

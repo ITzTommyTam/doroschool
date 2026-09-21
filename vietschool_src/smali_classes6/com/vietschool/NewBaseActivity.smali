@@ -2942,7 +2942,7 @@
     .line 854
     iget-object p1, p0, Lcom/vietschool/NewBaseActivity;->tvConnStatus:Landroid/widget/TextView;
 
-    const-string v0, " \u0110ang k\u1ebft n\u1ed1i m\u00e1y ch\u1ee7 Vietschool..."
+    const-string v0, " \u0110ang k\u1ebft n\u1ed1i m\u00e1y ch\u1ee7 Doroschool..."
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

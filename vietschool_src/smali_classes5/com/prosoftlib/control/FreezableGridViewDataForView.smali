@@ -1091,7 +1091,7 @@
 
     const/4 v0, 0x1
 
-    const-string v1, "VietSchool"
+    const-string v1, "Doroschool"
 
     invoke-static {p1, v1, p2, v0}, Landroid/app/ProgressDialog;->show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Landroid/app/ProgressDialog;
 

@@ -2077,7 +2077,7 @@
 
     move-result-object v0
 
-    const-string v1, "Vietschool"
+    const-string v1, "Doroschool"
 
     .line 524
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;

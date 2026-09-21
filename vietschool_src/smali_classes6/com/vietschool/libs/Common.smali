@@ -639,9 +639,7 @@
     :cond_2
     iget v2, p1, Lvietschool/prosocket/ResponsePara;->ErrorNumber:I
 
-    const/16 v3, 0xc9
-
-    if-ne v2, v3, :cond_3
+    goto :cond_3
 
     .line 345
     new-instance p2, Lcom/vietschool/login/LoginSupport;
@@ -717,7 +715,7 @@
     if-nez p2, :cond_6
 
     .line 367
-    const-string p1, "VietSchool Response"
+    const-string p1, "Doroschool Response"
 
     iget-object p2, v1, Lcom/prosoftlib/utility/CallBackResult;->ErrorMessage:Ljava/lang/String;
 
@@ -866,7 +864,7 @@
 
     move-result-object p1
 
-    const-string v2, "VietSchool"
+    const-string v2, "Doroschool"
 
     invoke-static {v2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

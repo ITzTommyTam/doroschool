@@ -1111,9 +1111,7 @@
     .line 331
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
-
-    if-nez p1, :cond_6
+    goto :cond_6
 
     .line 332
     const-string p1, "Th\u00f4ng b\u00e1o"
@@ -1220,7 +1218,7 @@
 
     .line 355
     :cond_1
-    const-string v0, "VietSchool"
+    const-string v0, "Doroschool"
 
     const-string v1, "MainActivity Refresh Icon NULL Mode"
 

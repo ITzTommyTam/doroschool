@@ -197,7 +197,7 @@
 
     move-result-object v0
 
-    const-string v2, "B\u1ea1n c\u00f3 mu\u1ed1n c\u1eadp nh\u1eadt danh s\u00e1ch th\u00e0nh vi\u00ean t\u1eeb Vietschool theo l\u1edbp hi\u1ec7n t\u1ea1i kh\u00f4ng?"
+    const-string v2, "B\u1ea1n c\u00f3 mu\u1ed1n c\u1eadp nh\u1eadt danh s\u00e1ch th\u00e0nh vi\u00ean t\u1eeb Doroschool theo l\u1edbp hi\u1ec7n t\u1ea1i kh\u00f4ng?"
 
     .line 214
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
@@ -604,7 +604,7 @@
 
     const-string/jumbo v3, "\u0110\u1ed3ng b\u1ed9 th\u00e0nh vi\u00ean"
 
-    const-string v4, "Th\u00e0nh vi\u00ean nh\u00f3m s\u1ebd \u0111\u01b0\u1ee3c \u0111\u1ed3ng b\u1ed9 t\u1eeb Vietschool"
+    const-string v4, "Th\u00e0nh vi\u00ean nh\u00f3m s\u1ebd \u0111\u01b0\u1ee3c \u0111\u1ed3ng b\u1ed9 t\u1eeb Doroschool"
 
     invoke-direct/range {v1 .. v7}, Lcom/vietschool/thongbao_chat/Data_chat/ContactNew$GroupOptionItem;-><init>(ILjava/lang/String;Ljava/lang/String;IIZ)V
 

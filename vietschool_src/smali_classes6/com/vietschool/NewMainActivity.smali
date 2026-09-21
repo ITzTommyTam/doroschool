@@ -2191,7 +2191,7 @@
 
     .line 233
     :cond_1
-    const-string v0, "VietSchool"
+    const-string v0, "Doroschool"
 
     const-string v1, "MainActivity Refresh Icon NULL Mode"
 

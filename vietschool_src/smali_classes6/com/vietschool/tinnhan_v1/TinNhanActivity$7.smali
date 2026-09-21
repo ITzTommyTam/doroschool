@@ -56,7 +56,7 @@
     .end annotation
 
     .line 285
-    const-string p1, "VietSchool:Tin"
+    const-string p1, "Doroschool:Tin"
 
     const-string p2, "onItemLongClick: "
 

@@ -425,7 +425,7 @@
     .locals 2
 
     .line 290
-    const-string v0, "VietSchool"
+    const-string v0, "Doroschool"
 
     const-string v1, "ShutDown APP onDestroy"
 

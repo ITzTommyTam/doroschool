@@ -7,7 +7,7 @@
             <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff1e293b" android:id="@id/tv_ho_ten" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_sll" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
                 <ImageView android:id="@id/iv_sll" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/check_circle_24px_fill" />
-                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff6366f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VietSchool" android:layout_marginStart="4.0dip" />
+                <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff6366f1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Doroschool" android:layout_marginStart="4.0dip" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">

@@ -3661,7 +3661,7 @@
     .line 602
     const-string v0, "PhongHoc onDestroy: "
 
-    const-string v2, "VietSchool Thi"
+    const-string v2, "Doroschool Thi"
 
     invoke-static {v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -12698,7 +12698,7 @@
     .locals 5
 
     .line 3725
-    const-string v0, "VietSchool Thi"
+    const-string v0, "Doroschool Thi"
 
     const-string v1, "save giam sat"
 
@@ -17592,7 +17592,7 @@
     .locals 3
 
     .line 276
-    const-string v0, "VietSchool Thi"
+    const-string v0, "Doroschool Thi"
 
     const-string v1, "onResume: "
 

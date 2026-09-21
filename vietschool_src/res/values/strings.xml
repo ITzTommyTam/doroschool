@@ -37,7 +37,7 @@
     <string name="add_widget">Add widget</string>
     <string name="ads_message">Bấm quảng cáo để xem số liệu bị ẩn. Xin chân thành cảm ơn!</string>
     <string name="androidx_startup">androidx.startup</string>
-    <string name="app_name">VietSchool</string>
+    <string name="app_name">Doroschool</string>
     <string name="app_version">null</string>
     <string name="app_widget_description">This is an app widget description</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
@@ -154,12 +154,12 @@
     <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="firebase_database_url">https://vietschool-2fcbb.firebaseio.com</string>
+    <string name="firebase_database_url">https://Doroschool-2fcbb.firebaseio.com</string>
     <string name="gcm_defaultSenderId">51407151997</string>
     <string name="google_api_key">AIzaSyA4nIq1DpR47y_yx-71VKCykMudV8KBVrM</string>
     <string name="google_app_id">1:51407151997:android:147cf8a3911cba45</string>
     <string name="google_crash_reporting_api_key">AIzaSyA4nIq1DpR47y_yx-71VKCykMudV8KBVrM</string>
-    <string name="google_storage_bucket">vietschool-2fcbb.appspot.com</string>
+    <string name="google_storage_bucket">Doroschool-2fcbb.appspot.com</string>
     <string name="grant">GRANT</string>
     <string name="grant_permission">Grant Permission</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -306,7 +306,7 @@
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="permission_request_read_external_storage">Give permission to read your phones storage</string>
     <string name="permission_request_read_external_storage_denied">"You can't select files or folders without giving the app permission to acces your phone's storage"</string>
-    <string name="project_id">vietschool-2fcbb</string>
+    <string name="project_id">Doroschool-2fcbb</string>
     <string name="read_barcode">Read Barcode</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbar_scrolling_view_behavior">com.google.android.material.search.SearchBar$ScrollingViewBehavior</string>
@@ -351,7 +351,7 @@
     <string name="title_activity_input_tong_hop">Chọn lớp - đợt điểm</string>
     <string name="title_activity_inputmark">Nhập điểm</string>
     <string name="title_activity_login">Đăng nhập</string>
-    <string name="title_activity_login_activity_v1">VietSchool</string>
+    <string name="title_activity_login_activity_v1">Doroschool</string>
     <string name="title_activity_main">Barcode Reader Sample</string>
     <string name="title_activity_main_vipham">Vi phạm</string>
     <string name="title_activity_nhan_tin_Diem">Yêu cầu trả điểm</string>
